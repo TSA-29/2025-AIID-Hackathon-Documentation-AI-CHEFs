@@ -32,28 +32,32 @@ The website features a horizontal navigation bar with the following structure:
    - Team overview and member directory
    - Grouped by individual profiles
 
-#### Sub-navigation under TEAM
-- **NAME1**
-  - **PROJECT**
-    - **PROBLEM DESCRIPTION**
-    - **RESULTS**
-    - **ENGINEERING**
-  - **EXPERIMENTS**
-  - **COMMUNICATION**
-- **NAME2**
-  - **PROJECT**
-    - **PROBLEM DESCRIPTION**
-    - **RESULTS**
-    - **ENGINEERING**
-  - **EXPERIMENTS**
-  - **COMMUNICATION**
-- **NAME3**
-  - **PROJECT**
-    - **PROBLEM DESCRIPTION**
-    - **RESULTS**
-    - **ENGINEERING**
-  - **EXPERIMENTS**
-  - **COMMUNICATION**
+3. **NAME1**
+   - **Sub-navigation items:**
+     - **PROJECT**
+       - **PROBLEM DESCRIPTION**
+       - **RESULTS**
+       - **ENGINEERING**
+     - **EXPERIMENTS**
+     - **COMMUNICATION**
+
+4. **NAME2**
+   - **Sub-navigation items:**
+     - **PROJECT**
+       - **PROBLEM DESCRIPTION**
+       - **RESULTS**
+       - **ENGINEERING**
+     - **EXPERIMENTS**
+     - **COMMUNICATION**
+
+5. **NAME3**
+   - **Sub-navigation items:**
+     - **PROJECT**
+       - **PROBLEM DESCRIPTION**
+       - **RESULTS**
+       - **ENGINEERING**
+     - **EXPERIMENTS**
+     - **COMMUNICATION**
 
 ### Footer Architecture
 
@@ -90,27 +94,27 @@ src/
 │   ├── pages/
 │   │   ├── Home/
 │   │   ├── Team/
-│   │   │   ├── Name1/
-│   │   │   │   ├── Project/
-│   │   │   │   │   ├── ProblemDescription/
-│   │   │   │   │   ├── Results/
-│   │   │   │   │   └── Engineering/
-│   │   │   │   ├── Experiments/
-│   │   │   │   └── Communication/
-│   │   │   ├── Name2/
-│   │   │   │   ├── Project/
-│   │   │   │   │   ├── ProblemDescription/
-│   │   │   │   │   ├── Results/
-│   │   │   │   │   └── Engineering/
-│   │   │   │   ├── Experiments/
-│   │   │   │   └── Communication/
-│   │   │   └── Name3/
-│   │   │       ├── Project/
-│   │   │       │   ├── ProblemDescription/
-│   │   │       │   ├── Results/
-│   │   │       │   └── Engineering/
-│   │   │       ├── Experiments/
-│   │   │       └── Communication/
+│   │   ├── Name1/
+│   │   │   ├── Project/
+│   │   │   │   ├── ProblemDescription/
+│   │   │   │   ├── Results/
+│   │   │   │   └── Engineering/
+│   │   │   ├── Experiments/
+│   │   │   └── Communication/
+│   │   ├── Name2/
+│   │   │   ├── Project/
+│   │   │   │   ├── ProblemDescription/
+│   │   │   │   ├── Results/
+│   │   │   │   └── Engineering/
+│   │   │   ├── Experiments/
+│   │   │   └── Communication/
+│   │   └── Name3/
+│   │       ├── Project/
+│   │       │   ├── ProblemDescription/
+│   │       │   ├── Results/
+│   │       │   └── Engineering/
+│   │       ├── Experiments/
+│   │       └── Communication/
 │   └── common/
 │       ├── Button/
 │       ├── Card/
@@ -140,34 +144,65 @@ interface NavigationItem {
 
 const navigationConfig: NavigationItem[] = [
   { id: 'home', label: 'HOME', path: '/' },
+  { id: 'team', label: 'TEAM', path: '/team' },
   {
-    id: 'team',
-    label: 'TEAM',
-    path: '/team',
+    id: 'name1',
+    label: 'NAME1',
+    path: '/name1',
     children: [
       {
-        id: 'name1',
-        label: 'NAME1',
-        path: '/team/name1',
+        id: 'project',
+        label: 'PROJECT',
+        path: '/name1/project',
         children: [
-          {
-            id: 'project',
-            label: 'PROJECT',
-            path: '/team/name1/project',
-            children: [
-              { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/team/name1/project/problem-description' },
-              { id: 'results', label: 'RESULTS', path: '/team/name1/project/results' },
-              { id: 'engineering', label: 'ENGINEERING', path: '/team/name1/project/engineering' }
-            ]
-          },
-          { id: 'experiments', label: 'EXPERIMENTS', path: '/team/name1/experiments' },
-          { id: 'communication', label: 'COMMUNICATION', path: '/team/name1/communication' }
+          { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/name1/project/problem-description' },
+          { id: 'results', label: 'RESULTS', path: '/name1/project/results' },
+          { id: 'engineering', label: 'ENGINEERING', path: '/name1/project/engineering' }
         ]
       },
+      { id: 'experiments', label: 'EXPERIMENTS', path: '/name1/experiments' },
+      { id: 'communication', label: 'COMMUNICATION', path: '/name1/communication' }
+    ]
+  },
+  {
+    id: 'name2',
+    label: 'NAME2',
+    path: '/name2',
+    children: [
       {
-        id: 'name2',
-        label: 'NAME2',
-        path: '/team/name2',
+        id: 'project',
+        label: 'PROJECT',
+        path: '/name2/project',
+        children: [
+          { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/name2/project/problem-description' },
+          { id: 'results', label: 'RESULTS', path: '/name2/project/results' },
+          { id: 'engineering', label: 'ENGINEERING', path: '/name2/project/engineering' }
+        ]
+      },
+      { id: 'experiments', label: 'EXPERIMENTS', path: '/name2/experiments' },
+      { id: 'communication', label: 'COMMUNICATION', path: '/name2/communication' }
+    ]
+  },
+  {
+    id: 'name3',
+    label: 'NAME3',
+    path: '/name3',
+    children: [
+      {
+        id: 'project',
+        label: 'PROJECT',
+        path: '/name3/project',
+        children: [
+          { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/name3/project/problem-description' },
+          { id: 'results', label: 'RESULTS', path: '/name3/project/results' },
+          { id: 'engineering', label: 'ENGINEERING', path: '/name3/project/engineering' }
+        ]
+      },
+      { id: 'experiments', label: 'EXPERIMENTS', path: '/name3/experiments' },
+      { id: 'communication', label: 'COMMUNICATION', path: '/name3/communication' }
+    ]
+  }
+];
         children: [
           {
             id: 'project',
@@ -243,15 +278,15 @@ interface SocialLink {
 ```
 /                           → Home Page
 /team                       → Team Directory
-/team/name1                 → NAME1 Profile
-/team/name1/project         → NAME1 Project Overview
-/team/name1/project/problem-description → Problem Description
-/team/name1/project/results → Results
-/team/name1/project/engineering → Engineering Details
-/team/name1/experiments     → NAME1 Experiments
-/team/name1/communication   → NAME1 Communication
-/team/name2/...             → Same structure for NAME2
-/team/name3/...             → Same structure for NAME3
+/name1                      → NAME1 Profile
+/name1/project              → NAME1 Project Overview
+/name1/project/problem-description → Problem Description
+/name1/project/results      → Results
+/name1/project/engineering  → Engineering Details
+/name1/experiments          → NAME1 Experiments
+/name1/communication        → NAME1 Communication
+/name2/...                  → Same structure for NAME2
+/name3/...                  → Same structure for NAME3
 ```
 
 ## Responsive Design Strategy
