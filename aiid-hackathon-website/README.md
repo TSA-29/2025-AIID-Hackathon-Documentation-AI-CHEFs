@@ -147,19 +147,56 @@ The website is fully responsive across all device sizes:
 
 ## 🚀 Deployment
 
-The application is optimized for production deployment:
+### GitHub Pages Deployment
 
-### Build Process
-1. **TypeScript Compilation**: Type validation and transpilation
-2. **Asset Optimization**: CSS and JavaScript minification
-3. **Bundle Generation**: Optimized production bundles
-4. **Static Asset Handling**: Efficient asset serving
+This project is configured for automatic GitHub Pages deployment:
+
+**Repository**: https://github.com/THU-SIGS-AIID/2025-AIID-Hackathon-Documentation-Template
+
+**Deployment URL**: https://THU-SIGS-AIID.github.io/2025-AIID-Hackathon-Documentation-Template/
+
+### Setup Instructions
+
+1. **Push to GitHub**
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
+
+2. **Enable GitHub Pages**
+   - Go to repository Settings → Pages
+   - Source: Select "GitHub Actions"
+   - Save and wait for deployment
+
+3. **Automatic Deployment**
+   - GitHub Actions will build and deploy on every push to main
+   - Monitor progress in Actions tab
+
+### Alternative Deployment Options
+
+**Option 1: Custom Domain**
+- Configure custom domain in GitHub Pages settings
+- Update `vite.config.ts` base path accordingly
+
+**Option 2: User Website**
+- Repository name: `THU-SIGS-AIID.github.io`
+- URL: `https://THU-SIGS-AIID.github.io`
+- Change base path to `/`
+
+**Option 3: Manual Deployment**
+```bash
+npm run build
+# Deploy dist folder to any static hosting service
+```
 
 ### Production Features
+- **TypeScript Compilation**: Type validation and transpilation
+- **Asset Optimization**: CSS and JavaScript minification
+- **Bundle Generation**: Optimized production bundles
+- **Static Asset Handling**: Efficient asset serving
 - **Code Splitting**: Optimized bundle sizes
-- **Asset Caching**: Browser caching strategies
 - **SEO Friendly**: Proper meta tags and semantic HTML
-- **Performance Optimized**: Fast load times and smooth interactions
 
 ## 🤝 Contributing
 
