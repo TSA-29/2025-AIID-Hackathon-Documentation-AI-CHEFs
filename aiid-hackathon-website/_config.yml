@@ -1,0 +1,39 @@
+# GitHub Pages configuration
+# This file tells Jekyll to skip certain files and directories
+
+# Skip these files and directories from Jekyll processing
+exclude:
+  - node_modules/
+  - src/
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - tsconfig.node.json
+  - tsconfig.app.json
+  - vite.config.ts
+  - eslint.config.js
+  - .github/
+  - dist/
+  - CLAUDE.md
+  - '*.log'
+  - '*.tmp'
+  - README.md
+
+# Skip processing of certain file types
+keep_files:
+  - dist/
+  - assets/
+
+# Plugins to disable
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Set base URL for GitHub Pages
+baseurl: "/2025-AIID-Hackathon-Documentation-Template/aiid-hackathon-website"
+
+# Disable Sass
+sass:
+  style: compressed

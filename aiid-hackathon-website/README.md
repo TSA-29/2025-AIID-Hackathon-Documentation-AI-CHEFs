@@ -198,6 +198,11 @@ npm run build
 - **Code Splitting**: Optimized bundle sizes
 - **SEO Friendly**: Proper meta tags and semantic HTML
 
+### Jekyll Configuration
+The project includes Jekyll configuration files to prevent conflicts:
+- `.nojekyll`: Disables Jekyll processing for static deployment
+- `_config.yml`: Configures Jekyll to skip build files and serve dist/ directly
+
 ## 🤝 Contributing
 
 This project serves as a template for hackathon documentation websites. When contributing:
