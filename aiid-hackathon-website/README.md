@@ -149,7 +149,7 @@ The website is fully responsive across all device sizes:
 
 ### GitHub Pages Deployment
 
-This project is configured for automatic GitHub Pages deployment:
+This project is configured for automatic GitHub Pages deployment using GitHub Actions with static file serving:
 
 **Repository**: https://github.com/THU-SIGS-AIID/2025-AIID-Hackathon-Documentation-Template
 
@@ -160,7 +160,7 @@ This project is configured for automatic GitHub Pages deployment:
 1. **Push to GitHub**
    ```bash
    git add .
-   git commit -m "Ready for deployment"
+   git commit -m "Configure static GitHub Pages deployment"
    git push origin main
    ```
 
@@ -171,7 +171,15 @@ This project is configured for automatic GitHub Pages deployment:
 
 3. **Automatic Deployment**
    - GitHub Actions will build and deploy on every push to main
-   - Monitor progress in Actions tab
+   - Monitor progress in the Actions tab
+   - `.nojekyll` file ensures static file serving
+   - No Jekyll processing of source files
+
+### Deployment Process
+- ✅ **Static File Serving**: `.nojekyll` bypasses Jekyll
+- ✅ **Automated Builds**: GitHub Actions handles the entire process
+- ✅ **No File Conflicts**: Source files remain untouched
+- ✅ **Fast Deployment**: Direct static file serving
 
 ### Alternative Deployment Options
 
@@ -197,11 +205,7 @@ npm run build
 - **Static Asset Handling**: Efficient asset serving
 - **Code Splitting**: Optimized bundle sizes
 - **SEO Friendly**: Proper meta tags and semantic HTML
-
-### Jekyll Configuration
-The project includes Jekyll configuration files to prevent conflicts:
-- `.nojekyll`: Disables Jekyll processing for static deployment
-- `_config.yml`: Configures Jekyll to skip build files and serve dist/ directly
+- **Direct Deployment**: No Jekyll processing, direct static file serving
 
 ## 🤝 Contributing
 
