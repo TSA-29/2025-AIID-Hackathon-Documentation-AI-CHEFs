@@ -1,0 +1,242 @@
+.tutorialPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Markdown Container */
+.markdownContainer {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.markdownWrapper {
+  padding: 3rem;
+}
+
+.markdownContent {
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Markdown Element Styles */
+.mdH1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f59e0b;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mdH2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 3rem 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f59e0b20;
+  position: relative;
+}
+
+.mdH2::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.mdH3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 2rem 0 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #f59e0b;
+}
+
+.mdH4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+.mdP {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.mdUl {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.mdLi {
+  font-size: 1.1rem;
+  color: #666;
+  padding: 0.8rem 0;
+  padding-left: 2rem;
+  position: relative;
+  line-height: 1.7;
+}
+
+.mdLi::before {
+  content: '✨';
+  position: absolute;
+  left: 0;
+  color: #f59e0b;
+  font-size: 1rem;
+}
+
+.mdBlockquote {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  border-left: 4px solid #f59e0b;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+}
+
+.mdHr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  margin: 3rem 0;
+  border-radius: 2px;
+}
+
+.mdStrong {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.mdEm {
+  color: #d97706;
+  font-style: italic;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #666;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f59e0b20;
+  border-top: 4px solid #f59e0b;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .markdownWrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .mdH1 {
+    font-size: 2rem;
+  }
+
+  .mdH2 {
+    font-size: 1.5rem;
+  }
+
+  .mdH3 {
+    font-size: 1.3rem;
+  }
+
+  .mdH4 {
+    font-size: 1.1rem;
+  }
+
+  .mdP {
+    font-size: 1rem;
+  }
+
+  .mdLi {
+    font-size: 1rem;
+    padding: 0.6rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .mdBlockquote {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+}

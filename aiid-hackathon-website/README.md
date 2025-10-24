@@ -1,73 +1,187 @@
-# React + TypeScript + Vite
+# AIID Hackathon 2025 - Team Documentation Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive documentation website built for the AIID Hackathon 2025, showcasing team collaboration, development processes, and project outcomes. This platform serves as a centralized hub for presenting hackathon projects, team profiles, and technical tutorials.
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website demonstrates modern web development practices using React, TypeScript, and Vite to create an elegant, responsive documentation platform. It features a clean architecture with component-based design, routing, and markdown rendering capabilities.
 
-## React Compiler
+### Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **📱 Responsive Design**: Mobile-first approach with beautiful gradients and modern UI
+- **🗺️ Multi-level Navigation**: Hierarchical routing system for projects and sub-pages
+- **👥 Team Showcase**: Dynamic team member profiles and collaboration highlights
+- **📚 Tutorial System**: Interactive markdown-based tutorials with custom styling
+- **⚡ Performance Optimized**: Fast builds with Vite and TypeScript
+- **🎨 Component Architecture**: Reusable, type-safe components with CSS Modules
 
-## Expanding the ESLint configuration
+## 🏗️ Website Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Main Sections
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **🏠 Home**: Introduction and overview of the hackathon experience
+- **👥 Team**: Team member profiles and roles
+- **📊 Project 1**: Medical AI Diagnosis System
+  - Background & Problem Statement
+  - Solution Idea & Architecture
+  - Implementation Details
+  - Results & Impact Analysis
+- **🌾 Project 2**: Sustainable Agriculture System
+  - Global Food Security Challenge
+  - Smart Farming Solution
+  - Technical Implementation
+  - Environmental & Social Impact
+- **🤖 Project 3**: Intelligent Educational Platform
+  - Learning Analytics Framework
+  - AI-Powered Personalization
+  - Development Process
+  - Educational Outcomes
+- **📡 Communication**: Team collaboration and development workflow
+- **📚 Tutorial**: "Vibe Coding" - AI-powered web development guide
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Technical Tutorial Highlight
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The website features a comprehensive tutorial on **"Vibe Coding"** - an innovative approach to web development using AI assistance. This beginner-friendly guide covers:
+
+- AI-powered website development workflows
+- Tool selection and setup
+- Prompt engineering for code generation
+- Iterative refinement techniques
+- SEO and deployment strategies
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **React 19.1.1**: Modern React with hooks and functional components
+- **TypeScript ~5.9.3**: Type-safe development
+- **Vite 7.1.7**: Fast build tool and development server
+- **React Router 7.9.4**: Client-side routing
+- **CSS Modules**: Component-scoped styling
+- **react-markdown**: Markdown rendering with GitHub-flavored support
+
+### Development Tools
+- **ESLint 9.36.0**: Code quality and linting
+- **TypeScript Compiler**: Type checking and validation
+- **Hot Module Replacement**: Instant development feedback
+
+## 🚦 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd aiid-hackathon-website
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at `http://localhost:5173`
+
+### Available Scripts
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint code quality checks
+- `npm run preview` - Preview production build locally
+
+## 🏛️ Project Architecture
+
+### Directory Structure
+```
+src/
+├── components/
+│   ├── layout/           # Header, Footer, Navigation
+│   └── pages/           # Route-based page components
+│       ├── Home/        # Landing page
+│       ├── Team/        # Team profiles
+│       ├── Project1-3/  # Hackathon projects
+│       ├── Tutorial/    # Markdown tutorial system
+│       └── Communication/ # Dev workflow
+├── config/
+│   └── navigation.ts    # Centralized navigation config
+├── contexts/            # React contexts (Navigation, Theme)
+├── types/              # TypeScript type definitions
+└── assets/             # Static assets
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Key Patterns
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Centralized Configuration**: Navigation and routing managed in `src/config/navigation.ts`
+- **Component-First Architecture**: Reusable components with scoped styling
+- **Type Safety**: Full TypeScript implementation throughout
+- **Responsive Design**: Mobile-first CSS with flexible layouts
+- **Markdown Integration**: Custom markdown rendering for tutorial content
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📱 Responsive Design
+
+The website is fully responsive across all device sizes:
+- **Desktop**: Full-featured layout with hover effects and animations
+- **Tablet**: Optimized navigation and content layout
+- **Mobile**: Touch-friendly interface with simplified navigation
+
+## 🎨 Design System
+
+### Visual Identity
+- **Color Palette**: Warm yellow-orange gradients creating an energetic, innovative feel
+- **Typography**: Clean, modern fonts with excellent readability
+- **Spacing**: Consistent spacing system for visual harmony
+- **Interactions**: Smooth transitions and hover effects
+
+### Component Styling
+- **CSS Modules**: Scoped styling preventing conflicts
+- **Responsive Grids**: Flexible layouts that adapt to content
+- **Modern Effects**: Gradients, shadows, and smooth animations
+
+## 🚀 Deployment
+
+The application is optimized for production deployment:
+
+### Build Process
+1. **TypeScript Compilation**: Type validation and transpilation
+2. **Asset Optimization**: CSS and JavaScript minification
+3. **Bundle Generation**: Optimized production bundles
+4. **Static Asset Handling**: Efficient asset serving
+
+### Production Features
+- **Code Splitting**: Optimized bundle sizes
+- **Asset Caching**: Browser caching strategies
+- **SEO Friendly**: Proper meta tags and semantic HTML
+- **Performance Optimized**: Fast load times and smooth interactions
+
+## 🤝 Contributing
+
+This project serves as a template for hackathon documentation websites. When contributing:
+
+1. Follow the established component patterns
+2. Maintain type safety with TypeScript
+3. Use CSS Modules for styling
+4. Update navigation configuration for new pages
+5. Test responsive design across devices
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- **AIID Hackathon 2025**: Organizers and participants
+- **React Team**: For the excellent React framework
+- **Vite Team**: For the blazing-fast build tool
+- **TypeScript Team**: For enabling type-safe JavaScript
+
+---
+
+**Built with ❤️ for AIID Hackathon 2025**

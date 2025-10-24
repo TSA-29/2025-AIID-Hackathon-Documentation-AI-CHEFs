@@ -5,21 +5,9 @@ import Footer from './Footer/Footer';
 
 const Layout: React.FC = () => {
   return (
-    <div style={{ 
-      minHeight: '100vh', 
-      display: 'flex', 
-      flexDirection: 'column' 
-    }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />
-      <main style={{ 
-        flex: 1, 
-        padding: '2rem 0',
-        width: '100%',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        paddingLeft: '20px',
-        paddingRight: '20px'
-      }}>
+      <main style={{ flex: 1 }}>
         <Outlet />
       </main>
       <Footer />

@@ -1,199 +1,283 @@
 import React from 'react';
+import styles from './Team.module.css';
 
 const Team: React.FC = () => {
-  const teamMembers = [
-    {
-      name: 'Dr. Sarah Chen',
-      role: 'Project Lead & AI Researcher',
-      bio: 'PhD in Machine Learning with 10+ years of experience in neural networks and deep learning.',
-      email: 'sarah.chen@aiid-hackathon.org',
-      expertise: ['Deep Learning', 'Neural Networks', 'Computer Vision']
-    },
-    {
-      name: 'Alex Rodriguez',
-      role: 'Full-Stack Developer',
-      bio: 'Experienced developer specializing in React, Node.js, and cloud infrastructure.',
-      email: 'alex.rodriguez@aiid-hackathon.org',
-      expertise: ['React', 'Node.js', 'AWS', 'TypeScript']
-    },
-    {
-      name: 'Dr. Michael Kim',
-      role: 'Data Scientist',
-      bio: 'Expert in statistical analysis, data mining, and predictive modeling.',
-      email: 'michael.kim@aiid-hackathon.org',
-      expertise: ['Data Analysis', 'Python', 'Machine Learning', 'Statistics']
-    },
-    {
-      name: 'Emily Johnson',
-      role: 'UX/UI Designer',
-      bio: 'Creative designer focused on user-centered design and accessibility.',
-      email: 'emily.johnson@aiid-hackathon.org',
-      expertise: ['UI/UX Design', 'Figma', 'User Research', 'Accessibility']
-    }
-  ];
-
   return (
-    <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-      <section style={{ textAlign: 'center', padding: '3rem 20px' }}>
-        <h1 style={{ 
-          fontSize: '3rem', 
-          marginBottom: '1rem',
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>
-          Our Team
-        </h1>
-        <p style={{ 
-          fontSize: '1.2rem', 
-          color: '#666', 
-          maxWidth: '600px', 
-          margin: '0 auto',
-          lineHeight: '1.6'
-        }}>
-          Meet the talented individuals driving innovation in AI research and development.
-        </p>
-      </section>
+    <div className={styles.teamPage}>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <h1 className={styles.title}>Meet Our Team</h1>
+          <p className={styles.subtitle}>
+            Meet the talented individuals behind our innovative hackathon projects
+          </p>
+        </div>
 
-      <section style={{ padding: '0 20px' }}>
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
-          gap: '2rem',
-          marginBottom: '3rem'
-        }}>
-          {teamMembers.map((member, index) => (
-            <div key={index} style={{ 
-              background: 'white', 
-              padding: '2rem', 
-              borderRadius: '12px', 
-              boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
-              border: '1px solid #e9ecef',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-            }}>
+        <div className={styles.teamIntro}>
+          <h2>About Us</h2>
+          <p>
+            We are a passionate interdisciplinary team dedicated to driving innovation across multiple domains
+            through artificial intelligence and cutting-edge technology. Our team members come from diverse
+            professional backgrounds, including AI engineers, healthcare experts, agricultural specialists,
+            educators, and software developers, working together to create impactful solutions.
+          </p>
+        </div>
+
+        <div className={styles.teamStats}>
+          <div className={styles.statCard}>
+            <div className={styles.statNumber}>15</div>
+            <div className={styles.statLabel}>Core Team Members</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statNumber}>48</div>
+            <div className={styles.statLabel}>Hours Intensive Development</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statNumber}>5</div>
+            <div className={styles.statLabel}>Different Domains</div>
+          </div>
+          <div className={styles.statCard}>
+            <div className={styles.statNumber}>3</div>
+            <div className={styles.statLabel}>Innovative Projects</div>
+          </div>
+        </div>
+
+        <div className={styles.teamGrid}>
+          <div className={styles.teamMember}>
+            <div className={styles.memberAvatar}>
               <div style={{
-                width: '100px',
-                height: '100px',
-                borderRadius: '50%',
+                width: '100%',
+                height: '100%',
                 background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                margin: '0 auto 1.5rem',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                fontSize: '2rem',
-                color: 'white',
-                fontWeight: 'bold'
+                fontSize: '3rem',
+                color: 'white'
               }}>
-                {member.name.split(' ').map(n => n[0]).join('')}
+                👨‍💻
               </div>
-              
-              <h3 style={{ 
-                fontSize: '1.5rem', 
-                marginBottom: '0.5rem',
-                color: '#333'
-              }}>
-                {member.name}
-              </h3>
-              
-              <p style={{ 
-                color: '#667eea', 
-                fontWeight: '600',
-                marginBottom: '1rem',
-                fontSize: '1.1rem'
-              }}>
-                {member.role}
-              </p>
-              
-              <p style={{ 
-                color: '#666', 
-                lineHeight: '1.6',
-                marginBottom: '1.5rem'
-              }}>
-                {member.bio}
-              </p>
-              
-              <div style={{ marginBottom: '1.5rem' }}>
-                <p style={{ 
-                  color: '#333', 
-                  fontWeight: '600',
-                  marginBottom: '0.5rem'
-                }}>
-                  Expertise:
-                </p>
-                <div style={{ 
-                  display: 'flex', 
-                  flexWrap: 'wrap', 
-                  gap: '0.5rem',
-                  justifyContent: 'center'
-                }}>
-                  {member.expertise.map((skill, skillIndex) => (
-                    <span key={skillIndex} style={{
-                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                      color: 'white',
-                      padding: '0.25rem 0.75rem',
-                      borderRadius: '15px',
-                      fontSize: '0.85rem',
-                      fontWeight: '500'
-                    }}>
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              
-              <a 
-                href={`mailto:${member.email}`}
-                style={{
-                  color: '#667eea',
-                  textDecoration: 'none',
-                  fontWeight: '500',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.5rem'
-                }}
-              >
-                ✉️ {member.email}
-              </a>
             </div>
-          ))}
-        </div>
-      </section>
+            <h3 className={styles.memberName}>Alex Chen</h3>
+            <p className={styles.memberRole}>AI Lead Engineer</p>
+            <p className={styles.memberBio}>
+              Specializing in deep learning and computer vision with extensive experience in medical imaging analysis.
+              Leads core algorithm development and model optimization across all projects.
+            </p>
+            <div className={styles.memberSkills}>
+              <span className={styles.skillTag}>PyTorch</span>
+              <span className={styles.skillTag}>CNN</span>
+              <span className={styles.skillTag}>Medical AI</span>
+            </div>
+            <div className={styles.memberContact}>
+              <a href="#" className={styles.contactLink}>📧</a>
+              <a href="#" className={styles.contactLink}>💼</a>
+              <a href="#" className={styles.contactLink}>🔗</a>
+            </div>
+          </div>
 
-      <section style={{ 
-        background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
-        padding: '3rem 20px',
-        textAlign: 'center',
-        marginTop: 'auto' /* Push to bottom */
-      }}>
-        <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#333' }}>
-          Join Our Team
-        </h2>
-        <p style={{ 
-          fontSize: '1.1rem', 
-          color: '#666',
-          marginBottom: '2rem',
-          maxWidth: '600px',
-          margin: '0 auto 2rem'
-        }}>
-          We're always looking for talented individuals to join our mission. 
-          If you're passionate about AI and innovation, we'd love to hear from you.
-        </p>
-        <button style={{
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-          border: 'none',
-          color: 'white',
-          padding: '1rem 2rem',
-          borderRadius: '6px',
-          cursor: 'pointer',
-          fontSize: '1.1rem',
-          fontWeight: '600',
-          transition: 'transform 0.3s ease'
-        }}>
-          Contact Us
-        </button>
-      </section>
+          <div className={styles.teamMember}>
+            <div className={styles.memberAvatar}>
+              <div style={{
+                width: '100%',
+                height: '100%',
+                background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '3rem',
+                color: 'white'
+              }}>
+                👩‍🔬
+              </div>
+            </div>
+            <h3 className={styles.memberName}>Dr. Sarah Johnson</h3>
+            <p className={styles.memberRole}>Medical Consultant</p>
+            <p className={styles.memberBio}>
+              Board-certified radiologist with 10+ years of clinical experience. Provides medical expertise
+              ensuring clinical feasibility and accuracy of AI diagnostic solutions.
+            </p>
+            <div className={styles.memberSkills}>
+              <span className={styles.skillTag}>Medical Imaging</span>
+              <span className={styles.skillTag}>Clinical Diagnosis</span>
+              <span className={styles.skillTag}>Healthcare AI</span>
+            </div>
+            <div className={styles.memberContact}>
+              <a href="#" className={styles.contactLink}>📧</a>
+              <a href="#" className={styles.contactLink}>💼</a>
+              <a href="#" className={styles.contactLink}>🔗</a>
+            </div>
+          </div>
+
+          <div className={styles.teamMember}>
+            <div className={styles.memberAvatar}>
+              <div style={{
+                width: '100%',
+                height: '100%',
+                background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '3rem',
+                color: 'white'
+              }}>
+                🌾
+              </div>
+            </div>
+            <h3 className={styles.memberName}>Michael Park</h3>
+            <p className={styles.memberRole}>Agriculture Specialist</p>
+            <p className={styles.memberBio}>
+              Agronomist and sustainable farming expert. Bridges the gap between traditional farming practices
+              and modern AI technology for precision agriculture solutions.
+            </p>
+            <div className={styles.memberSkills}>
+              <span className={styles.skillTag}>Crop Science</span>
+              <span className={styles.skillTag}>IoT Agriculture</span>
+              <span className={styles.skillTag}>Sustainability</span>
+            </div>
+            <div className={styles.memberContact}>
+              <a href="#" className={styles.contactLink}>📧</a>
+              <a href="#" className={styles.contactLink}>💼</a>
+              <a href="#" className={styles.contactLink}>🔗</a>
+            </div>
+          </div>
+
+          <div className={styles.teamMember}>
+            <div className={styles.memberAvatar}>
+              <div style={{
+                width: '100%',
+                height: '100%',
+                background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '3rem',
+                color: 'white'
+              }}>
+                👩‍🏫
+              </div>
+            </div>
+            <h3 className={styles.memberName}>Dr. Emily Rodriguez</h3>
+            <p className={styles.memberRole}>Education Expert</p>
+            <p className={styles.memberBio}>
+              Educational psychologist and learning sciences expert. Ensures our AI learning platform aligns with
+              pedagogical best practices and educational outcomes.
+            </p>
+            <div className={styles.memberSkills}>
+              <span className={styles.skillTag}>Learning Design</span>
+              <span className={styles.skillTag}>Educational AI</span>
+              <span className={styles.skillTag}>Pedagogy</span>
+            </div>
+            <div className={styles.memberContact}>
+              <a href="#" className={styles.contactLink}>📧</a>
+              <a href="#" className={styles.contactLink}>💼</a>
+              <a href="#" className={styles.contactLink}>🔗</a>
+            </div>
+          </div>
+
+          <div className={styles.teamMember}>
+            <div className={styles.memberAvatar}>
+              <div style={{
+                width: '100%',
+                height: '100%',
+                background: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '3rem',
+                color: 'white'
+              }}>
+                👨‍💻
+              </div>
+            </div>
+            <h3 className={styles.memberName}>David Kim</h3>
+            <p className={styles.memberRole}>Full-Stack Developer</p>
+            <p className={styles.memberBio}>
+              Leads system architecture and full-stack development. Ensures robust, scalable solutions
+              across all our web and mobile applications.
+            </p>
+            <div className={styles.memberSkills}>
+              <span className={styles.skillTag}>React</span>
+              <span className={styles.skillTag}>Node.js</span>
+              <span className={styles.skillTag}>Cloud Dev</span>
+            </div>
+            <div className={styles.memberContact}>
+              <a href="#" className={styles.contactLink}>📧</a>
+              <a href="#" className={styles.contactLink}>💼</a>
+              <a href="#" className={styles.contactLink}>🔗</a>
+            </div>
+          </div>
+
+          <div className={styles.teamMember}>
+            <div className={styles.memberAvatar}>
+              <div style={{
+                width: '100%',
+                height: '100%',
+                background: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '3rem',
+                color: 'white'
+              }}>
+                👩‍🎨
+              </div>
+            </div>
+            <h3 className={styles.memberName}>Lisa Wang</h3>
+            <p className={styles.memberRole}>UX/Product Designer</p>
+            <p className={styles.memberBio}>
+              Creates intuitive user experiences and beautiful interfaces. Ensures our complex AI solutions
+              are accessible, user-friendly, and delightful to use.
+            </p>
+            <div className={styles.memberSkills}>
+              <span className={styles.skillTag}>UI Design</span>
+              <span className={styles.skillTag}>User Research</span>
+              <span className={styles.skillTag}>Prototyping</span>
+            </div>
+            <div className={styles.memberContact}>
+              <a href="#" className={styles.contactLink}>📧</a>
+              <a href="#" className={styles.contactLink}>💼</a>
+              <a href="#" className={styles.contactLink}>🔗</a>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.teamCulture}>
+          <h2>Our Values</h2>
+          <div className={styles.cultureValues}>
+            <div className={styles.cultureValue}>
+              <span className={styles.valueIcon}>🎯</span>
+              <h3 className={styles.valueTitle}>Impact-Driven</h3>
+              <p className={styles.valueDesc}>
+                Focused on solving real problems and creating meaningful change through technology innovation.
+              </p>
+            </div>
+            <div className={styles.cultureValue}>
+              <span className={styles.valueIcon}>🤝</span>
+              <h3 className={styles.valueTitle}>Collaborative</h3>
+              <p className={styles.valueDesc}>
+                Cross-disciplinary teamwork leveraging diverse expertise to tackle complex challenges.
+              </p>
+            </div>
+            <div className={styles.cultureValue}>
+              <span className={styles.valueIcon}>🚀</span>
+              <h3 className={styles.valueTitle}>Innovative</h3>
+              <p className={styles.valueDesc}>
+                Pushing boundaries and exploring new possibilities at the intersection of AI and real-world applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contactSection}>
+          <h2>Get In Touch</h2>
+          <p>
+            Interested in our projects or looking to collaborate? We'd love to hear from you!
+          </p>
+          <button className={styles.contactButton}>
+            Contact Us
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

@@ -24,40 +24,39 @@ This document outlines the architecture for a modern website built with React an
 The website features a horizontal navigation bar with the following structure:
 
 #### Primary Navigation Items
-1. **HOME**
-   - Landing page with hero section
-   - Overview of the organization/project
+1.  **HOME**
+    -   Landing page with hero section
+    -   Overview of the organization/project
 
-2. **TEAM**
-   - Team overview and member directory
-   - Grouped by individual profiles
+2.  **TEAM**
+    -   Team overview and member directory
+    -   Grouped by individual profiles
 
-3. **NAME1**
-   - **Sub-navigation items:**
-     - **PROJECT**
-       - **PROBLEM DESCRIPTION**
-       - **RESULTS**
-       - **ENGINEERING**
-     - **EXPERIMENTS**
-     - **COMMUNICATION**
+3.  **PROJECT1**
+    -   **Sub-navigation items:**
+        -   **BACKGROUND**
+        -   **IDEA**
+        -   **IMPLEMENTATION**
+        -   **RESULT**  (video)
 
-4. **NAME2**
-   - **Sub-navigation items:**
-     - **PROJECT**
-       - **PROBLEM DESCRIPTION**
-       - **RESULTS**
-       - **ENGINEERING**
-     - **EXPERIMENTS**
-     - **COMMUNICATION**
+4.  **PROJECT2**
+    -   **Sub-navigation items:**
+        -   **BACKGROUND**
+        -   **IDEA**
+        -   **IMPLEMENTATION**
+        -   **RESULT**  (video)
 
-5. **NAME3**
-   - **Sub-navigation items:**
-     - **PROJECT**
-       - **PROBLEM DESCRIPTION**
-       - **RESULTS**
-       - **ENGINEERING**
-     - **EXPERIMENTS**
-     - **COMMUNICATION**
+5.  **PROJECT3**
+    -   **Sub-navigation items:**
+        -   **BACKGROUND**
+        -   **IDEA**
+        -   **IMPLEMENTATION**
+        -   **RESULT**  (video)
+
+6.  **COMMUNICATION**
+
+7.  **TUTORIAL**
+
 
 ### Footer Architecture
 
@@ -94,31 +93,23 @@ src/
 │   ├── pages/
 │   │   ├── Home/
 │   │   ├── Team/
-│   │   ├── Name1/
-│   │   │   ├── Project/
-│   │   │   │   ├── ProblemDescription/
-│   │   │   │   ├── Results/
-│   │   │   │   └── Engineering/
-│   │   │   ├── Experiments/
-│   │   │   └── Communication/
-│   │   ├── Name2/
-│   │   │   ├── Project/
-│   │   │   │   ├── ProblemDescription/
-│   │   │   │   ├── Results/
-│   │   │   │   └── Engineering/
-│   │   │   ├── Experiments/
-│   │   │   └── Communication/
-│   │   └── Name3/
-│   │       ├── Project/
-│   │       │   ├── ProblemDescription/
-│   │       │   ├── Results/
-│   │       │   └── Engineering/
-│   │       ├── Experiments/
-│   │       └── Communication/
-│   └── common/
-│       ├── Button/
-│       ├── Card/
-│       └── Modal/
+│   │   ├── Project1/
+│   │   │   ├── Background/
+│   │   │   ├── Idea/
+│   │   │   ├── Implementation/
+│   │   │   └── Result/
+│   │   ├── Project2/
+│   │   │   ├── Background/
+│   │   │   ├── Idea/
+│   │   │   ├── Implementation/
+│   │   │   └── Result/
+│   │   ├── Project3/
+│   │   │   ├── Background/
+│   │   │   ├── Idea/
+│   │   │   ├── Implementation/
+│   │   │   └── Result/
+│   │   ├── Communication/
+│   │   └── Tutorial/
 │   └── common/
 │       ├── Button/
 │       ├── Card/
@@ -146,99 +137,40 @@ const navigationConfig: NavigationItem[] = [
   { id: 'home', label: 'HOME', path: '/' },
   { id: 'team', label: 'TEAM', path: '/team' },
   {
-    id: 'name1',
-    label: 'NAME1',
-    path: '/name1',
+    id: 'project1',
+    label: 'PROJECT1',
+    path: '/project1',
     children: [
-      {
-        id: 'project',
-        label: 'PROJECT',
-        path: '/name1/project',
-        children: [
-          { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/name1/project/problem-description' },
-          { id: 'results', label: 'RESULTS', path: '/name1/project/results' },
-          { id: 'engineering', label: 'ENGINEERING', path: '/name1/project/engineering' }
-        ]
-      },
-      { id: 'experiments', label: 'EXPERIMENTS', path: '/name1/experiments' },
-      { id: 'communication', label: 'COMMUNICATION', path: '/name1/communication' }
+      { id: 'background', label: 'BACKGROUND', path: '/project1/background' },
+      { id: 'idea', label: 'IDEA', path: '/project1/idea' },
+      { id: 'implementation', label: 'IMPLEMENTATION', path: '/project1/implementation' },
+      { id: 'result', label: 'RESULT', path: '/project1/result' }
     ]
   },
   {
-    id: 'name2',
-    label: 'NAME2',
-    path: '/name2',
+    id: 'project2',
+    label: 'PROJECT2',
+    path: '/project2',
     children: [
-      {
-        id: 'project',
-        label: 'PROJECT',
-        path: '/name2/project',
-        children: [
-          { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/name2/project/problem-description' },
-          { id: 'results', label: 'RESULTS', path: '/name2/project/results' },
-          { id: 'engineering', label: 'ENGINEERING', path: '/name2/project/engineering' }
-        ]
-      },
-      { id: 'experiments', label: 'EXPERIMENTS', path: '/name2/experiments' },
-      { id: 'communication', label: 'COMMUNICATION', path: '/name2/communication' }
+      { id: 'background', label: 'BACKGROUND', path: '/project2/background' },
+      { id: 'idea', label: 'IDEA', path: '/project2/idea' },
+      { id: 'implementation', label: 'IMPLEMENTATION', path: '/project2/implementation' },
+      { id: 'result', label: 'RESULT', path: '/project2/result' }
     ]
   },
   {
-    id: 'name3',
-    label: 'NAME3',
-    path: '/name3',
+    id: 'project3',
+    label: 'PROJECT3',
+    path: '/project3',
     children: [
-      {
-        id: 'project',
-        label: 'PROJECT',
-        path: '/name3/project',
-        children: [
-          { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/name3/project/problem-description' },
-          { id: 'results', label: 'RESULTS', path: '/name3/project/results' },
-          { id: 'engineering', label: 'ENGINEERING', path: '/name3/project/engineering' }
-        ]
-      },
-      { id: 'experiments', label: 'EXPERIMENTS', path: '/name3/experiments' },
-      { id: 'communication', label: 'COMMUNICATION', path: '/name3/communication' }
+      { id: 'background', label: 'BACKGROUND', path: '/project3/background' },
+      { id: 'idea', label: 'IDEA', path: '/project3/idea' },
+      { id: 'implementation', label: 'IMPLEMENTATION', path: '/project3/implementation' },
+      { id: 'result', label: 'RESULT', path: '/project3/result' }
     ]
-  }
-];
-        children: [
-          {
-            id: 'project',
-            label: 'PROJECT',
-            path: '/team/name2/project',
-            children: [
-              { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/team/name2/project/problem-description' },
-              { id: 'results', label: 'RESULTS', path: '/team/name2/project/results' },
-              { id: 'engineering', label: 'ENGINEERING', path: '/team/name2/project/engineering' }
-            ]
-          },
-          { id: 'experiments', label: 'EXPERIMENTS', path: '/team/name2/experiments' },
-          { id: 'communication', label: 'COMMUNICATION', path: '/team/name2/communication' }
-        ]
-      },
-      {
-        id: 'name3',
-        label: 'NAME3',
-        path: '/team/name3',
-        children: [
-          {
-            id: 'project',
-            label: 'PROJECT',
-            path: '/team/name3/project',
-            children: [
-              { id: 'problem', label: 'PROBLEM DESCRIPTION', path: '/team/name3/project/problem-description' },
-              { id: 'results', label: 'RESULTS', path: '/team/name3/project/results' },
-              { id: 'engineering', label: 'ENGINEERING', path: '/team/name3/project/engineering' }
-            ]
-          },
-          { id: 'experiments', label: 'EXPERIMENTS', path: '/team/name3/experiments' },
-          { id: 'communication', label: 'COMMUNICATION', path: '/team/name3/communication' }
-        ]
-      }
-    ]
-  }
+  },
+  { id: 'communication', label: 'COMMUNICATION', path: '/communication' },
+  { id: 'tutorial', label: 'TUTORIAL', path: '/tutorial' }
 ];
 ```
 
@@ -278,15 +210,15 @@ interface SocialLink {
 ```
 /                           → Home Page
 /team                       → Team Directory
-/name1                      → NAME1 Profile
-/name1/project              → NAME1 Project Overview
-/name1/project/problem-description → Problem Description
-/name1/project/results      → Results
-/name1/project/engineering  → Engineering Details
-/name1/experiments          → NAME1 Experiments
-/name1/communication        → NAME1 Communication
-/name2/...                  → Same structure for NAME2
-/name3/...                  → Same structure for NAME3
+/project1                   → PROJECT1 Overview
+/project1/background        → Background
+/project1/idea              → Idea
+/project1/implementation    → Implementation
+/project1/result            → Result
+/project2/...               → Same structure for PROJECT2
+/project3/...               → Same structure for PROJECT3
+/communication              → Communication Page
+/tutorial                   → Tutorial Page
 ```
 
 ## Responsive Design Strategy

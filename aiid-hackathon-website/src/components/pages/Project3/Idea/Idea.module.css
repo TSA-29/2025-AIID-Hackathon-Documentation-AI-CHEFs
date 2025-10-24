@@ -1,0 +1,663 @@
+.ideaPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.ideaContent {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.ideaSection {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  position: relative;
+}
+
+.ideaSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sectionIcon {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.sectionContent {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.introText {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.coreConcepts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.conceptCard {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #f59e0b20;
+  transition: all 0.3s ease;
+}
+
+.conceptCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+  border-color: #f59e0b;
+}
+
+.conceptIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.conceptTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.conceptDesc {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.platformArchitecture {
+  margin-top: 2rem;
+}
+
+.diagramTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.architectureFlow {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.archLayer {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #f59e0b;
+}
+
+.layerTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.layerIcon {
+  font-size: 1.5rem;
+}
+
+.layerComponents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.component {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  font-weight: 500;
+  color: #666;
+}
+
+.differentiators {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.differentiatorCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #f59e0b;
+  transition: all 0.3s ease;
+}
+
+.differentiatorCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+}
+
+.diffIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.diffTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.diffDesc {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.diffFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.feature {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #f59e0b;
+  text-align: center;
+}
+
+.userJourney {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.journeyStep {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.stepNumber {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.stepDesc {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.learningAdaptation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.adaptationFeature {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #f59e0b;
+}
+
+.featureTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureList li {
+  padding: 0.5rem 0;
+  color: #666;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.featureList li::before {
+  content: '✓';
+  color: #f59e0b;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.aiIntegration {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.integrationCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #f59e0b;
+  text-align: center;
+}
+
+.integrationIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.integrationTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.integrationMetrics {
+  margin-bottom: 1.5rem;
+}
+
+.integrationNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.integrationLabel {
+  color: #666;
+  font-weight: 500;
+}
+
+.integrationDesc {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.businessModel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.modelComponent {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #f59e0b;
+}
+
+.modelTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subscriptionTier {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.tierName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.tierPrice {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+}
+
+.tierDesc {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.tierFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.tierFeatures li {
+  padding: 0.5rem 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tierFeatures li::before {
+  content: '✓';
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+.dataServices {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dataService {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid #f59e0b;
+}
+
+.dataService h4 {
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.dataService p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ecosystemPartners {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.partnerCategory {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid #f59e0b;
+}
+
+.partnerCategory h4 {
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.partnerCategory p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.roadmap {
+  display: grid;
+  gap: 2rem;
+}
+
+.roadmapPhase {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #f59e0b;
+}
+
+.phaseHeader {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.phaseNumber {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.phaseTimeline {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  color: #f59e0b;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.phaseTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.phaseGoals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.goal {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border-left: 3px solid #f59e0b;
+  color: #666;
+}
+
+.navigationFooter {
+  text-align: center;
+  padding: 3rem 0;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+
+.navigationFooter h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.navigationButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.3);
+}
+
+.secondaryButton {
+  background: white;
+  color: #f59e0b;
+  border-color: #f59e0b;
+}
+
+.secondaryButton:hover {
+  background: #f59e0b;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .ideaSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .coreConcepts {
+    grid-template-columns: 1fr;
+  }
+
+  .differentiators {
+    grid-template-columns: 1fr;
+  }
+
+  .learningAdaptation {
+    grid-template-columns: 1fr;
+  }
+
+  .aiIntegration {
+    grid-template-columns: 1fr;
+  }
+
+  .businessModel {
+    grid-template-columns: 1fr;
+  }
+
+  .journeyStep {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .navigationButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
