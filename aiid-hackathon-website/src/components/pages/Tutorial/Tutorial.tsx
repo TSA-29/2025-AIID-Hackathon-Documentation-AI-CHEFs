@@ -9,7 +9,7 @@ const Tutorial: React.FC = () => {
       description: 'Modern AI-powered content generator that creates stunning images, text, and videos using SiliconFlow API with comprehensive security features and responsive design.',
       image: 'images/ProjPic/ArrowistaPic.png',
       video: 'videos/Arrowista_Demo.mp4',
-      runInstructions: `git clone https://github.com/AMatved/2025-AIID-HACKATHON-PERSONAL-PROJECT-ANNA-REZTSOVA.git
+      runInstructions: `git clone https://github.com/TSA-29/2025-AIID-HACKATHON-PERSONAL-PROJECT-ANNA-REZTSOVA.git
 cd 2025-AIID-HACKATHON-PERSONAL-PROJECT-ANNA-REZTSOVA
 npm install
 cp .env.example .env.local

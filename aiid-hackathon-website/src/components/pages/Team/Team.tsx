@@ -67,7 +67,7 @@ const Team: React.FC = () => {
             </div>
             <div className={styles.memberContact}>
               <a href="#" className={styles.contactLink} title="WeChat: TSA-29">💬</a>
-              <a href="https://github.com/THU-SIGS-AIID/2025-AIID-HACKATHON-PERSONAL-PROJECT-ANNA-REZTSOVA" target="_blank" rel="noopener noreferrer" className={styles.contactLink} title="Arrowista Project">🔗</a>
+              <a href="https://github.com/TSA-29/2025-AIID-HACKATHON-PERSONAL-PROJECT-ANNA-REZTSOVA" target="_blank" rel="noopener noreferrer" className={styles.contactLink} title="Arrowista Project">🔗</a>
             </div>
           </div>
 

@@ -151,9 +151,9 @@ The website is fully responsive across all device sizes:
 
 This project is configured for automatic GitHub Pages deployment using GitHub Actions with static file serving:
 
-**Repository**: https://github.com/THU-SIGS-AIID/2025-AIID-Hackathon-Documentation-Template
+**Repository**: https://github.com/TSA-29/2025-AIID-Hackathon-Documentation-AI-CHEFs
 
-**Deployment URL**: https://THU-SIGS-AIID.github.io/2025-AIID-Hackathon-Documentation-Template/
+**Deployment URL**: https://TSA-29.github.io/2025-AIID-Hackathon-Documentation-AI-CHEFs/
 
 ### Setup Instructions
 
@@ -188,8 +188,8 @@ This project is configured for automatic GitHub Pages deployment using GitHub Ac
 - Update `vite.config.ts` base path accordingly
 
 **Option 2: User Website**
-- Repository name: `THU-SIGS-AIID.github.io`
-- URL: `https://THU-SIGS-AIID.github.io`
+- Repository name: `TSA-29.github.io`
+- URL: `https://TSA-29.github.io`
 - Change base path to `/`
 
 **Option 3: Manual Deployment**
