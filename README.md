@@ -21,23 +21,78 @@ This website demonstrates modern web development practices using React, TypeScri
 
 - **🏠 Home**: Introduction and overview of the hackathon experience
 - **👥 Team**: Team member profiles and roles
-- **📊 Project 1**: Medical AI Diagnosis System
-  - Background & Problem Statement
-  - Solution Idea & Architecture
-  - Implementation Details
-  - Results & Impact Analysis
-- **🌾 Project 2**: Sustainable Agriculture System
-  - Global Food Security Challenge
-  - Smart Farming Solution
-  - Technical Implementation
-  - Environmental & Social Impact
-- **🤖 Project 3**: Intelligent Educational Platform
-  - Learning Analytics Framework
-  - AI-Powered Personalization
-  - Development Process
-  - Educational Outcomes
+- **🎨 Project 1**: ARROWISTA - AI Content Generator
+  - Background & Content Creation Challenges
+  - Secure AI Generation Architecture
+  - Implementation with Security Features
+  - Results & Multi-modal Content Generation
+- **🌍 Project 2**: CARBON COMPASS - EU CBAM Compliance Platform
+  - EU Carbon Border Adjustment Challenges
+  - AI-powered Carbon Emission Calculations
+  - Technical Implementation & Integration
+  - Results & Compliance Benefits
+- **📚 Project 3**: STUDYBUDDY - AI-powered Educational Platform
+  - Educational Challenges & Research Context
+  - AI-powered Quiz Generation & Personalization
+  - Technical Implementation & Classroom Management
+  - Results & Learning Outcomes
 - **📡 Communication**: Team collaboration and development workflow
 - **📚 Tutorial**: "Vibe Coding" - AI-powered web development guide
+
+## 🚀 Project Details
+
+### 🎨 Project 1: ARROWISTA - AI Content Generator
+
+Arrowista is a modern AI-powered content generator that creates stunning images, text, and videos using SiliconFlow API with comprehensive security features and responsive design. This project addresses the growing need for accessible, secure content creation tools while implementing advanced security measures to prevent abuse.
+
+**Key Features:**
+- Multi-modal content generation (images, text, videos)
+- Advanced content moderation and filtering
+- Rate limiting and prompt injection protection
+- Responsive design with loading states and animations
+- Dual deployment ready (Vercel and GitHub Pages)
+
+**Technical Stack:**
+- Next.js 15, React, TypeScript
+- SiliconFlow API (Qwen/Qwen-Image model)
+- Custom security systems for content moderation
+- Comprehensive error handling and fallback mechanisms
+
+### 🌍 Project 2: CARBON COMPASS - EU CBAM Compliance Platform
+
+Carbon Compass is an AI-powered platform helping Small and Medium Enterprises (SMEs) exporting to the European Union accurately estimate shipment carbon emissions, calculate CBAM fees, and identify practical strategies to reduce those costs. This project addresses the complex challenges of EU Carbon Border Adjustment Mechanism compliance.
+
+**Key Features:**
+- AI-powered carbon emission calculations
+- CBAM fee estimation and compliance reporting
+- Emission reduction strategies and recommendations
+- Industry benchmarking and cost optimization
+- Automated compliance documentation
+
+**Technical Stack:**
+- TRAE + Diffy LLM for AI processing
+- React + Next.js for frontend
+- Python (FastAPI) for backend
+- Google Cloud Storage and deployment
+- Integration with carbon emission databases
+
+### 📚 Project 3: STUDYBUDDY - AI-powered Educational Platform
+
+StudyBuddy is an AI-powered interactive learning platform designed for primary and middle school education. Teachers can create engaging classrooms and generate personalized quizzes instantly, while students learn at their own pace with smart, adaptive AI-generated content.
+
+**Key Features:**
+- AI-powered quiz generation from any topic
+- Personalized learning paths based on student performance
+- Classroom management with real-time tracking
+- PDF document processing for automatic quiz creation
+- Comprehensive analytics and progress monitoring
+
+**Technical Stack:**
+- Next.js 15, TypeScript, Tailwind CSS
+- Supabase for database management
+- OpenAI/SiliconFlow APIs for AI processing
+- Zustand for state management
+- Responsive design for multi-device access
 
 ### Technical Tutorial Highlight
 
@@ -107,7 +162,9 @@ src/
 │   └── pages/           # Route-based page components
 │       ├── Home/        # Landing page
 │       ├── Team/        # Team profiles
-│       ├── Project1-3/  # Hackathon projects
+│       ├── Project1/    # Arrowista - AI Content Generator
+│       ├── Project2/    # Carbon Compass - EU CBAM Compliance
+│       ├── Project3/    # StudyBuddy - AI Educational Platform
 │       ├── Tutorial/    # Markdown tutorial system
 │       └── Communication/ # Dev workflow
 ├── config/

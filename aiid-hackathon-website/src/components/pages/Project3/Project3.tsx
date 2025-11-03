@@ -6,10 +6,17 @@ const Project3: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.projectOverview}>
-        <h1 className={styles.title}>EDU-LEARN AI</h1>
+        <h1 className={styles.title}>STUDYBUDDY</h1>
         <p className={styles.subtitle}>
-          Adaptive learning platform using AI to personalize education, identify learning gaps, and provide tailored content for optimal student outcomes.
+          AI-powered interactive learning platform designed for primary and middle school education. Teachers can create engaging classrooms and generate personalized quizzes instantly, while students learn at their own pace with smart, adaptive AI-generated content.
         </p>
+        <div className={styles.projectImageContainer}>
+          <img
+            src={import.meta.env.BASE_URL + 'images/ProjPic/StudyBuddy.png'}
+            alt="StudyBuddy project screenshot"
+            className={styles.projectImage}
+          />
+        </div>
       </div>
 
       <div className={styles.navigationGrid}>
@@ -18,7 +25,7 @@ const Project3: React.FC = () => {
           <div className={styles.navCardNumber}>01</div>
           <h3 className={styles.navCardTitle}>BACKGROUND</h3>
           <p className={styles.navCardDescription}>
-            Examine educational challenges, learning diversity issues, and traditional classroom limitations we're addressing.
+            Explore educational challenges, learning diversity issues, and traditional classroom limitations we're addressing.
           </p>
         </Link>
 
@@ -27,7 +34,7 @@ const Project3: React.FC = () => {
           <div className={styles.navCardNumber}>02</div>
           <h3 className={styles.navCardTitle}>IDEA</h3>
           <p className={styles.navCardDescription}>
-            Explore personalized learning algorithms, adaptive content delivery, and intelligent tutoring systems.
+            Discover AI-powered quiz generation, personalized learning algorithms, and adaptive content delivery.
           </p>
         </Link>
 
@@ -36,16 +43,16 @@ const Project3: React.FC = () => {
           <div className={styles.navCardNumber}>03</div>
           <h3 className={styles.navCardTitle}>IMPLEMENTATION</h3>
           <p className={styles.navCardDescription}>
-            Discover machine learning models, content management systems, and student progress analytics.
+            Learn about Next.js framework, Supabase database, and AI integration with OpenAI and SiliconFlow.
           </p>
         </Link>
 
         <Link to="result" className={styles.navCard}>
-          <span className={styles.navCardIcon}>🎓</span>
+          <span className={styles.navCardIcon}>📈</span>
           <div className={styles.navCardNumber}>04</div>
           <h3 className={styles.navCardTitle}>RESULT</h3>
           <p className={styles.navCardDescription}>
-            View learning improvements, engagement metrics, and educational outcomes from pilot programs.
+            See student engagement improvements, learning outcomes, and teacher time savings with real classroom data.
           </p>
         </Link>
       </div>
@@ -55,19 +62,19 @@ const Project3: React.FC = () => {
         <div className={styles.projectInfoGrid}>
           <div className={styles.infoItem}>
             <h3>🎯 Main Goal</h3>
-            <p>Create adaptive learning platform improving student performance by 45% through personalized AI-driven education</p>
+            <p>Transform traditional classroom learning by using AI to create personalized, interactive quizzes on any topic</p>
           </div>
           <div className={styles.infoItem}>
             <h3>🔧 Tech Stack</h3>
-            <p>Machine Learning, NLP, Data Analytics, Cloud Infrastructure, Mobile/Web Apps</p>
+            <p>Next.js 15, TypeScript, Supabase, OpenAI/SiliconFlow APIs, Tailwind CSS, Zustand</p>
           </div>
           <div className={styles.infoItem}>
             <h3>👥 Team Size</h3>
-            <p>6-person team including educators, AI engineers, and educational psychologists</p>
+            <p>4-person interdisciplinary team including frontend developers, backend engineers, and AI specialists</p>
           </div>
           <div className={styles.infoItem}>
-            <h3>📊 Impact</h3>
-            <p>Pilot with 5,000 students across 20 schools showing significant learning improvements</p>
+            <h3>⏱️ Development Period</h3>
+            <p>48-hour intensive hackathon development</p>
           </div>
         </div>
       </div>

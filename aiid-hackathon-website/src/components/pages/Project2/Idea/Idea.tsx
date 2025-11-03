@@ -7,9 +7,9 @@ const Idea: React.FC = () => {
     <div className={styles.ideaPage}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Project 2: Idea</h1>
+          <h1 className={styles.title}>Carbon Compass: Idea</h1>
           <p className={styles.subtitle}>
-            Sustainable agriculture system: Smart IoT sensor networks and AI-driven precision farming solution
+            AI-powered carbon emission calculation platform: Regulatory intelligence, logistics data integration, and CBAM compliance automation
           </p>
         </div>
 
@@ -21,36 +21,39 @@ const Idea: React.FC = () => {
             </h2>
             <div className={styles.sectionContent}>
               <p className={styles.introText}>
-                Our vision is to democratize precision agriculture through an affordable, integrated IoT and AI platform
-                that empowers farmers of all sizes to optimize resource usage, increase yields, and contribute to global
-                food security.
+                Our vision is to democratize carbon compliance for SMEs through an affordable, integrated AI platform that makes CBAM compliance accessible and manageable for businesses of all sizes.
               </p>
 
               <div className={styles.innovationHighlight}>
                 <div className={styles.highlightCard}>
-                  <div className={styles.highlightIcon}>🌱</div>
-                  <h3 className={styles.highlightTitle}>Smart Farming for Everyone</h3>
+                  <div className={styles.highlightIcon}>📊</div>
+                  <h3 className={styles.highlightTitle}>Accurate Emission Calculations</h3>
                   <p className={styles.highlightDesc}>
-                    Breaking down cost barriers to make precision agriculture accessible to small-scale farmers
-                    who produce 70% of the world's food.
+                    Breaking down complexity barriers to make carbon emission calculations accessible to SMEs who lack technical expertise.
+                  </p>
+                </div>
+
+                <div className={styles.highlightCard}>
+                  <div className={styles.highlightIcon}>💰</div>
+                  <h3 className={styles.highlightTitle}>Cost Reduction Strategies</h3>
+                  <p className={styles.highlightDesc}>
+                    From emission data to actionable insights, creating self-regulating compliance systems that adapt to regulatory changes.
+                  </p>
+                </div>
+
+                <div className={styles.highlightCard}>
+                  <div className={styles.highlightIcon}>📋</div>
+                  <h3 className={styles.highlightTitle}>Automated Reporting</h3>
+                  <p className={styles.highlightDesc}>
+                    Transforming regulatory intuition into quantifiable compliance using AI models trained on verified carbon databases.
                   </p>
                 </div>
 
                 <div className={styles.highlightCard}>
                   <div className={styles.highlightIcon}>🔄</div>
-                  <h3 className={styles.highlightTitle}>Closed-Loop Automation</h3>
+                  <h3 className={styles.highlightTitle}>Closed-Loop Compliance</h3>
                   <p className={styles.highlightDesc}>
-                    From sensor data to automated action, creating self-regulating farming systems that
-                    adapt to real-time conditions without human intervention.
-                  </p>
-                </div>
-
-                <div className={styles.highlightCard}>
-                  <div className={styles.highlightIcon}>📊</div>
-                  <h3 className={styles.highlightTitle}>Data-Driven Decisions</h3>
-                  <p className={styles.highlightDesc}>
-                    Transforming agricultural intuition into quantifiable insights using machine learning
-                    models trained on millions of farm data points.
+                    Integration with existing business systems enables automated response to regulatory changes, reducing manual intervention.
                   </p>
                 </div>
               </div>
@@ -64,31 +67,18 @@ const Idea: React.FC = () => {
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.architectureDiagram}>
-                <h3 className={styles.diagramTitle}>Integrated Smart Farming Ecosystem</h3>
+                <h3 className={styles.diagramTitle}>Integrated Carbon Compliance Ecosystem</h3>
                 <div className={styles.architectureFlow}>
                   <div className={styles.archLayer}>
                     <div className={styles.layerTitle}>
-                      <span className={styles.layerIcon}>📡</span>
-                      Sensor Network Layer
+                      <span className={styles.layerIcon}>📊</span>
+                      Data Integration Layer
                     </div>
                     <div className={styles.layerComponents}>
-                      <div className={styles.component}>Soil moisture sensors</div>
-                      <div className={styles.component}>Nutrient analyzers</div>
-                      <div className={styles.component}>Weather stations</div>
-                      <div className={styles.component}>Crop health cameras</div>
-                    </div>
-                  </div>
-
-                  <div className={styles.archLayer}>
-                    <div className={styles.layerTitle}>
-                      <span className={styles.layerIcon}>🌐</span>
-                      Connectivity Layer
-                    </div>
-                    <div className={styles.layerComponents}>
-                      <div className={styles.component}>LoRaWAN mesh network</div>
-                      <div className={styles.component}>Edge computing nodes</div>
-                      <div className={styles.component}>Satellite backup</div>
-                      <div className={styles.component}>5G/4G fallback</div>
+                      <div className={styles.component}>Logistics data sources</div>
+                      <div className={styles.component}>Carbon emission databases</div>
+                      <div className={styles.component}>Transport emission factors</div>
+                      <div className={styles.component}>EU industry benchmarks</div>
                     </div>
                   </div>
 
@@ -98,23 +88,36 @@ const Idea: React.FC = () => {
                       AI Intelligence Layer
                     </div>
                     <div className={styles.layerComponents}>
-                      <div className={styles.component}>Crop disease prediction</div>
-                      <div className={styles.component}>Irrigation optimization</div>
-                      <div className={styles.component}>Yield forecasting</div>
-                      <div className={styles.component}>Pest outbreak alerts</div>
+                      <div className={styles.component}>Emission calculation engine</div>
+                      <div className={styles.component}>CBAM fee calculator</div>
+                      <div className={styles.component}>Benchmark comparison system</div>
+                      <div className={styles.component}>Reduction strategy generator</div>
                     </div>
                   </div>
 
                   <div className={styles.archLayer}>
                     <div className={styles.layerTitle}>
-                      <span className={styles.layerIcon}>📱</span>
+                      <span className={styles.layerIcon}>🌐</span>
+                      Connectivity Layer
+                    </div>
+                    <div className={styles.layerComponents}>
+                      <div className={styles.component}>API integrations</div>
+                      <div className={styles.component}>Real-time data sync</div>
+                      <div className={styles.component}>Cloud storage</div>
+                      <div className={styles.component}>Secure data transmission</div>
+                    </div>
+                  </div>
+
+                  <div className={styles.archLayer}>
+                    <div className={styles.layerTitle}>
+                      <span className={styles.layerIcon}>👥</span>
                       User Interface Layer
                     </div>
                     <div className={styles.layerComponents}>
-                      <div className={styles.component}>Mobile dashboard</div>
-                      <div className={styles.component}>Voice commands</div>
-                      <div className={styles.component}>SMS alerts</div>
-                      <div className={styles.component}>Web analytics</div>
+                      <div className={styles.component}>SME-friendly dashboard</div>
+                      <div className={styles.component}>Compliance reporting tools</div>
+                      <div className={styles.component}>Cost analysis interface</div>
+                      <div className={styles.component}>Export-ready documentation</div>
                     </div>
                   </div>
                 </div>
@@ -130,54 +133,50 @@ const Idea: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.differentiatorsGrid}>
                 <div className={styles.differentiatorCard}>
-                  <div className={styles.diffIcon}>💰</div>
-                  <h3 className={styles.diffTitle}>80% Cost Reduction</h3>
+                  <div className={styles.diffIcon}>🎯</div>
+                  <h3 className={styles.diffTitle}>SME-Focused Design</h3>
                   <p className={styles.diffDesc}>
-                    Custom-designed open-source sensors cost $20-50 compared to $200-500 for commercial alternatives,
-                    making precision farming financially viable for smallholders.
+                    Simplified interface tailored to small and medium businesses without dedicated compliance teams, making complex regulations accessible.
                   </p>
                   <div className={styles.diffMetrics}>
-                    <span className={styles.metric}>Commercial: $500/acre</span>
-                    <span className={styles.metric}>Our solution: $100/acre</span>
+                    <span className={styles.metric}>Setup time: {'<'}15 minutes</span>
+                    <span className={styles.metric}>No technical expertise required</span>
                   </div>
                 </div>
 
                 <div className={styles.differentiatorCard}>
-                  <div className={styles.diffIcon}>🛠️</div>
-                  <h3 className={styles.diffTitle}>Plug-and-Play Simplicity</h3>
+                  <div className={styles.diffIcon}>🤖</div>
+                  <h3 className={styles.diffTitle}>AI-Powered Accuracy</h3>
                   <p className={styles.diffDesc}>
-                    Self-installing sensors with automatic calibration and mobile-first setup process requires
-                    no technical expertise – farmers can deploy the system in under 30 minutes.
+                    Advanced machine learning models provide 40-60% more accurate emission calculations compared to default values, reducing CBAM costs.
                   </p>
                   <div className={styles.diffMetrics}>
-                    <span className={styles.metric}>Setup time: &lt;30 minutes</span>
-                    <span className={styles.metric}>No technical skills required</span>
+                    <span className={styles.metric}>40-60% improvement in accuracy</span>
+                    <span className={styles.metric}>15-30% reduction in CBAM fees</span>
                   </div>
                 </div>
 
                 <div className={styles.differentiatorCard}>
-                  <div className={styles.diffIcon}>🔗</div>
-                  <h3 className={styles.diffTitle}>Universal Compatibility</h3>
+                  <div className={styles.diffIcon}>📊</div>
+                  <h3 className={styles.diffTitle}>Benchmark Comparison</h3>
                   <p className={styles.diffDesc}>
-                    Works with existing irrigation systems, farm equipment, and management software through
-                    standardized APIs and modular integration kits.
+                    Industry benchmarking identifies high-emission products and suggests alternatives, helping businesses make data-driven decisions.
                   </p>
                   <div className={styles.diffMetrics}>
-                    <span className={styles.metric}>500+ equipment models supported</span>
-                    <span className={styles.metric}>15 major farm software integrations</span>
+                    <span className={styles.metric}>EU industry benchmarks</span>
+                    <span className={styles.metric}>Alternative product suggestions</span>
                   </div>
                 </div>
 
                 <div className={styles.differentiatorCard}>
-                  <div className={styles.diffIcon}>🌍</div>
-                  <h3 className={styles.diffTitle}>Offline-First Design</h3>
+                  <div className={styles.diffIcon}>🔄</div>
+                  <h3 className={styles.diffTitle}>Regulatory Intelligence</h3>
                   <p className={styles.diffDesc}>
-                    Full functionality without internet connectivity using edge computing and local mesh networks,
-                    crucial for rural farming communities.
+                    Automated updates to reflect changing EU regulations, ensuring continuous compliance without manual monitoring.
                   </p>
                   <div className={styles.diffMetrics}>
-                    <span className={styles.metric}>30 days offline operation</span>
-                    <span className={styles.metric}>10km mesh network range</span>
+                    <span className={styles.metric}>Real-time regulatory updates</span>
+                    <span className={styles.metric}>Automated compliance checks</span>
                   </div>
                 </div>
               </div>
@@ -186,7 +185,7 @@ const Idea: React.FC = () => {
 
           <section className={styles.ideaSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🎮</span>
+              <span className={styles.sectionIcon}>👥</span>
               User Experience Design
             </h2>
             <div className={styles.sectionContent}>
@@ -196,7 +195,7 @@ const Idea: React.FC = () => {
                   <div className={styles.stepContent}>
                     <h3 className={styles.stepTitle}>Quick Onboarding</h3>
                     <p className={styles.stepDesc}>
-                      Scan QR code, install app, and place sensors. Voice-guided setup in local languages.
+                      Simple registration process with guided setup for business profile, import data, and compliance requirements.
                     </p>
                   </div>
                 </div>
@@ -204,9 +203,9 @@ const Idea: React.FC = () => {
                 <div className={styles.journeyStep}>
                   <div className={styles.stepNumber}>2</div>
                   <div className={styles.stepContent}>
-                    <h3 className={styles.stepTitle}>Visual Dashboard</h3>
+                    <h3 className={styles.stepTitle}>Data Integration</h3>
                     <p className={styles.stepDesc}>
-                      Color-coded field maps show soil moisture, nutrient levels, and crop health at a glance.
+                      Connect to existing business systems or upload shipment data for automatic emission calculations.
                     </p>
                   </div>
                 </div>
@@ -214,9 +213,9 @@ const Idea: React.FC = () => {
                 <div className={styles.journeyStep}>
                   <div className={styles.stepNumber}>3</div>
                   <div className={styles.stepContent}>
-                    <h3 className={styles.stepTitle}>Smart Recommendations</h3>
+                    <h3 className={styles.stepTitle}>Emission Analysis</h3>
                     <p className={styles.stepDesc}>
-                      Daily suggestions for irrigation, fertilization, and pest control based on AI analysis.
+                      Visual dashboard shows carbon footprint by product, shipment, and supplier with AI-powered insights.
                     </p>
                   </div>
                 </div>
@@ -224,9 +223,9 @@ const Idea: React.FC = () => {
                 <div className={styles.journeyStep}>
                   <div className={styles.stepNumber}>4</div>
                   <div className={styles.stepContent}>
-                    <h3 className={styles.stepTitle}>Automated Actions</h3>
+                    <h3 className={styles.stepTitle}>Compliance Reporting</h3>
                     <p className={styles.stepDesc}>
-                      One-click approval triggers automated irrigation, fertigation, and alert systems.
+                      One-click generation of export-ready CBAM reports with all required documentation and certificates.
                     </p>
                   </div>
                 </div>
@@ -234,32 +233,32 @@ const Idea: React.FC = () => {
 
               <div className={styles.interfaceFeatures}>
                 <div className={styles.featureGroup}>
-                  <h3 className={styles.featureTitle}>📱 Mobile-First Interface</h3>
+                  <h3 className={styles.featureTitle}>📊 Analytics Dashboard</h3>
                   <ul className={styles.featureList}>
-                    <li>Voice commands in 12 local languages</li>
-                    <li>Visual indicators for non-literate users</li>
-                    <li>Offline mode with full functionality</li>
-                    <li>WhatsApp integration for alerts</li>
+                    <li>Carbon emission breakdown by product category</li>
+                    <li>CBAM cost forecasting and scenario analysis</li>
+                    <li>Supplier emission performance comparison</li>
+                    <li>Historical compliance tracking</li>
                   </ul>
                 </div>
 
                 <div className={styles.featureGroup}>
-                  <h3 className={styles.featureTitle}>👨‍🌾 Farmer-Centric Features</h3>
+                  <h3 className={styles.featureTitle}>🎯 Reduction Strategies</h3>
                   <ul className={styles.featureList}>
-                    <li>Crop-specific recommendations</li>
-                    <li>Local market price integration</li>
-                    <li>Weather forecasting with farming advice</li>
-                    <li>Community knowledge sharing</li>
+                    <li>AI-generated emission reduction recommendations</li>
+                    <li>Cost-benefit analysis for each strategy</li>
+                    <li>Implementation timeline and resource requirements</li>
+                    <li>Expected ROI and compliance benefits</li>
                   </ul>
                 </div>
 
                 <div className={styles.featureGroup}>
-                  <h3 className={styles.featureTitle}>📊 Advanced Analytics</h3>
+                  <h3 className={styles.featureTitle}>📋 Compliance Tools</h3>
                   <ul className={styles.featureList}>
-                    <li>Yield prediction accuracy 85-95%</li>
-                    <li>Cost-benefit analysis for each action</li>
-                    <li>Historical performance tracking</li>
-                    <li>Comparative analysis with neighbors</li>
+                    <li>Automated CBAM report generation</li>
+                    <li>Document management and version control</li>
+                    <li>Regulatory requirement tracking</li>
+                    <li>Audit trail and evidence collection</li>
                   </ul>
                 </div>
               </div>
@@ -268,60 +267,52 @@ const Idea: React.FC = () => {
 
           <section className={styles.ideaSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🌱</span>
+              <span className={styles.sectionIcon}>🌍</span>
               Sustainability Impact
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.impactGrid}>
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>💧</div>
-                  <h3 className={styles.impactTitle}>Water Conservation</h3>
+                  <div className={styles.impactIcon}>📊</div>
+                  <h3 className={styles.impactTitle}>Carbon Transparency</h3>
                   <div className={styles.impactNumbers}>
-                    <div className={styles.impactNumber}>30-50%</div>
-                    <div className={styles.impactLabel}>Reduction in water usage</div>
+                    <div className={styles.impactNumber}>100%</div>
+                    <div className={styles.impactLabel}>Supply chain visibility</div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Smart irrigation based on real-time soil moisture and weather data prevents overwatering
-                    and reduces water waste significantly.
+                    Complete emission tracking across entire supply chain enables informed decisions and targeted reductions.
                   </p>
                 </div>
 
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>🌿</div>
-                  <h3 className={styles.impactTitle}>Chemical Reduction</h3>
+                  <div className={styles.impactIcon}>🎯</div>
+                  <h3 className={styles.impactTitle}>Emission Reduction</h3>
                   <div className={styles.impactNumbers}>
-                    <div className={styles.impactNumber}>40%</div>
-                    <div className={styles.impactLabel}>Less fertilizer and pesticides</div>
+                    <div className={styles.impactNumber}>20-40%</div>
+                    <div className={styles.impactLabel}>Lower carbon intensity</div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Precise nutrient application and early pest detection reduce chemical usage while
-                    maintaining or improving crop yields.
+                    AI-driven strategies identify practical reduction opportunities without compromising product quality.
                   </p>
                 </div>
 
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>🏭</div>
-                  <h3 className={styles.impactTitle}>Carbon Footprint</h3>
+                  <div className={styles.impactIcon}>💰</div>
+                  <h3 className={styles.impactTitle}>Economic Benefits</h3>
                   <div className={styles.impactNumbers}>
-                    <div className={styles.impactNumber}>25%</div>
-                    <div className={styles.impactLabel}>Lower carbon emissions</div>
+                    <div className={styles.impactNumber}>15-30%</div>
+                    <div className={styles.impactLabel}>Lower CBAM costs</div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Optimized equipment usage, reduced chemical applications, and improved soil health
-                    contribute to lower farm carbon emissions.
+                    Accurate calculations and strategic reductions minimize compliance costs and improve competitiveness.
                   </p>
                 </div>
 
                 <div className={styles.impactCard}>
                   <div className={styles.impactIcon}>🌍</div>
-                  <h3 className={styles.impactTitle}>Biodiversity Protection</h3>
-                  <div className={styles.impactNumbers}>
-                    <div className={styles.impactNumber}>60%</div>
-                    <div className={styles.impactLabel}>Less chemical runoff</div>
-                  </div>
+                  <h3 className={styles.impactTitle}>Global Decarbonization</h3>
                   <p className={styles.impactDesc}>
-                    Targeted application and natural pest control methods protect surrounding ecosystems
-                    and promote beneficial insect populations.
+                    Supporting worldwide efforts to combat climate change through accessible carbon management tools.
                   </p>
                 </div>
               </div>
@@ -336,34 +327,34 @@ const Idea: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.businessModel}>
                 <div className={styles.modelComponent}>
-                  <h3 className={styles.modelTitle}>📦 Hardware-as-a-Service</h3>
+                  <h3 className={styles.modelTitle}>💰 Subscription Tiers</h3>
                   <div className={styles.pricingTier}>
-                    <div className={styles.tierName}>Starter Kit</div>
-                    <div className={styles.tierPrice}>$99/year</div>
-                    <div className={styles.tierDesc}>5 sensors, mobile app, basic analytics</div>
+                    <div className={styles.tierName}>Starter</div>
+                    <div className={styles.tierPrice}>€99/month</div>
+                    <div className={styles.tierDesc}>Up to 50 shipments/month, basic reporting</div>
                     <ul className={styles.tierFeatures}>
-                      <li>Soil moisture monitoring</li>
-                      <li>Basic weather data</li>
-                      <li>Mobile alerts</li>
-                      <li>Community support</li>
+                      <li>Emission calculations</li>
+                      <li>CBAM fee estimation</li>
+                      <li>Basic reporting tools</li>
+                      <li>Email support</li>
                     </ul>
                   </div>
                 </div>
 
                 <div className={styles.modelComponent}>
-                  <h3 className={styles.modelTitle}>🤝 Data Marketplace</h3>
+                  <h3 className={styles.modelTitle}>🤝 Enterprise Solutions</h3>
                   <div className={styles.dataServices}>
                     <div className={styles.dataService}>
-                      <h4>Farmer-to-Farmer</h4>
-                      <p>Share best practices and learn from successful farms in similar conditions</p>
+                      <h4>Custom Integration</h4>
+                      <p>API connections to existing ERP and logistics systems</p>
                     </div>
                     <div className={styles.dataService}>
-                      <h4>Research Partnerships</h4>
-                      <p>Contribute anonymized data to agricultural research institutions</p>
+                      <h4>Advanced Analytics</h4>
+                      <p>Custom dashboards and detailed emission insights</p>
                     </div>
                     <div className={styles.dataService}>
-                      <h4>Insurance Integration</h4>
-                      <p>Provide verified data for crop insurance claims and risk assessment</p>
+                      <h4>Compliance Consulting</h4>
+                      <p>Expert guidance on complex CBAM requirements</p>
                     </div>
                   </div>
                 </div>
@@ -372,16 +363,16 @@ const Idea: React.FC = () => {
                   <h3 className={styles.modelTitle}>🌐 Platform Ecosystem</h3>
                   <div className={styles.ecosystemPartners}>
                     <div className={styles.partnerCategory}>
-                      <h4>Equipment Manufacturers</h4>
-                      <p>Integration kits for smart irrigation systems and farm equipment</p>
+                      <h4>Carbon Marketplaces</h4>
+                      <p>Integration with carbon credit trading platforms</p>
                     </div>
                     <div className={styles.partnerCategory}>
-                      <h4>Input Suppliers</h4>
-                      <p>Automated ordering and optimized delivery of seeds and fertilizers</p>
+                      <h4>Logistics Providers</h4>
+                      <p>Direct data feeds from shipping and freight companies</p>
                     </div>
                     <div className={styles.partnerCategory}>
-                      <h4>Financial Services</h4>
-                      <p>Data-driven loans and insurance products for farmers</p>
+                      <h4>Regulatory Bodies</h4>
+                      <p>Official certification and verification partnerships</p>
                     </div>
                   </div>
                 </div>
@@ -401,12 +392,12 @@ const Idea: React.FC = () => {
                     <div className={styles.phaseNumber}>Phase 1</div>
                     <div className={styles.phaseTimeline}>Months 1-6</div>
                   </div>
-                  <h3 className={styles.phaseTitle}>Pilot Launch</h3>
+                  <h3 className={styles.phaseTitle}>Platform Launch</h3>
                   <div className={styles.phaseGoals}>
-                    <div className={styles.goal}>Deploy to 100 farms across 5 regions</div>
-                    <div className={styles.goal}>Validate sensor accuracy and durability</div>
-                    <div className={styles.goal}>Test user interface with diverse farmer groups</div>
-                    <div className={styles.goal}>Establish manufacturing partnerships</div>
+                    <div className={styles.goal}>Deploy to 100 SMEs across 5 industries</div>
+                    <div className={styles.goal}>Validate emission calculation accuracy</div>
+                    <div className={styles.goal}>Test user interface with diverse business groups</div>
+                    <div className={styles.goal}>Establish regulatory partnerships</div>
                   </div>
                 </div>
 
@@ -415,11 +406,11 @@ const Idea: React.FC = () => {
                     <div className={styles.phaseNumber}>Phase 2</div>
                     <div className={styles.phaseTimeline}>Months 7-18</div>
                   </div>
-                  <h3 className={styles.phaseTitle}>Scale Manufacturing</h3>
+                  <h3 className={styles.phaseTitle}>Feature Expansion</h3>
                   <div className={styles.phaseGoals}>
-                    <div className={styles.goal}>Reach 10,000 farms deployment</div>
-                    <div className={styles.goal}>Expand to 3 new countries</div>
-                    <div className={styles.goal}>Launch advanced AI features</div>
+                    <div className={styles.goal}>Reach 1,000 active businesses</div>
+                    <div className={styles.goal}>Expand to 10 new industry sectors</div>
+                    <div className={styles.goal}>Launch advanced AI reduction strategies</div>
                     <div className={styles.goal}>Secure Series A funding</div>
                   </div>
                 </div>
@@ -429,10 +420,10 @@ const Idea: React.FC = () => {
                     <div className={styles.phaseNumber}>Phase 3</div>
                     <div className={styles.phaseTimeline}>Months 19-36</div>
                   </div>
-                  <h3 className={styles.phaseTitle}>Global Expansion</h3>
+                  <h3 className={styles.phaseTitle}>Global Compliance</h3>
                   <div className={styles.phaseGoals}>
-                    <div className={styles.goal}>100,000+ active farms</div>
-                    <div className={styles.goal}>Presence in 15+ countries</div>
+                    <div className={styles.goal}>10,000+ active businesses</div>
+                    <div className={styles.goal}>Support for multiple carbon border mechanisms</div>
                     <div className={styles.goal}>Full ecosystem integration</div>
                     <div className={styles.goal}>Profitability achieved</div>
                   </div>

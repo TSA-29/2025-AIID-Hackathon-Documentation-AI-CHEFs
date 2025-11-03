@@ -8,8 +8,15 @@ const Team: React.FC = () => {
         <div className={styles.header}>
           <h1 className={styles.title}>Meet Our Team</h1>
           <p className={styles.subtitle}>
-            Meet the talented individuals behind our innovative hackathon projects
+            We are <strong>AI CHEF's</strong> — the team behind our innovative hackathon projects
           </p>
+          <div style={{ marginTop: 'var(--spacing-xl)' }}>
+            <img
+              src={import.meta.env.BASE_URL + 'images/TeamPic2.JPG'}
+              alt="AI CHEF's team photo"
+              style={{ width: '100%', maxWidth: '1000px', height: 'auto', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-lg)', border: '1px solid var(--color-border)' }}
+            />
+          </div>
         </div>
 
         <div className={styles.teamIntro}>
@@ -17,19 +24,19 @@ const Team: React.FC = () => {
           <p>
             We are a passionate interdisciplinary team dedicated to driving innovation across multiple domains
             through artificial intelligence and cutting-edge technology. Our team members come from diverse
-            professional backgrounds, including AI engineers, healthcare experts, agricultural specialists,
-            educators, and software developers, working together to create impactful solutions.
+            professional backgrounds, including computer science, international business, and project management,
+            working together to create impactful solutions for education, sustainability, and creative applications.
           </p>
         </div>
 
         <div className={styles.teamStats}>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>15</div>
+            <div className={styles.statNumber}>3</div>
             <div className={styles.statLabel}>Core Team Members</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>48</div>
-            <div className={styles.statLabel}>Hours Intensive Development</div>
+            <div className={styles.statNumber}>30</div>
+            <div className={styles.statLabel}>Days Intensive Development</div>
           </div>
           <div className={styles.statCard}>
             <div className={styles.statNumber}>5</div>
@@ -42,201 +49,69 @@ const Team: React.FC = () => {
         </div>
 
         <div className={styles.teamGrid}>
+          {/* Team Members */}
           <div className={styles.teamMember}>
             <div className={styles.memberAvatar}>
-              <div style={{
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'white'
-              }}>
-                👨‍💻
-              </div>
+              <img src={import.meta.env.BASE_URL + 'images/profiles/Anna_Profile.png'} alt="Anna Reztsova" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
-            <h3 className={styles.memberName}>Alex Chen</h3>
-            <p className={styles.memberRole}>AI Lead Engineer</p>
+            <h3 className={styles.memberName}>Anna Reztsova</h3>
+            <p className={styles.memberRole}>Arrowista Project Lead</p>
             <p className={styles.memberBio}>
-              Specializing in deep learning and computer vision with extensive experience in medical imaging analysis.
-              Leads core algorithm development and model optimization across all projects.
+              Leading the Arrowista project with a focus on innovative solutions and creative problem-solving.
+              Brings a unique perspective to AI-driven applications and user experience design.
             </p>
             <div className={styles.memberSkills}>
-              <span className={styles.skillTag}>PyTorch</span>
-              <span className={styles.skillTag}>CNN</span>
-              <span className={styles.skillTag}>Medical AI</span>
+              <span className={styles.skillTag}>Project Leadership</span>
+              <span className={styles.skillTag}>Innovation</span>
+              <span className={styles.skillTag}>Creative Solutions</span>
             </div>
             <div className={styles.memberContact}>
-              <a href="#" className={styles.contactLink}>📧</a>
-              <a href="#" className={styles.contactLink}>💼</a>
-              <a href="#" className={styles.contactLink}>🔗</a>
+              <a href="#" className={styles.contactLink} title="WeChat: TSA-29">💬</a>
+              <a href="https://github.com/THU-SIGS-AIID/2025-AIID-HACKATHON-PERSONAL-PROJECT-ANNA-REZTSOVA" target="_blank" rel="noopener noreferrer" className={styles.contactLink} title="Arrowista Project">🔗</a>
             </div>
           </div>
 
           <div className={styles.teamMember}>
             <div className={styles.memberAvatar}>
-              <div style={{
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'white'
-              }}>
-                👩‍🔬
-              </div>
+              <img src={import.meta.env.BASE_URL + 'images/profiles/Taleb_Profile.png'} alt="Taleb Alhajji" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
-            <h3 className={styles.memberName}>Dr. Sarah Johnson</h3>
-            <p className={styles.memberRole}>Medical Consultant</p>
+            <h3 className={styles.memberName}>Taleb Alhajji</h3>
+            <p className={styles.memberRole}>Computer Science Specialist - Study Buddy</p>
             <p className={styles.memberBio}>
-              Board-certified radiologist with 10+ years of clinical experience. Provides medical expertise
-              ensuring clinical feasibility and accuracy of AI diagnostic solutions.
+              Computer science expert leading development of the Study Buddy educational platform.
+              Specializes in creating innovative learning technologies and AI-powered educational tools
+              that enhance student engagement and academic success.
             </p>
             <div className={styles.memberSkills}>
-              <span className={styles.skillTag}>Medical Imaging</span>
-              <span className={styles.skillTag}>Clinical Diagnosis</span>
-              <span className={styles.skillTag}>Healthcare AI</span>
+              <span className={styles.skillTag}>Computer Science</span>
+              <span className={styles.skillTag}>Educational Tech</span>
+              <span className={styles.skillTag}>AI Development</span>
             </div>
             <div className={styles.memberContact}>
-              <a href="#" className={styles.contactLink}>📧</a>
-              <a href="#" className={styles.contactLink}>💼</a>
-              <a href="#" className={styles.contactLink}>🔗</a>
+              <a href="#" className={styles.contactLink} title="WeChat: TSA-29">💬</a>
+              <a href="https://github.com/TSA-29/2025-AIID-HACKATHON-PERSONAL-PROJECT-Taleb-Alhajji" target="_blank" rel="noopener noreferrer" className={styles.contactLink} title="Study Buddy Project">🔗</a>
             </div>
           </div>
 
           <div className={styles.teamMember}>
             <div className={styles.memberAvatar}>
-              <div style={{
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'white'
-              }}>
-                🌾
-              </div>
+              <img src={import.meta.env.BASE_URL + 'images/profiles/Valeria_Profile.png'} alt="Phuong Thao Valeria" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
-            <h3 className={styles.memberName}>Michael Park</h3>
-            <p className={styles.memberRole}>Agriculture Specialist</p>
+            <h3 className={styles.memberName}>Phuong Thao Valeria</h3>
+            <p className={styles.memberRole}>International Business Specialist - Carbon Compass</p>
             <p className={styles.memberBio}>
-              Agronomist and sustainable farming expert. Bridges the gap between traditional farming practices
-              and modern AI technology for precision agriculture solutions.
+              International business professional driving the Carbon Compass sustainability initiative.
+              Combines business acumen with environmental consciousness to create impactful solutions
+              for carbon tracking and sustainable business practices.
             </p>
             <div className={styles.memberSkills}>
-              <span className={styles.skillTag}>Crop Science</span>
-              <span className={styles.skillTag}>IoT Agriculture</span>
+              <span className={styles.skillTag}>International Business</span>
               <span className={styles.skillTag}>Sustainability</span>
+              <span className={styles.skillTag}>Carbon Management</span>
             </div>
             <div className={styles.memberContact}>
-              <a href="#" className={styles.contactLink}>📧</a>
-              <a href="#" className={styles.contactLink}>💼</a>
-              <a href="#" className={styles.contactLink}>🔗</a>
-            </div>
-          </div>
-
-          <div className={styles.teamMember}>
-            <div className={styles.memberAvatar}>
-              <div style={{
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'white'
-              }}>
-                👩‍🏫
-              </div>
-            </div>
-            <h3 className={styles.memberName}>Dr. Emily Rodriguez</h3>
-            <p className={styles.memberRole}>Education Expert</p>
-            <p className={styles.memberBio}>
-              Educational psychologist and learning sciences expert. Ensures our AI learning platform aligns with
-              pedagogical best practices and educational outcomes.
-            </p>
-            <div className={styles.memberSkills}>
-              <span className={styles.skillTag}>Learning Design</span>
-              <span className={styles.skillTag}>Educational AI</span>
-              <span className={styles.skillTag}>Pedagogy</span>
-            </div>
-            <div className={styles.memberContact}>
-              <a href="#" className={styles.contactLink}>📧</a>
-              <a href="#" className={styles.contactLink}>💼</a>
-              <a href="#" className={styles.contactLink}>🔗</a>
-            </div>
-          </div>
-
-          <div className={styles.teamMember}>
-            <div className={styles.memberAvatar}>
-              <div style={{
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'white'
-              }}>
-                👨‍💻
-              </div>
-            </div>
-            <h3 className={styles.memberName}>David Kim</h3>
-            <p className={styles.memberRole}>Full-Stack Developer</p>
-            <p className={styles.memberBio}>
-              Leads system architecture and full-stack development. Ensures robust, scalable solutions
-              across all our web and mobile applications.
-            </p>
-            <div className={styles.memberSkills}>
-              <span className={styles.skillTag}>React</span>
-              <span className={styles.skillTag}>Node.js</span>
-              <span className={styles.skillTag}>Cloud Dev</span>
-            </div>
-            <div className={styles.memberContact}>
-              <a href="#" className={styles.contactLink}>📧</a>
-              <a href="#" className={styles.contactLink}>💼</a>
-              <a href="#" className={styles.contactLink}>🔗</a>
-            </div>
-          </div>
-
-          <div className={styles.teamMember}>
-            <div className={styles.memberAvatar}>
-              <div style={{
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'white'
-              }}>
-                👩‍🎨
-              </div>
-            </div>
-            <h3 className={styles.memberName}>Lisa Wang</h3>
-            <p className={styles.memberRole}>UX/Product Designer</p>
-            <p className={styles.memberBio}>
-              Creates intuitive user experiences and beautiful interfaces. Ensures our complex AI solutions
-              are accessible, user-friendly, and delightful to use.
-            </p>
-            <div className={styles.memberSkills}>
-              <span className={styles.skillTag}>UI Design</span>
-              <span className={styles.skillTag}>User Research</span>
-              <span className={styles.skillTag}>Prototyping</span>
-            </div>
-            <div className={styles.memberContact}>
-              <a href="#" className={styles.contactLink}>📧</a>
-              <a href="#" className={styles.contactLink}>💼</a>
-              <a href="#" className={styles.contactLink}>🔗</a>
+              <a href="#" className={styles.contactLink} title="WeChat: Valeria_pham">💬</a>
+              <a href="https://github.com/PhuongThaoValeria/Carbon-Compass-Hackathon" target="_blank" rel="noopener noreferrer" className={styles.contactLink} title="Carbon Compass Project">🔗</a>
             </div>
           </div>
         </div>
@@ -265,6 +140,17 @@ const Team: React.FC = () => {
                 Pushing boundaries and exploring new possibilities at the intersection of AI and real-world applications.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className={styles.teamPhotoSection}>
+          <h2>Team Moments</h2>
+          <div className={styles.photoGallery}>
+            <img
+              src={import.meta.env.BASE_URL + 'images/TeamPic3.JPG'}
+              alt="AI CHEF's team working together"
+              className={styles.teamPhoto}
+            />
           </div>
         </div>
 

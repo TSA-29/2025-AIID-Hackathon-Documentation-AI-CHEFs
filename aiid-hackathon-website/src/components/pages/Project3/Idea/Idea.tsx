@@ -7,9 +7,9 @@ const Idea: React.FC = () => {
     <div className={styles.ideaPage}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Project 3: Idea</h1>
+          <h1 className={styles.title}>StudyBuddy: Idea</h1>
           <p className={styles.subtitle}>
-            Educational AI platform: Adaptive learning systems, personalized content delivery, and intelligent tutoring solutions
+            AI-powered interactive learning platform: AI-powered quiz generation, personalized learning algorithms, and adaptive content delivery
           </p>
         </div>
 
@@ -21,36 +21,45 @@ const Idea: React.FC = () => {
             </h2>
             <div className={styles.sectionContent}>
               <p className={styles.introText}>
-                Our vision is to transform education through AI-powered personalized learning that adapts to every
-                student's unique needs, learning style, and pace, while empowering teachers with data-driven insights
-                and automated tools to enhance their teaching effectiveness.
+                Our vision is to transform traditional classroom learning by using artificial intelligence to create
+                personalized, interactive quizzes on any topic, while empowering teachers with data-driven insights
+                and automated tools.
               </p>
 
               <div className={styles.innovationHighlight}>
                 <div className={styles.highlightCard}>
-                  <div className={styles.highlightIcon}>🧠</div>
-                  <h3 className={styles.highlightTitle}>Adaptive Learning Intelligence</h3>
+                  <div className={styles.highlightIcon}>🤖</div>
+                  <h3 className={styles.highlightTitle}>AI-Powered Quiz Generation</h3>
                   <p className={styles.highlightDesc}>
-                    AI algorithms that understand how each student learns best and continuously adjust
-                    content difficulty, presentation format, and pacing to maximize learning outcomes.
+                    Advanced machine learning models create contextually relevant questions based on
+                    topic, difficulty level, and student performance history.
                   </p>
                 </div>
 
                 <div className={styles.highlightCard}>
                   <div className={styles.highlightIcon}>👥</div>
-                  <h3 className={styles.highlightTitle}>Human-AI Teaching Partnership</h3>
+                  <h3 className={styles.highlightTitle}>Classroom Management</h3>
                   <p className={styles.highlightDesc}>
-                    Augmenting teacher capabilities with AI assistants that handle routine tasks, provide
-                    real-time insights, and enable more meaningful human connections.
+                    Teachers can create and manage multiple virtual classrooms with real-time
+                    student tracking and automated assessment.
                   </p>
                 </div>
 
                 <div className={styles.highlightCard}>
                   <div className={styles.highlightIcon}>📊</div>
-                  <h3 className={styles.highlightTitle}>Data-Driven Personalization</h3>
+                  <h3 className={styles.highlightTitle}>Personalized Learning</h3>
                   <p className={styles.highlightDesc}>
-                    Comprehensive analytics that track learning patterns, identify knowledge gaps, and
-                    predict learning outcomes before they become problems.
+                    AI adapts questions based on individual student performance, creating
+                    personalized learning paths for optimal outcomes.
+                  </p>
+                </div>
+
+                <div className={styles.highlightCard}>
+                  <div className={styles.highlightIcon}>📄</div>
+                  <h3 className={styles.highlightTitle}>PDF Learning Tools</h3>
+                  <p className={styles.highlightDesc}>
+                    Teachers can upload documents and automatically generate quizzes and summaries,
+                    reducing preparation time significantly.
                   </p>
                 </div>
               </div>
@@ -64,57 +73,57 @@ const Idea: React.FC = () => {
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.architectureDiagram}>
-                <h3 className={styles.diagramTitle}>Intelligent Learning Ecosystem</h3>
+                <h3 className={styles.diagramTitle}>Interactive Learning Platform Architecture</h3>
                 <div className={styles.architectureFlow}>
-                  <div className={styles.archLayer}>
-                    <div className={styles.layerTitle}>
-                      <span className={styles.layerIcon}>👤</span>
-                      Student Interaction Layer
-                    </div>
-                    <div className={styles.layerComponents}>
-                      <div className={styles.component}>Adaptive content interface</div>
-                      <div className={styles.component}>Multi-modal learning materials</div>
-                      <div className={styles.component}>Interactive assessments</div>
-                      <div className={styles.component}>Progress tracking</div>
-                    </div>
-                  </div>
-
                   <div className={styles.archLayer}>
                     <div className={styles.layerTitle}>
                       <span className={styles.layerIcon}>🤖</span>
                       AI Intelligence Layer
                     </div>
                     <div className={styles.layerComponents}>
-                      <div className={styles.component}>Learning pattern analysis</div>
-                      <div className={styles.component}>Knowledge gap detection</div>
+                      <div className={styles.component}>OpenAI/SiliconFlow API integration</div>
+                      <div className={styles.component}>Quiz generation algorithms</div>
                       <div className={styles.component}>Personalization engine</div>
-                      <div className={styles.component}>Predictive analytics</div>
+                      <div className={styles.component}>Adaptive difficulty adjustment</div>
                     </div>
                   </div>
 
                   <div className={styles.archLayer}>
                     <div className={styles.layerTitle}>
-                      <span className={styles.layerIcon}>👩‍🏫</span>
-                      Teacher Enhancement Layer
+                      <span className={styles.layerIcon}>🗄️</span>
+                      Database Layer
                     </div>
                     <div className={styles.layerComponents}>
-                      <div className={styles.component}>Classroom analytics dashboard</div>
-                      <div className={styles.component}>Automated grading system</div>
-                      <div className={styles.component}>Intervention recommendations</div>
-                      <div className={styles.component}>Resource optimization</div>
+                      <div className={styles.component}>Supabase PostgreSQL</div>
+                      <div className={styles.component}>Real-time capabilities</div>
+                      <div className={styles.component}>Authentication system</div>
+                      <div className={styles.component}>Row-level security</div>
                     </div>
                   </div>
 
                   <div className={styles.archLayer}>
                     <div className={styles.layerTitle}>
-                      <span className={styles.layerIcon}>🏫</span>
-                      Institutional Integration Layer
+                      <span className={styles.layerIcon}>🌐</span>
+                      Frontend Layer
                     </div>
                     <div className={styles.layerComponents}>
-                      <div className={styles.component}>Learning management systems</div>
-                      <div className={styles.component}>Student information systems</div>
-                      <div className={styles.component}>Assessment platforms</div>
-                      <div className={styles.component}>Parent communication tools</div>
+                      <div className={styles.component}>Next.js 15 framework</div>
+                      <div className={styles.component}>React components</div>
+                      <div className={styles.component}>Tailwind CSS styling</div>
+                      <div className={styles.component}>Zustand state management</div>
+                    </div>
+                  </div>
+
+                  <div className={styles.archLayer}>
+                    <div className={styles.layerTitle}>
+                      <span className={styles.layerIcon}>📄</span>
+                      Document Processing Layer
+                    </div>
+                    <div className={styles.layerComponents}>
+                      <div className={styles.component}>PDF parsing with pdf-parse</div>
+                      <div className={styles.component}>Text extraction and summarization</div>
+                      <div className={styles.component}>Quiz generation from documents</div>
+                      <div className={styles.component}>Google Cloud Storage</div>
                     </div>
                   </div>
                 </div>
@@ -130,54 +139,54 @@ const Idea: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.differentiatorsGrid}>
                 <div className={styles.differentiatorCard}>
-                  <div className={styles.diffIcon}>🧠</div>
-                  <h3 className={styles.diffTitle}>Cognitive Learning Models</h3>
+                  <div className={styles.diffIcon}>🤖</div>
+                  <h3 className={styles.diffTitle}>AI-Powered Content</h3>
                   <p className={styles.diffDesc}>
-                    Advanced neural networks that mimic human learning processes, understanding not just what students know,
-                    but how they think and approach problems, enabling truly personalized learning pathways.
+                    Advanced machine learning models generate contextually relevant questions based on
+                    topic, difficulty level, and student performance history.
                   </p>
                   <div className={styles.diffMetrics}>
-                    <span className={styles.metric}>Traditional AI: Pattern matching</span>
-                    <span className={styles.metric}>Our AI: Cognitive modeling</span>
-                  </div>
-                </div>
-
-                <div className={styles.differentiatorCard}>
-                  <div className={styles.diffIcon}>🎨</div>
-                  <h3 className={styles.diffTitle}>Multi-Modal Content Generation</h3>
-                  <p className={styles.diffDesc}>
-                    AI that creates and adapts content in real-time to match individual learning styles,
-                    including visual, auditory, reading/writing, and kinesthetic preferences.
-                  </p>
-                  <div className={styles.diffMetrics}>
-                    <span className={styles.metric}>5 learning modalities supported</span>
+                    <span className={styles.metric}>OpenAI/SiliconFlow integration</span>
                     <span className={styles.metric}>Real-time content adaptation</span>
                   </div>
                 </div>
 
                 <div className={styles.differentiatorCard}>
-                  <div className={styles.diffIcon}>🔮</div>
-                  <h3 className={styles.diffTitle}>Predictive Intervention</h3>
+                  <div className={styles.diffIcon}>👥</div>
+                  <h3 className={styles.diffTitle}>Teacher-Focused Design</h3>
                   <p className={styles.diffDesc}>
-                    Early warning system that identifies students at risk of falling behind before traditional
-                    assessments can detect the problem, enabling proactive intervention.
+                    Intuitive interface designed specifically for teachers to create engaging
+                    classrooms and track student progress with minimal effort.
                   </p>
                   <div className={styles.diffMetrics}>
-                    <span className={styles.metric}>85% early prediction accuracy</span>
-                    <span className={styles.metric}>60-80% improvement in outcomes</span>
+                    <span className={styles.metric}>15-minute classroom setup</span>
+                    <span className={styles.metric}>Automated grading system</span>
                   </div>
                 </div>
 
                 <div className={styles.differentiatorCard}>
-                  <div className={styles.diffIcon}>🔄</div>
-                  <h3 className={styles.diffTitle}>Continuous Learning Loop</h3>
+                  <div className={styles.diffIcon}>📊</div>
+                  <h3 className={styles.diffTitle}>Real-Time Analytics</h3>
                   <p className={styles.diffDesc}>
-                    Self-improving system that learns from millions of student interactions daily,
-                    continuously refining personalization algorithms and content effectiveness.
+                    Comprehensive dashboards provide teachers with actionable insights into student
+                    progress, engagement patterns, and learning obstacles.
                   </p>
                   <div className={styles.diffMetrics}>
-                    <span className={styles.metric}>10M+ learning interactions daily</span>
-                    <span className={styles.metric}>Weekly algorithm improvements</span>
+                    <span className={styles.metric}>Live student tracking</span>
+                    <span className={styles.metric}>Performance analytics</span>
+                  </div>
+                </div>
+
+                <div className={styles.differentiatorCard}>
+                  <div className={styles.diffIcon}>📄</div>
+                  <h3 className={styles.diffTitle}>PDF Integration</h3>
+                  <p className={styles.diffDesc}>
+                    Teachers can upload learning materials and automatically generate quizzes and summaries,
+                    reducing preparation time by 80%.
+                  </p>
+                  <div className={styles.diffMetrics}>
+                    <span className={styles.metric}>Automatic quiz generation</span>
+                    <span className={styles.metric}>Document summarization</span>
                   </div>
                 </div>
               </div>
@@ -194,10 +203,9 @@ const Idea: React.FC = () => {
                 <div className={styles.journeyStep}>
                   <div className={styles.stepNumber}>1</div>
                   <div className={styles.stepContent}>
-                    <h3 className={styles.stepTitle}>Initial Assessment</h3>
+                    <h3 className={styles.stepTitle}>Quick Onboarding</h3>
                     <p className={styles.stepDesc}>
-                      Comprehensive evaluation of learning style, current knowledge level, and cognitive patterns
-                      to create personalized learning profiles.
+                      Simple registration process with guided setup for teacher profile and classroom creation.
                     </p>
                   </div>
                 </div>
@@ -205,10 +213,9 @@ const Idea: React.FC = () => {
                 <div className={styles.journeyStep}>
                   <div className={styles.stepNumber}>2</div>
                   <div className={styles.stepContent}>
-                    <h3 className={styles.stepTitle}>Adaptive Learning Path</h3>
+                    <h3 className={styles.stepTitle}>Classroom Creation</h3>
                     <p className={styles.stepDesc}>
-                      Personalized curriculum that adjusts difficulty and content based on real-time performance
-                      and engagement metrics.
+                      Intuitive interface for creating virtual classrooms, managing students, and setting learning objectives.
                     </p>
                   </div>
                 </div>
@@ -216,10 +223,9 @@ const Idea: React.FC = () => {
                 <div className={styles.journeyStep}>
                   <div className={styles.stepNumber}>3</div>
                   <div className={styles.stepContent}>
-                    <h3 className={styles.stepTitle}>Interactive Learning</h3>
+                    <h3 className={styles.stepTitle}>Quiz Generation</h3>
                     <p className={styles.stepDesc}>
-                      Engaging activities and challenges that adapt to student responses, providing immediate feedback
-                      and scaffolding support.
+                      AI-powered quiz creation based on topic, difficulty level, and learning objectives.
                     </p>
                   </div>
                 </div>
@@ -227,10 +233,9 @@ const Idea: React.FC = () => {
                 <div className={styles.journeyStep}>
                   <div className={styles.stepNumber}>4</div>
                   <div className={styles.stepContent}>
-                    <h3 className={styles.stepTitle}>Mastery Achievement</h3>
+                    <h3 className={styles.stepTitle}>Live Sessions</h3>
                     <p className={styles.stepDesc}>
-                      Progress tracking that focuses on deep understanding rather than completion speed, with
-                      multiple pathways to demonstrate mastery.
+                      Real-time quiz sessions with instant feedback, progress tracking, and engagement metrics.
                     </p>
                   </div>
                 </div>
@@ -238,32 +243,32 @@ const Idea: React.FC = () => {
 
               <div className={styles.interfaceFeatures}>
                 <div className={styles.featureGroup}>
-                  <h3 className={styles.featureTitle}>👤 Student-Centric Interface</h3>
+                  <h3 className={styles.featureTitle}>👨‍🏫 Teacher Dashboard</h3>
                   <ul className={styles.featureList}>
-                    <li>Adaptive difficulty based on performance</li>
-                    <li>Learning style-aware content presentation</li>
-                    <li>Gamified progress and achievement system</li>
-                    <li>Peer collaboration and social learning</li>
+                    <li>Classroom management tools</li>
+                    <li>Student progress tracking</li>
+                    <li>Performance analytics</li>
+                    <li>Quiz creation and management</li>
                   </ul>
                 </div>
 
                 <div className={styles.featureGroup}>
-                  <h3 className={styles.featureTitle}>👩‍🏫 Teacher Empowerment</h3>
+                  <h3 className={styles.featureTitle}>👨‍🎓 Student Experience</h3>
                   <ul className={styles.featureList}>
-                    <li>Real-time classroom analytics</li>
-                    <li>Automated assessment and grading</li>
-                    <li>Individual student learning insights</li>
-                    <li>Professional development recommendations</li>
+                    <li>Adaptive quiz difficulty</li>
+                    <li>Instant feedback on answers</li>
+                    <li>Personalized learning paths</li>
+                    <li>Progress tracking and achievements</li>
                   </ul>
                 </div>
 
                 <div className={styles.featureGroup}>
-                  <h3 className={styles.featureTitle}>📊 Advanced Analytics</h3>
+                  <h3 className={styles.featureTitle}>📄 PDF Learning Tools</h3>
                   <ul className={styles.featureList}>
-                    <li>Learning pattern visualization</li>
-                    <li>Predictive performance modeling</li>
-                    <li>Intervention effectiveness tracking</li>
-                    <li>Equity and accessibility monitoring</li>
+                    <li>Document upload and processing</li>
+                    <li>Automatic quiz generation</li>
+                    <li>Content summarization</li>
+                    <li>Learning material organization</li>
                   </ul>
                 </div>
               </div>
@@ -273,20 +278,31 @@ const Idea: React.FC = () => {
           <section className={styles.ideaSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>🌱</span>
-              Sustainability Impact
+              Educational Impact
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.impactGrid}>
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>🎓</div>
-                  <h3 className={styles.impactTitle}>Educational Equity</h3>
+                  <div className={styles.impactIcon}>📊</div>
+                  <h3 className={styles.impactTitle}>Learning Efficiency</h3>
                   <div className={styles.impactNumbers}>
-                    <div className={styles.impactNumber}>60%</div>
-                    <div className={styles.impactLabel}>Reduction in achievement gaps</div>
+                    <div className={styles.impactNumber}>67%</div>
+                    <div className={styles.impactLabel}>Faster knowledge acquisition</div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Personalized learning addresses individual needs and provides extra support where needed,
-                    significantly reducing educational disparities across diverse student populations.
+                    Personalized learning paths and adaptive content significantly reduce time to mastery.
+                  </p>
+                </div>
+
+                <div className={styles.impactCard}>
+                  <div className={styles.impactIcon}>🎯</div>
+                  <h3 className={styles.impactTitle}>Student Engagement</h3>
+                  <div className={styles.impactNumbers}>
+                    <div className={styles.impactNumber}>94%</div>
+                    <div className={styles.impactLabel}>Average engagement rate</div>
+                  </div>
+                  <p className={styles.impactDesc}>
+                    Interactive quizzes and gamified elements dramatically increase student participation.
                   </p>
                 </div>
 
@@ -294,38 +310,23 @@ const Idea: React.FC = () => {
                   <div className={styles.impactIcon}>👨‍🏫</div>
                   <h3 className={styles.impactTitle}>Teacher Effectiveness</h3>
                   <div className={styles.impactNumbers}>
-                    <div className={styles.impactNumber}>83%</div>
-                    <div className={styles.impactLabel}>Improvement in job satisfaction</div>
+                    <div className={styles.impactNumber}>15 hrs</div>
+                    <div className={styles.impactLabel}>Weekly time savings</div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Reduced administrative burden and enhanced teaching tools allow educators to focus on
-                    what matters most: student relationships and meaningful instruction.
+                    Automated quiz creation and grading free up time for meaningful instruction.
                   </p>
                 </div>
 
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>📚</div>
+                  <div className={styles.impactIcon}>📈</div>
                   <h3 className={styles.impactTitle}>Learning Outcomes</h3>
                   <div className={styles.impactNumbers}>
                     <div className={styles.impactNumber}>25%</div>
-                    <div className={styles.impactLabel}>Increase in test scores</div>
+                    <div className={styles.impactLabel}>Improvement in test scores</div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Data-driven instruction and personalized pacing lead to measurable improvements
-                    in academic performance across all subject areas.
-                  </p>
-                </div>
-
-                <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>💰</div>
-                  <h3 className={styles.impactTitle}>Cost Efficiency</h3>
-                  <div className={styles.impactNumbers}>
-                    <div className={styles.impactNumber}>40%</div>
-                    <div className={styles.impactLabel}>Reduction in intervention costs</div>
-                  </div>
-                  <p className={styles.impactDesc}>
-                    Early identification and prevention of learning difficulties reduces the need for
-                    expensive remedial programs and special education services.
+                    Data-driven instruction and personalized pacing lead to measurable improvements.
                   </p>
                 </div>
               </div>
@@ -340,15 +341,15 @@ const Idea: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.businessModel}>
                 <div className={styles.modelComponent}>
-                  <h3 className={styles.modelTitle}>📦 Platform-as-a-Service</h3>
+                  <h3 className={styles.modelTitle}>📦 Subscription Tiers</h3>
                   <div className={styles.pricingTier}>
-                    <div className={styles.tierName}>Essential</div>
-                    <div className={styles.tierPrice}>$12/student/month</div>
-                    <div className={styles.tierDesc}>Core adaptive learning features</div>
+                    <div className={styles.tierName}>Teacher</div>
+                    <div className={styles.tierPrice}>$19/month</div>
+                    <div className={styles.tierDesc}>Unlimited classrooms and students</div>
                     <ul className={styles.tierFeatures}>
-                      <li>Personalized learning paths</li>
-                      <li>Progress tracking dashboard</li>
-                      <li>Basic teacher analytics</li>
+                      <li>AI quiz generation</li>
+                      <li>Student analytics</li>
+                      <li>PDF integration</li>
                       <li>Email support</li>
                     </ul>
                   </div>
@@ -358,16 +359,16 @@ const Idea: React.FC = () => {
                   <h3 className={styles.modelTitle}>🏫 Institutional Solutions</h3>
                   <div className={styles.institutionalServices}>
                     <div className={styles.serviceCategory}>
-                      <h4>K-12 Schools</h4>
-                      <p>Comprehensive platform with curriculum alignment, standards-based assessment, and parent portal access</p>
+                      <h4>School Districts</h4>
+                      <p>Volume pricing, custom integrations, and administrative dashboards</p>
                     </div>
                     <div className={styles.serviceCategory}>
                       <h4>Higher Education</h4>
-                      <p>Advanced analytics for student success, predictive modeling, and institutional research integration</p>
+                      <p>Advanced analytics, LMS integration, and research collaboration tools</p>
                     </div>
                     <div className={styles.serviceCategory}>
-                      <h4>Corporate Training</h4>
-                      <p>Custom learning paths, skill assessment, and certification tracking with business intelligence</p>
+                      <h4>Tutoring Centers</h4>
+                      <p>Multi-teacher accounts, student management, and progress reporting</p>
                     </div>
                   </div>
                 </div>
@@ -376,16 +377,16 @@ const Idea: React.FC = () => {
                   <h3 className={styles.modelTitle}>🤝 Content Ecosystem</h3>
                   <div className={styles.contentPartners}>
                     <div className={styles.partnerCategory}>
-                      <h4>Publisher Partnerships</h4>
-                      <p>Integration with major educational publishers and content providers for rich, standards-aligned materials</p>
+                      <h4>Educational Publishers</h4>
+                      <p>Curated content partnerships with major educational publishers</p>
                     </div>
                     <div className={styles.partnerCategory}>
                       <h4>Open Educational Resources</h4>
-                      <p>Curated and enhanced OER content with AI-powered personalization and assessment</p>
+                      <p>Integration with OER platforms and free learning materials</p>
                     </div>
                     <div className={styles.partnerCategory}>
-                      <h4>Teacher-Created Content</h4>
-                      <p>Marketplace for educators to share and monetize their custom learning materials and teaching strategies</p>
+                      <h4>Teacher Community</h4>
+                      <p>Marketplace for sharing and discovering teacher-created content</p>
                     </div>
                   </div>
                 </div>
@@ -403,42 +404,42 @@ const Idea: React.FC = () => {
                 <div className={styles.roadmapPhase}>
                   <div className={styles.phaseHeader}>
                     <div className={styles.phaseNumber}>Phase 1</div>
-                    <div className={styles.phaseTimeline}>Months 1-9</div>
+                    <div className={styles.phaseTimeline}>Months 1-6</div>
                   </div>
-                  <h3 className={styles.phaseTitle}>Platform Development</h3>
+                  <h3 className={styles.phaseTitle}>Platform Launch</h3>
                   <div className={styles.phaseGoals}>
-                    <div className={styles.goal}>Core AI learning algorithms development</div>
-                    <div className={styles.goal}>Initial content partnerships (50k+ learning materials)</div>
-                    <div className={styles.goal}>Beta testing with 25 pilot schools</div>
-                    <div className={styles.goal}>Teacher training program development</div>
+                    <div className={styles.goal}>Deploy to 100 schools across 5 regions</div>
+                    <div className={styles.goal}>Validate AI quiz generation accuracy</div>
+                    <div className={styles.goal}>Test user interface with diverse teacher groups</div>
+                    <div className={styles.goal}>Establish content partnerships</div>
                   </div>
                 </div>
 
                 <div className={styles.roadmapPhase}>
                   <div className={styles.phaseHeader}>
                     <div className={styles.phaseNumber}>Phase 2</div>
-                    <div className={styles.phaseTimeline}>Months 10-24</div>
+                    <div className={styles.phaseTimeline}>Months 7-18</div>
                   </div>
-                  <h3 className={styles.phaseTitle}>Market Expansion</h3>
+                  <h3 className={styles.phaseTitle}>Feature Expansion</h3>
                   <div className={styles.phaseGoals}>
-                    <div className={styles.goal}>Launch in North American markets</div>
-                    <div className={styles.goal}>Expand content library to 250k+ materials</div>
-                    <div className={styles.goal}>Secure Series A funding round</div>
-                    <div className={styles.goal}>Mobile app development</div>
+                    <div className={styles.goal}>Reach 1,000 active schools</div>
+                    <div className={styles.goal}>Expand to 10 new subject areas</div>
+                    <div className={styles.goal}>Launch advanced AI personalization</div>
+                    <div className={styles.goal}>Secure Series A funding</div>
                   </div>
                 </div>
 
                 <div className={styles.roadmapPhase}>
                   <div className={styles.phaseHeader}>
                     <div className={styles.phaseNumber}>Phase 3</div>
-                    <div className={styles.phaseTimeline}>Months 25-36</div>
+                    <div className={styles.phaseTimeline}>Months 19-36</div>
                   </div>
-                  <h3 className={styles.phaseTitle}>Global Scale</h3>
+                  <h3 className={styles.phaseTitle}>Global Education</h3>
                   <div className={styles.phaseGoals}>
-                    <div className={styles.goal}>International expansion to 10+ countries</div>
-                    <div className={styles.goal}>Multi-language support development</div>
-                    <div className={styles.goal}>Advanced AI research partnerships</div>
-                    <div className={styles.goal}>Achieve 1M+ active learners</div>
+                    <div className={styles.goal}>10,000+ active schools</div>
+                    <div className={styles.goal}>Presence in 50+ countries</div>
+                    <div className={styles.goal}>Multi-language support</div>
+                    <div className={styles.goal}>Achieve profitability</div>
                   </div>
                 </div>
               </div>

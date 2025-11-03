@@ -7,9 +7,9 @@ const Background: React.FC = () => {
     <div className={styles.backgroundPage}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Project 2: Background</h1>
+          <h1 className={styles.title}>Carbon Compass: Background</h1>
           <p className={styles.subtitle}>
-            Sustainable agriculture system: Problem analysis, research context, and solution rationale
+            EU Carbon Border Adjustment Mechanism: Regulatory challenges, compliance requirements, and carbon emission problem we're solving
           </p>
         </div>
 
@@ -17,35 +17,33 @@ const Background: React.FC = () => {
           <section className={styles.backgroundSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>🌍</span>
-              Global Food Security Challenge
+              EU Carbon Border Adjustment Mechanism (CBAM)
             </h2>
             <div className={styles.sectionContent}>
               <p className={styles.introText}>
-                The world faces unprecedented challenges in food security as climate change, population growth, and resource
-                scarcity threaten traditional farming methods. By 2050, we need to feed 10 billion people while reducing
-                environmental impact by 50%.
+                The European Union's Carbon Border Adjustment Mechanism (CBAM) is a landmark climate policy that puts a price on carbon emitted during the production of carbon-intensive goods entering the EU. Starting in 2026, it will require importers to declare embedded emissions and surrender corresponding CBAM certificates.
               </p>
 
               <div className={styles.statsGrid}>
                 <div className={styles.statCard}>
-                  <div className={styles.statNumber}>820M</div>
-                  <div className={styles.statLabel}>People facing hunger globally</div>
+                  <div className={styles.statNumber}>€78-90</div>
+                  <div className={styles.statLabel}>Current CBAM price per ton CO₂</div>
                   <p className={styles.statDesc}>
-                    Despite sufficient food production, distribution and access remain critical challenges
+                    Based on EU Allowance (EUA) futures contracts for December 2025
                   </p>
                 </div>
                 <div className={styles.statCard}>
-                  <div className={styles.statNumber}>70%</div>
-                  <div className={styles.statLabel}>Freshwater used by agriculture</div>
+                  <div className={styles.statNumber}>55%</div>
+                  <div className={styles.statLabel}>EU emissions covered by CBAM</div>
                   <p className={styles.statDesc}>
-                    Unsustainable water consumption threatens long-term food security
+                    Targeting high-emission sectors like steel, cement, and aluminum
                   </p>
                 </div>
                 <div className={styles.statCard}>
-                  <div className={styles.statNumber}>40%</div>
-                  <div className={styles.statLabel}>Crop losses to pests and diseases</div>
+                  <div className={styles.statNumber}>2026</div>
+                  <div className={styles.statLabel}>Full implementation year</div>
                   <p className={styles.statDesc}>
-                    Preventable losses that could be reduced with better monitoring and early intervention
+                    Transitional period began in October 2023 with reporting requirements
                   </p>
                 </div>
               </div>
@@ -54,44 +52,40 @@ const Background: React.FC = () => {
 
           <section className={styles.backgroundSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🌾</span>
-              Modern Agriculture Problems
+              <span className={styles.sectionIcon}>🏭</span>
+              SME Export Challenges
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.problemsGrid}>
                 <div className={styles.problemCard}>
-                  <div className={styles.problemIcon}>💧</div>
-                  <h3 className={styles.problemTitle}>Water Scarcity</h3>
-                  <p className={styles.problemDesc}>
-                    Traditional irrigation wastes up to 60% of water through evaporation and runoff. Farmers lack
-                    real-time data to optimize water usage based on crop needs and weather conditions.
-                  </p>
-                </div>
-
-                <div className={styles.problemCard}>
-                  <div className={styles.problemIcon}>🐛</div>
-                  <h3 className={styles.problemTitle}>Pest Management</h3>
-                  <p className={styles.problemDesc}>
-                    Late detection of pest infestations leads to widespread crop damage. Current monitoring
-                    methods are labor-intensive and often miss early warning signs.
-                  </p>
-                </div>
-
-                <div className={styles.problemCard}>
                   <div className={styles.problemIcon}>📊</div>
-                  <h3 className={styles.problemTitle}>Resource Inefficiency</h3>
+                  <h3 className={styles.problemTitle}>Emission Calculation Complexity</h3>
                   <p className={styles.problemDesc}>
-                    Overuse of fertilizers and pesticides contaminates soil and water while increasing costs.
-                    Farmers lack precise data on actual crop requirements.
+                    Small and Medium Enterprises (SMEs) lack technical expertise to accurately calculate embedded emissions across complex supply chains, leading to compliance risks and unexpected costs.
                   </p>
                 </div>
 
                 <div className={styles.problemCard}>
-                  <div className={styles.problemIcon}>🌡️</div>
-                  <h3 className={styles.problemTitle}>Climate Adaptation</h3>
+                  <div className={styles.problemIcon}>💰</div>
+                  <h3 className={styles.problemTitle}>Financial Uncertainty</h3>
                   <p className={styles.problemDesc}>
-                    Changing weather patterns make traditional farming calendars obsolete. Farmers need
-                    adaptive systems that respond to real-time environmental conditions.
+                    Unpredictable CBAM fees impact profit margins and pricing strategies. SMEs struggle to forecast costs and remain competitive in EU markets.
+                  </p>
+                </div>
+
+                <div className={styles.problemCard}>
+                  <div className={styles.problemIcon}>📋</div>
+                  <h3 className={styles.problemTitle}>Regulatory Compliance Burden</h3>
+                  <p className={styles.problemDesc}>
+                    Complex reporting requirements and documentation demands overwhelm small businesses without dedicated compliance teams, risking penalties and market access.
+                  </p>
+                </div>
+
+                <div className={styles.problemCard}>
+                  <div className={styles.problemIcon}>🔄</div>
+                  <h3 className={styles.problemTitle}>Supply Chain Visibility</h3>
+                  <p className={styles.problemDesc}>
+                    Limited visibility into suppliers' emission data makes accurate reporting difficult, forcing SMEs to use default values that often overestimate actual emissions.
                   </p>
                 </div>
               </div>
@@ -106,38 +100,35 @@ const Background: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.researchAreas}>
                 <div className={styles.researchArea}>
-                  <h3 className={styles.researchTitle}>IoT Sensor Networks</h3>
+                  <h3 className={styles.researchTitle}>Carbon Emission Methodologies</h3>
                   <p className={styles.researchDesc}>
-                    Studies show that sensor-based agriculture can reduce water usage by 30-50% while increasing
-                    yields by 15-25%. However, current solutions are expensive and complex for small farmers.
+                    Studies show that accurate emission calculations can reduce CBAM costs by 15-30% compared to default values. However, current tools are expensive and complex for SMEs.
                   </p>
                   <div className={styles.researchSources}>
-                    <span className={styles.sourceTag}>FAO Report 2023</span>
-                    <span className={styles.sourceTag}>Nature Sustainability</span>
+                    <span className={styles.sourceTag}>EU Commission Report 2024</span>
+                    <span className={styles.sourceTag}>Carbon Trust Analysis</span>
                   </div>
                 </div>
 
                 <div className={styles.researchArea}>
-                  <h3 className={styles.researchTitle}>Machine Learning in Agriculture</h3>
+                  <h3 className={styles.researchTitle}>SME Compliance Challenges</h3>
                   <p className={styles.researchDesc}>
-                    AI models can predict crop diseases with 85-95% accuracy using satellite imagery and sensor data.
-                    Early warning systems can prevent 60-80% of potential crop losses.
+                    Research indicates that 68% of exporting SMEs are unprepared for CBAM implementation, with lack of technical expertise cited as the primary barrier.
                   </p>
                   <div className={styles.researchSources}>
-                    <span className={styles.sourceTag}>Science Advances 2024</span>
-                    <span className={styles.sourceTag}>AGU Journal</span>
+                    <span className={styles.sourceTag}>European SME Survey 2023</span>
+                    <span className={styles.sourceTag}>OECD Business Analysis</span>
                   </div>
                 </div>
 
                 <div className={styles.researchArea}>
-                  <h3 className={styles.researchTitle}>Precision Agriculture Economics</h3>
+                  <h3 className={styles.researchTitle}>AI in Carbon Accounting</h3>
                   <p className={styles.researchDesc}>
-                    Farmers adopting precision technologies report 20-30% reduction in input costs and 10-20%
-                    increase in profitability within the first two years of implementation.
+                    AI-powered emission calculation tools can improve accuracy by 40-60% while reducing manual effort by 80%, making compliance accessible for smaller businesses.
                   </p>
                   <div className={styles.researchSources}>
-                    <span className={styles.sourceTag}>World Bank Study</span>
-                    <span className={styles.sourceTag}>USDA Economic Research</span>
+                    <span className={styles.sourceTag}>MIT Climate Review</span>
+                    <span className={styles.sourceTag}>Nature Climate Change</span>
                   </div>
                 </div>
               </div>
@@ -153,25 +144,25 @@ const Background: React.FC = () => {
               <div className={styles.stakeholdersGrid}>
                 <div className={styles.stakeholderGroup}>
                   <h3 className={styles.stakeholderTitle}>
-                    <span>👨‍🌾</span> Small-Scale Farmers
+                    <span>🏢</span> Small & Medium Exporters
                   </h3>
                   <div className={styles.stakeholderNeeds}>
-                    <div className={styles.needItem}>Affordable technology solutions</div>
-                    <div className={styles.needItem}>Simple, intuitive interfaces</div>
-                    <div className={styles.needItem}>Quick ROI on investments</div>
-                    <div className={styles.needItem}>Local language support</div>
+                    <div className={styles.needItem}>Affordable compliance solutions</div>
+                    <div className={styles.needItem}>Simple calculation tools</div>
+                    <div className={styles.needItem}>Cost reduction strategies</div>
+                    <div className={styles.needItem}>Regulatory guidance</div>
                   </div>
                 </div>
 
                 <div className={styles.stakeholderGroup}>
                   <h3 className={styles.stakeholderTitle}>
-                    <span>🏭</span> Large Agricultural Operations
+                    <span>🏛️</span> EU Regulatory Bodies
                   </h3>
                   <div className={styles.stakeholderNeeds}>
-                    <div className={styles.needItem}>Scalable automation systems</div>
-                    <div className={styles.needItem}>Advanced analytics and reporting</div>
-                    <div className={styles.needItem}>Integration with existing systems</div>
-                    <div className={styles.needItem}>Regulatory compliance</div>
+                    <div className={styles.needItem}>Accurate emission reporting</div>
+                    <div className={styles.needItem}>Compliance verification</div>
+                    <div className={styles.needItem}>Carbon leakage prevention</div>
+                    <div className={styles.needItem}>Fair market competition</div>
                   </div>
                 </div>
 
@@ -180,22 +171,22 @@ const Background: React.FC = () => {
                     <span>🌍</span> Environmental Organizations
                   </h3>
                   <div className={styles.stakeholderNeeds}>
-                    <div className={styles.needItem}>Water conservation metrics</div>
-                    <div className={styles.needItem}>Reduced chemical usage</div>
-                    <div className={styles.needItem}>Soil health monitoring</div>
-                    <div className={styles.needItem}>Carbon footprint tracking</div>
+                    <div className={styles.needItem}>Carbon emission transparency</div>
+                    <div className={styles.needItem}>Global emission reductions</div>
+                    <div className={styles.needItem}>Climate goal alignment</div>
+                    <div className={styles.needItem}>Green technology adoption</div>
                   </div>
                 </div>
 
                 <div className={styles.stakeholderGroup}>
                   <h3 className={styles.stakeholderTitle}>
-                    <span>🏛️</span> Government Agencies
+                    <span>🏭</span> Importers & Distributors
                   </h3>
                   <div className={styles.stakeholderNeeds}>
-                    <div className={styles.needItem}>Food security data</div>
-                    <div className={styles.needItem}>Policy compliance tracking</div>
-                    <div className={styles.needItem}>Subsidy program integration</div>
-                    <div className={styles.needItem}>Emergency response systems</div>
+                    <div className={styles.needItem}>Supply chain carbon data</div>
+                    <div className={styles.needItem}>Cost impact forecasting</div>
+                    <div className={styles.needItem}>Product carbon labeling</div>
+                    <div className={styles.needItem}>Competitive pricing strategies</div>
                   </div>
                 </div>
               </div>
@@ -209,44 +200,39 @@ const Background: React.FC = () => {
             </h2>
             <div className={styles.sectionContent}>
               <p className={styles.introText}>
-                Our smart agriculture system addresses these challenges through an integrated IoT and AI platform that
-                makes precision farming accessible and affordable for farmers of all sizes.
+                Carbon Compass addresses these challenges through an AI-powered platform that makes carbon emission calculation and CBAM compliance accessible and affordable for SMEs.
               </p>
 
               <div className={styles.solutionRationale}>
                 <div className={styles.rationalePoint}>
-                  <div className={styles.pointIcon}>📡</div>
-                  <h3 className={styles.pointTitle}>Low-Cost IoT Sensors</h3>
-                  <p className={styles.pointDesc}>
-                    Custom-designed sensors that cost 80% less than commercial alternatives while providing
-                    comparable accuracy for key measurements like soil moisture, temperature, and nutrient levels.
-                  </p>
-                </div>
-
-                <div className={styles.rationalePoint}>
                   <div className={styles.pointIcon}>🤖</div>
-                  <h3 className={styles.pointTitle}>AI-Powered Decision Support</h3>
+                  <h3 className={styles.pointTitle}>AI-Powered Calculations</h3>
                   <p className={styles.pointDesc}>
-                    Machine learning models trained on millions of data points provide personalized recommendations
-                    for irrigation, fertilization, and pest control based on real-time conditions.
+                    Advanced machine learning models trained on verified emission databases provide accurate calculations for both embedded and transport-related emissions.
                   </p>
                 </div>
 
                 <div className={styles.rationalePoint}>
-                  <div className={styles.pointIcon}>📱</div>
-                  <h3 className={styles.pointTitle}>Farmer-Centric Design</h3>
+                  <div className={styles.pointIcon}>📊</div>
+                  <h3 className={styles.pointTitle}>Benchmark Comparison</h3>
                   <p className={styles.pointDesc}>
-                    Mobile-first interface with visual dashboards, voice commands in local languages, and
-                    automated alerts that work even with limited internet connectivity.
+                    Industry benchmarking identifies high-emission products and suggests alternatives, helping businesses make data-driven decisions to reduce CBAM costs.
                   </p>
                 </div>
 
                 <div className={styles.rationalePoint}>
-                  <div className={styles.pointIcon}>🔄</div>
-                  <h3 className={styles.pointTitle}>Closed-Loop Automation</h3>
+                  <div className={styles.pointIcon}>💡</div>
+                  <h3 className={styles.pointTitle}>Emission Reduction Strategies</h3>
                   <p className={styles.pointDesc}>
-                    Integration with existing irrigation systems and smart controllers enables automated
-                    response to sensor readings, reducing manual intervention requirements.
+                    AI-driven recommendations provide practical strategies to minimize carbon intensity while maintaining product quality and competitiveness.
+                  </p>
+                </div>
+
+                <div className={styles.rationalePoint}>
+                  <div className={styles.pointIcon}>📋</div>
+                  <h3 className={styles.pointTitle}>Automated Reporting</h3>
+                  <p className={styles.pointDesc}>
+                    Export-ready compliance reports are generated automatically, reducing administrative burden and ensuring regulatory requirements are met.
                   </p>
                 </div>
               </div>
@@ -263,30 +249,30 @@ const Background: React.FC = () => {
                 <div className={styles.impactCategory}>
                   <h3 className={styles.impactTitle}>Environmental Benefits</h3>
                   <ul className={styles.impactList}>
-                    <li><strong>Water Conservation:</strong> 30-50% reduction in agricultural water usage</li>
-                    <li><strong>Chemical Reduction:</strong> 40% decrease in fertilizer and pesticide application</li>
-                    <li><strong>Soil Health:</strong> Improved organic matter and microbial activity</li>
-                    <li><strong>Biodiversity:</strong> Reduced runoff protects local ecosystems</li>
+                    <li><strong>Carbon Transparency:</strong> Increased visibility into supply chain emissions</li>
+                    <li><strong>Emission Reduction:</strong> AI-driven strategies reduce carbon intensity</li>
+                    <li><strong>Green Innovation:</strong> Incentivizes adoption of low-carbon technologies</li>
+                    <li><strong>Global Impact:</strong> Supports worldwide decarbonization efforts</li>
                   </ul>
                 </div>
 
                 <div className={styles.impactCategory}>
                   <h3 className={styles.impactTitle}>Economic Benefits</h3>
                   <ul className={styles.impactList}>
-                    <li><strong>Cost Reduction:</strong> 20-30% lower input costs for farmers</li>
-                    <li><strong>Yield Increase:</strong> 15-25% improvement in crop productivity</li>
-                    <li><strong>Risk Mitigation:</strong> Early warning prevents major crop losses</li>
-                    <li><strong>Market Access:</strong> Data-driven certification for premium markets</li>
+                    <li><strong>Cost Reduction:</strong> 15-30% lower CBAM fees through accurate calculations</li>
+                    <li><strong>Market Access:</strong> Simplified compliance enables EU market participation</li>
+                    <li><strong>Competitive Advantage:</strong> Carbon-efficient products gain market preference</li>
+                    <li><strong>Risk Mitigation:</strong> Avoids penalties and supply chain disruptions</li>
                   </ul>
                 </div>
 
                 <div className={styles.impactCategory}>
-                  <h3 className={styles.impactTitle}>Social Benefits</h3>
+                  <h3 className={styles.impactTitle}>Business Benefits</h3>
                   <ul className={styles.impactList}>
-                    <li><strong>Food Security:</strong> Increased local food production stability</li>
-                    <li><strong>Farmer Livelihood:</strong> Improved income and reduced labor requirements</li>
-                    <li><strong>Knowledge Transfer:</strong> Data sharing enables community learning</li>
-                    <li><strong>Rural Development:</strong> Technology adoption creates local expertise</li>
+                    <li><strong>Time Savings:</strong> 80% reduction in compliance reporting effort</li>
+                    <li><strong>Decision Support:</strong> Data-driven insights for strategic planning</li>
+                    <li><strong>Supply Chain Optimization:</strong> Identifies emission reduction opportunities</li>
+                    <li><strong>Customer Value:</strong> Carbon transparency meets market demands</li>
                   </ul>
                 </div>
               </div>

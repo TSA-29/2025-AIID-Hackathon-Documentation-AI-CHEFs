@@ -6,9 +6,14 @@ const ContactInfo: React.FC = () => {
   return (
     <div>
       <h3 className={styles.footerTitle}>Contact Information</h3>
-      <p>Phone: {contactInfo.phone}</p>
+      {contactInfo.phone && <p>Phone: {contactInfo.phone}</p>}
       <p>Email: {contactInfo.email}</p>
       <p>Address: {contactInfo.address.street}, {contactInfo.address.city}, {contactInfo.address.country}</p>
+      
+      <h4 className={styles.footerSubtitle}>WeChat Contacts</h4>
+      <p>TSA-29 (Team Lead)</p>
+      <p>Valeria_pham (AI Development)</p>
+      <p>ModulYnga (Backend Development)</p>
     </div>
   );
 };

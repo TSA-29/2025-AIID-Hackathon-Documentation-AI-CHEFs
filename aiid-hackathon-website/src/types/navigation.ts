@@ -16,7 +16,7 @@ export interface ContactInfo {
 }
 
 export interface SocialLink {
-  platform: 'instagram' | 'youtube' | 'maps';
+  platform: 'instagram' | 'twitter' | 'wechat' | 'university';
   url: string;
   icon: string;
 }

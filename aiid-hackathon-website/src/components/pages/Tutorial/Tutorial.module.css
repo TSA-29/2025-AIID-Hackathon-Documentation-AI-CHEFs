@@ -1,38 +1,47 @@
 .tutorialPage {
   min-height: 100vh;
-  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
-  padding: 2rem 0;
+  background: var(--color-bg-primary);
+  padding: var(--spacing-xl) 0;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 var(--spacing-lg);
 }
 
 .header {
   text-align: center;
-  margin-bottom: 2rem;
-  padding: 2rem 0;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-xl) 0;
 }
 
 .title {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  font-size: 3.5rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: -0.02em;
+  background-image: linear-gradient(90deg, #a78bfa, #22d3ee, #34d399, #a78bfa);
+  background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: gradientShift 8s ease infinite;
+  text-shadow: 0 0 24px rgba(168, 85, 247, 0.25);
+  font-family: 'Baloo 2', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.title:hover {
+  text-shadow: 0 0 36px rgba(168, 85, 247, 0.4);
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: #666;
+  color: var(--color-text-secondary);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 /* Markdown Container */
@@ -238,5 +247,157 @@
   .mdBlockquote {
     padding: 1rem 1.5rem;
     font-size: 1rem;
+  }
+}
+
+/* Projects Grid */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+/* Project Card */
+.projectCard {
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border);
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent-border);
+}
+
+/* Video Container */
+.videoContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background: #000;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Project Info */
+.projectInfo {
+  padding: var(--spacing-lg);
+}
+
+.projectTitle {
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.projectDescription {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.7;
+}
+
+/* Project Image Container */
+.projectImageContainer {
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.projectImage {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--color-accent-border);
+  transition: all var(--transition-normal);
+}
+
+.projectImage:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Instructions Section */
+.instructionsSection {
+  margin-top: var(--spacing-lg);
+}
+
+.instructionsTitle {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.codeBlock {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.liveDemo {
+  margin-top: var(--spacing-md);
+}
+
+.demoLink {
+  display: inline-block;
+  background: var(--gradient-accent);
+  color: var(--color-text-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-normal);
+}
+
+.demoLink:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent);
+}
+
+/* Responsive Design for Video Components */
+@media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .projectInfo {
+    padding: var(--spacing-md);
+  }
+  
+  .projectTitle {
+    font-size: 1.5rem;
+  }
+  
+  .codeBlock {
+    font-size: 0.8rem;
+  }
+  
+  .projectImage {
+    max-width: 100%;
   }
 }

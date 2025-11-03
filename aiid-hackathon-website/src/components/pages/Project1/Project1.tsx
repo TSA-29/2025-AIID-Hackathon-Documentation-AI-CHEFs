@@ -6,19 +6,26 @@ const Project1: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.projectOverview}>
-        <h1 className={styles.title}>MEDICAI DIAGNOSTICS</h1>
+        <h1 className={styles.title}>ARROWISTA</h1>
         <p className={styles.subtitle}>
-          Revolutionary AI-powered medical imaging diagnosis system leveraging deep learning to enhance disease detection accuracy and efficiency in healthcare.
+          Modern AI-powered content generator that creates stunning images, text, and videos using SiliconFlow API with comprehensive security features and responsive design.
         </p>
+        <div className={styles.projectImageContainer}>
+          <img
+            src={import.meta.env.BASE_URL + 'images/ProjPic/ArrowistaPic.png'}
+            alt="Arrowista project screenshot"
+            className={styles.projectImage}
+          />
+        </div>
       </div>
 
       <div className={styles.navigationGrid}>
         <Link to="background" className={styles.navCard}>
-          <span className={styles.navCardIcon}>📋</span>
+          <span className={styles.navCardIcon}>🎨</span>
           <div className={styles.navCardNumber}>01</div>
           <h3 className={styles.navCardTitle}>BACKGROUND</h3>
           <p className={styles.navCardDescription}>
-            Discover the project's foundation, research motivation, and core problems we're solving in medical diagnosis.
+            Discover the project's foundation, research motivation, and core problems we're solving in AI content generation.
           </p>
         </Link>
 
@@ -27,7 +34,7 @@ const Project1: React.FC = () => {
           <div className={styles.navCardNumber}>02</div>
           <h3 className={styles.navCardTitle}>IDEA</h3>
           <p className={styles.navCardDescription}>
-            Explore our innovative approach, technical architecture, and core concepts transforming medical diagnostics.
+            Explore our innovative approach, technical architecture, and security features transforming content creation.
           </p>
         </Link>
 
@@ -36,7 +43,7 @@ const Project1: React.FC = () => {
           <div className={styles.navCardNumber}>03</div>
           <h3 className={styles.navCardTitle}>IMPLEMENTATION</h3>
           <p className={styles.navCardDescription}>
-            Dive into detailed technical implementation, development steps, and key engineering challenges.
+            Dive into detailed technical implementation, security systems, and key engineering challenges.
           </p>
         </Link>
 
@@ -45,7 +52,7 @@ const Project1: React.FC = () => {
           <div className={styles.navCardNumber}>04</div>
           <h3 className={styles.navCardTitle}>RESULT</h3>
           <p className={styles.navCardDescription}>
-            Showcase project outcomes, performance metrics, and real-world impact with demo videos.
+            Showcase project outcomes, security metrics, and live demos with deployment links.
           </p>
         </Link>
       </div>
@@ -55,15 +62,15 @@ const Project1: React.FC = () => {
         <div className={styles.projectInfoGrid}>
           <div className={styles.infoItem}>
             <h3>🎯 Main Goal</h3>
-            <p>Develop deep learning-based medical imaging diagnosis system to improve disease detection accuracy and early discovery capabilities</p>
+            <p>Develop secure, intuitive AI content generation platform with multi-modal support and comprehensive security features</p>
           </div>
           <div className={styles.infoItem}>
             <h3>🔬 Tech Stack</h3>
-            <p>PyTorch, TensorFlow, CNN, Image Processing, Medical Imaging Analysis</p>
+            <p>Next.js 15, React, TypeScript, SiliconFlow API, Custom Security Systems</p>
           </div>
           <div className={styles.infoItem}>
             <h3>👥 Team Size</h3>
-            <p>4-person interdisciplinary team including AI engineers, medical experts, and frontend developers</p>
+            <p>Individual project with comprehensive security implementation</p>
           </div>
           <div className={styles.infoItem}>
             <h3>⏱️ Development Period</h3>
@@ -74,7 +81,7 @@ const Project1: React.FC = () => {
 
       <div className={styles.quickStart}>
         <h3>Start Exploring</h3>
-        <p>Begin with BACKGROUND to follow our complete development journey sequentially</p>
+        <p>Begin with BACKGROUND to follow our complete development journey and security implementation</p>
         <Link to="background" className={styles.startButton}>
           Explore Project Background →
         </Link>

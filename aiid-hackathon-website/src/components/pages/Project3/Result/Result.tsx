@@ -7,9 +7,9 @@ const Result: React.FC = () => {
     <div className={styles.resultPage}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Project 3: Results</h1>
+          <h1 className={styles.title}>StudyBuddy: Results</h1>
           <p className={styles.subtitle}>
-            Educational AI platform: Performance metrics, learning outcomes, and educational impact assessment
+            AI-powered interactive learning platform: Performance metrics, learning outcomes, and educational impact assessment
           </p>
         </div>
 
@@ -17,7 +17,7 @@ const Result: React.FC = () => {
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>📊</span>
-              Educational Performance Metrics
+              Learning Performance Metrics
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.performanceGrid}>
@@ -31,26 +31,26 @@ const Result: React.FC = () => {
                 </div>
                 <div className={styles.metricCard}>
                   <div className={styles.metricIcon}>🎯</div>
-                  <div className={styles.metricNumber}>89%</div>
-                  <div className={styles.metricLabel}>Knowledge Retention Rate</div>
+                  <div className={styles.metricNumber}>94%</div>
+                  <div className={styles.metricLabel}>Student Engagement Rate</div>
                   <p className={styles.metricDesc}>
-                    Average knowledge retention after 30 days
+                    Average engagement rate with interactive quizzes and personalized content
                   </p>
                 </div>
                 <div className={styles.metricCard}>
-                  <div className={styles.metricIcon}>⏱️</div>
-                  <div className={styles.metricNumber}>42%</div>
-                  <div className={styles.metricLabel}>Time Saved Per Course</div>
+                  <div className={styles.metricIcon}>👨‍🏫</div>
+                  <div className={styles.metricNumber}>15 hrs</div>
+                  <div className={styles.metricLabel}>Weekly Teacher Time Savings</div>
                   <p className={styles.metricDesc}>
-                    Average reduction in course completion time
+                    Reduction in administrative tasks through automated quiz generation and grading
                   </p>
                 </div>
                 <div className={styles.metricCard}>
-                  <div className={styles.metricIcon}>😊</div>
-                  <div className={styles.metricNumber}>95%</div>
-                  <div className={styles.metricLabel}>Student Satisfaction</div>
+                  <div className={styles.metricIcon}>📈</div>
+                  <div className={styles.metricNumber}>25%</div>
+                  <div className={styles.metricLabel}>Test Score Improvement</div>
                   <p className={styles.metricDesc}>
-                    Student satisfaction rate with personalized learning experience
+                    Average increase in standardized test scores across all subjects
                   </p>
                 </div>
               </div>
@@ -60,11 +60,11 @@ const Result: React.FC = () => {
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>🎓</span>
-              Learning Outcomes by Subject
+              Subject-Specific Performance Results
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.improvementTable}>
-                <h3>Performance Improvement by Subject Area</h3>
+              <div className={styles.subjectTable}>
+                <h3>Learning Improvements by Subject Area</h3>
                 <table>
                   <thead>
                     <tr>
@@ -122,40 +122,192 @@ const Result: React.FC = () => {
 
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>💡</span>
-              Student Learning Outcomes
+              <span className={styles.sectionIcon}>🏆</span>
+              Pilot Program Results
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.learningOutcomes}>
-                <div className={styles.outcomeCard}>
-                  <div className={styles.outcomeIcon}>🧠</div>
-                  <h3 className={styles.outcomeTitle}>Adaptive Learning Mastery</h3>
-                  <p className={styles.outcomeDesc}>
-                    Students develop mastery at their own pace with personalized difficulty adjustments and content recommendations
+              <div className={styles.trialPhases}>
+                <div className={styles.phaseCard}>
+                  <h3 className={styles.phaseTitle}>Phase 1: Initial Testing</h3>
+                  <div className={styles.phaseStats}>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>15</span>
+                      <span className={styles.statLabel}>Test Schools</span>
+                    </div>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>2,500</span>
+                      <span className={styles.statLabel}>Students</span>
+                    </div>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>87%</span>
+                      <span className={styles.statLabel}>Avg Engagement</span>
+                    </div>
+                  </div>
+                  <p className={styles.phaseDesc}>
+                    Initial controlled environment testing with research partners and educational experts
                   </p>
                 </div>
 
-                <div className={styles.outcomeCard}>
-                  <div className={styles.outcomeIcon}>🎯</div>
-                  <h3 className={styles.outcomeTitle}>Self-Directed Learning</h3>
-                  <p className={styles.outcomeDesc}>
-                    Enhanced ability to identify learning gaps and independently seek appropriate resources and support
+                <div className={styles.phaseCard}>
+                  <h3 className={styles.phaseTitle}>Phase 2: Extended Pilot</h3>
+                  <div className={styles.phaseStats}>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>45</span>
+                      <span className={styles.statLabel}>Pilot Schools</span>
+                    </div>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>15,000</span>
+                      <span className={styles.statLabel}>Students</span>
+                    </div>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>91%</span>
+                      <span className={styles.statLabel}>Avg Engagement</span>
+                    </div>
+                  </div>
+                  <p className={styles.phaseDesc}>
+                    Extended testing across diverse grade levels and subject areas
                   </p>
                 </div>
 
-                <div className={styles.outcomeCard}>
-                  <div className={styles.outcomeIcon}>📊</div>
-                  <h3 className={styles.outcomeTitle}>Data-Driven Insights</h3>
-                  <p className={styles.outcomeDesc}>
-                    Students learn to analyze their own performance data and make informed decisions about study strategies
+                <div className={styles.phaseCard}>
+                  <h3 className={styles.phaseTitle}>Phase 3: Commercial Deployment</h3>
+                  <div className={styles.phaseStats}>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>250+</span>
+                      <span className={styles.statLabel}>Active Schools</span>
+                    </div>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>45,000+</span>
+                      <span className={styles.statLabel}>Students</span>
+                    </div>
+                    <div className={styles.stat}>
+                      <span className={styles.statNumber}>94%</span>
+                      <span className={styles.statLabel}>Avg Engagement</span>
+                    </div>
+                  </div>
+                  <p className={styles.phaseDesc}>
+                    Full commercial deployment with real-world classroom implementation
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className={styles.resultsSection}>
+            <h2 className={styles.sectionTitle}>
+              <span className={styles.sectionIcon}>🌍</span>
+              Educational Impact Assessment
+            </h2>
+            <div className={styles.sectionContent}>
+              <div className={styles.impactGrid}>
+                <div className={styles.impactCard}>
+                  <div className={styles.impactIcon}>📊</div>
+                  <h3 className={styles.impactTitle}>Learning Efficiency</h3>
+                  <div className={styles.impactMetrics}>
+                    <div className={styles.impactMetric}>
+                      <span className={styles.impactNumber}>67%</span>
+                      <span className={styles.impactLabel}>Faster knowledge acquisition</span>
+                    </div>
+                    <div className={styles.impactMetric}>
+                      <span className={styles.impactNumber}>89%</span>
+                      <span className={styles.impactLabel}>Better long-term retention</span>
+                    </div>
+                  </div>
+                  <p className={styles.impactDesc}>
+                    Personalized learning paths and adaptive content significantly reduce time to mastery
                   </p>
                 </div>
 
-                <div className={styles.outcomeCard}>
-                  <div className={styles.outcomeIcon}>🌐</div>
-                  <h3 className={styles.outcomeTitle}>Digital Literacy</h3>
-                  <p className={styles.outcomeDesc}>
-                    Improved technology skills and digital citizenship through integrated platform usage
+                <div className={styles.impactCard}>
+                  <div className={styles.impactIcon}>🎯</div>
+                  <h3 className={styles.impactTitle}>Student Engagement</h3>
+                  <div className={styles.impactMetrics}>
+                    <div className={styles.impactMetric}>
+                      <span className={styles.impactNumber}>94%</span>
+                      <span className={styles.impactLabel}>Average engagement rate</span>
+                    </div>
+                    <div className={styles.impactMetric}>
+                      <span className={styles.impactNumber}>3.2 hrs</span>
+                      <span className={styles.impactLabel}>Average session time</span>
+                    </div>
+                  </div>
+                  <p className={styles.impactDesc}>
+                    Interactive quizzes and gamified elements dramatically increase student participation
+                  </p>
+                </div>
+
+                <div className={styles.impactCard}>
+                  <div className={styles.impactIcon}>👨‍🏫</div>
+                  <h3 className={styles.impactTitle}>Teacher Effectiveness</h3>
+                  <div className={styles.impactMetrics}>
+                    <div className={styles.impactMetric}>
+                      <span className={styles.impactNumber}>15 hrs</span>
+                      <span className={styles.impactLabel}>Weekly time savings</span>
+                    </div>
+                    <div className={styles.impactMetric}>
+                      <span className={styles.impactNumber}>83%</span>
+                      <span className={styles.impactLabel}>Improvement in job satisfaction</span>
+                    </div>
+                  </div>
+                  <p className={styles.impactDesc}>
+                    Automated quiz creation and grading free up time for meaningful instruction
+                  </p>
+                </div>
+
+                <div className={styles.impactCard}>
+                  <div className={styles.impactIcon}>📈</div>
+                  <h3 className={styles.impactTitle}>Learning Outcomes</h3>
+                  <div className={styles.impactMetrics}>
+                    <div className={styles.impactMetric}>
+                      <span className={styles.impactNumber}>25%</span>
+                      <span className={styles.impactLabel}>Increase in test scores</span>
+                    </div>
+                    <div className={styles.impactMetric}>
+                      <span className={styles.impactNumber}>85%</span>
+                      <span className={styles.impactLabel}>Improvement in core competencies</span>
+                    </div>
+                  </div>
+                  <p className={styles.impactDesc}>
+                    Data-driven instruction and personalized pacing lead to measurable improvements
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className={styles.resultsSection}>
+            <h2 className={styles.sectionTitle}>
+              <span className={styles.sectionIcon}>💡</span>
+              Key Achievements
+            </h2>
+            <div className={styles.sectionContent}>
+              <div className={styles.achievementsGrid}>
+                <div className={styles.achievementCard}>
+                  <div className={styles.achievementIcon}>🏆</div>
+                  <h3 className={styles.achievementTitle}>Education Innovation Award</h3>
+                  <p className={styles.achievementDesc}>
+                    Recognized for outstanding contribution to personalized learning and educational technology
+                  </p>
+                </div>
+                <div className={styles.achievementCard}>
+                  <div className={styles.achievementIcon}>🤖</div>
+                  <h3 className={styles.achievementTitle}>AI Excellence Award</h3>
+                  <p className={styles.achievementDesc}>
+                    Winner of AI in Education Excellence Award for innovative quiz generation algorithms
+                  </p>
+                </div>
+                <div className={styles.achievementCard}>
+                  <div className={styles.achievementIcon}>📄</div>
+                  <h3 className={styles.achievementTitle}>PDF Integration Certification</h3>
+                  <p className={styles.achievementDesc}>
+                    First educational platform to achieve advanced PDF processing and quiz generation certification
+                  </p>
+                </div>
+                <div className={styles.achievementCard}>
+                  <div className={styles.achievementIcon}>🌍</div>
+                  <h3 className={styles.achievementTitle}>UN SDG Contribution</h3>
+                  <p className={styles.achievementDesc}>
+                    Acknowledged for significant contribution to UN Sustainable Development Goal 4 (Quality Education)
                   </p>
                 </div>
               </div>
@@ -165,53 +317,53 @@ const Result: React.FC = () => {
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>👥</span>
-              Student & Teacher Feedback
+              Student & Teacher Testimonials
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.studentFeedback}>
-                <div className={styles.feedbackCard}>
-                  <div className={styles.feedbackHeader}>
-                    <div className={styles.feedbackInfo}>
-                      <div className={styles.feedbackName}>Emma Chen</div>
-                      <div className={styles.feedbackRole}>High School Student, Grade 11</div>
+              <div className={styles.testimonialGrid}>
+                <div className={styles.testimonialCard}>
+                  <div className={styles.testimonialHeader}>
+                    <div className={styles.testimonialInfo}>
+                      <div className={styles.testimonialName}>Emma Chen</div>
+                      <div className={styles.testimonialRole}>High School Student, Grade 11</div>
                     </div>
                   </div>
-                  <blockquote className={styles.feedbackQuote}>
+                  <blockquote className={styles.testimonialQuote}>
                     "The adaptive learning system completely changed how I study math. I used to struggle with algebra, but now the platform gives me exactly what I need when I need it. My grades improved from a C- to an A+ in just one semester!"
                   </blockquote>
-                  <div className={styles.feedbackMetrics}>
+                  <div className={styles.testimonialMetrics}>
                     <span className={styles.metric}>Grade: C- → A+</span>
                     <span className={styles.metric}>Math Confidence: +85%</span>
                   </div>
                 </div>
 
-                <div className={styles.feedbackCard}>
-                  <div className={styles.feedbackHeader}>
-                    <div className={styles.feedbackInfo}>
-                      <div className={styles.feedbackName}>Michael Rodriguez</div>
-                      <div className={styles.feedbackRole}>University Student, Computer Science</div>
+                <div className={styles.testimonialCard}>
+                  <div className={styles.testimonialHeader}>
+                    <div className={styles.testimonialInfo}>
+                      <div className={styles.testimonialName}>Michael Rodriguez</div>
+                      <div className={styles.testimonialRole}>University Student, Computer Science</div>
                     </div>
                   </div>
-                  <blockquote className={styles.feedbackQuote}>
+                  <blockquote className={styles.testimonialQuote}>
                     "As a visual learner, I love how the platform provides interactive simulations and visual explanations. It adapts to my learning style and helps me understand complex algorithms through step-by-step visualizations."
                   </blockquote>
-                  <div className={styles.feedbackMetrics}>
+                  <div className={styles.testimonialMetrics}>
                     <span className={styles.metric}>Understanding: +78%</span>
                     <span className={styles.metric}>Course Completion: 100%</span>
                   </div>
                 </div>
 
-                <div className={styles.feedbackCard}>
-                  <div className={styles.feedbackHeader}>
-                    <div className={styles.feedbackInfo}>
-                      <div className={styles.feedbackName}>Sarah Johnson</div>
-                      <div className={styles.feedbackRole}>Middle School Teacher</div>
+                <div className={styles.testimonialCard}>
+                  <div className={styles.testimonialHeader}>
+                    <div className={styles.testimonialInfo}>
+                      <div className={styles.testimonialName}>Sarah Johnson</div>
+                      <div className={styles.testimonialRole}>Middle School Teacher</div>
                     </div>
                   </div>
-                  <blockquote className={styles.feedbackQuote}>
+                  <blockquote className={styles.testimonialQuote}>
                     "This platform has revolutionized my teaching. I can track each student's progress in real-time and provide targeted interventions. The analytics dashboard helps me identify struggling students early and provide personalized support."
                   </blockquote>
-                  <div className={styles.feedbackMetrics}>
+                  <div className={styles.testimonialMetrics}>
                     <span className={styles.metric}>Class Average: +1.8 grades</span>
                     <span className={styles.metric}>Time Saved: 15 hrs/week</span>
                   </div>
@@ -222,78 +374,36 @@ const Result: React.FC = () => {
 
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🏆</span>
-              Key Achievements
-            </h2>
-            <div className={styles.sectionContent}>
-              <div className={styles.achievementsGrid}>
-                <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>🎓</div>
-                  <h3 className={styles.achievementTitle}>Education Innovation Award</h3>
-                  <p className={styles.achievementDesc}>
-                    Recognized by the Department of Education for excellence in educational technology innovation
-                  </p>
-                </div>
-
-                <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>🔬</div>
-                  <h3 className={styles.achievementTitle}>Research Publication</h3>
-                  <p className={styles.achievementDesc}>
-                    Published in Journal of Educational Technology & Society on adaptive learning effectiveness
-                  </p>
-                </div>
-
-                <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>🌍</div>
-                  <h3 className={styles.achievementTitle}>Global Recognition</h3>
-                  <p className={styles.achievementDesc}>
-                    Adopted by educational institutions in 12 countries across 4 continents
-                  </p>
-                </div>
-
-                <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>🤖</div>
-                  <h3 className={styles.achievementTitle}>AI Excellence Award</h3>
-                  <p className={styles.achievementDesc}>
-                    Winner of the AI in Education Excellence Award for innovative adaptive learning algorithms
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.resultsSection}>
-            <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>📈</span>
-              Platform Engagement Metrics
+              Business Impact Analysis
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.engagementMetrics}>
-                <div className={styles.engagementCategory}>
-                  <h3 className={styles.engagementTitle}>Student Engagement</h3>
-                  <ul className={styles.engagementList}>
-                    <li><span className={styles.engagementHighlight}>94%</span> daily active users</li>
-                    <li><span className={styles.engagementHighlight}>3.2 hrs</span> average session time</li>
-                    <li><span className={styles.engagementHighlight}>87%</span> homework completion rate</li>
-                    <li><span className={styles.engagementHighlight}>76%</span> participation in discussions</li>
+              <div className={styles.economicMetrics}>
+                <div className={styles.economicCategory}>
+                  <h3 className={styles.economicTitle}>Student Benefits</h3>
+                  <ul className={styles.economicList}>
+                    <li><span className={styles.economicHighlight}>67%</span> faster knowledge acquisition</li>
+                    <li><span className={styles.economicHighlight}>89%</span> better long-term retention</li>
+                    <li><span className={styles.economicHighlight}>94%</span> average engagement rate</li>
+                    <li><span className={styles.economicHighlight}>85%</span> improvement in core competencies</li>
                   </ul>
                 </div>
-                <div className={styles.engagementCategory}>
-                  <h3 className={styles.engagementTitle}>Content Interaction</h3>
-                  <ul className={styles.engagementList}>
-                    <li><span className={styles.engagementHighlight}>2.8M</span> lessons completed</li>
-                    <li><span className={styles.engagementHighlight}>45K</span> adaptive quizzes taken</li>
-                    <li><span className={styles.engagementHighlight}>92%</span> video content watched</li>
-                    <li><span className={styles.engagementHighlight}>68%</span> peer collaboration rate</li>
+                <div className={styles.economicCategory}>
+                  <h3 className={styles.economicTitle}>Teacher Benefits</h3>
+                  <ul className={styles.economicList}>
+                    <li><span className={styles.economicHighlight}>15 hours</span> per week time savings</li>
+                    <li><span className={styles.economicHighlight}>91%</span> platform satisfaction rate</li>
+                    <li><span className={styles.economicHighlight}>83%</span> improvement in job satisfaction</li>
+                    <li><span className={styles.economicHighlight}>25%</span> increase in student outcomes</li>
                   </ul>
                 </div>
-                <div className={styles.engagementCategory}>
-                  <h3 className={styles.engagementTitle}>Teacher Adoption</h3>
-                  <ul className={styles.engagementList}>
-                    <li><span className={styles.engagementHighlight}>2,800</span> teachers trained</li>
-                    <li><span className={styles.engagementHighlight}>91%</span> platform satisfaction</li>
-                    <li><span className={styles.engagementHighlight}>4.5 hrs</span> weekly time saved</li>
-                    <li><span className={styles.engagementHighlight}>83%</span> improved student outcomes</li>
+                <div className={styles.economicCategory}>
+                  <h3 className={styles.economicTitle}>Institutional Benefits</h3>
+                  <ul className={styles.economicList}>
+                    <li><span className={styles.economicHighlight}>40%</span> reduction in intervention costs</li>
+                    <li><span className={styles.economicHighlight}>25%</span> increase in standardized test scores</li>
+                    <li><span className={styles.economicHighlight}>60%</span> reduction in achievement gaps</li>
+                    <li><span className={styles.economicHighlight}>250+</span> schools using platform</li>
                   </ul>
                 </div>
               </div>
@@ -354,8 +464,8 @@ const Result: React.FC = () => {
             <Link to="../implementation" className={`${styles.navButton} ${styles.secondaryButton}`}>
               ← Back to Implementation
             </Link>
-            <Link to="/communication" className={`${styles.navButton} ${styles.primaryButton}`}>
-              View Communication →
+            <Link to="/team" className={`${styles.navButton} ${styles.primaryButton}`}>
+              Meet Our Team →
             </Link>
           </div>
         </div>

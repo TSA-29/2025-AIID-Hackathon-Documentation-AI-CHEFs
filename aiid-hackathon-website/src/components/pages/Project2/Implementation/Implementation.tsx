@@ -7,9 +7,9 @@ const Implementation: React.FC = () => {
     <div className={styles.implementationPage}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Project 2: Implementation</h1>
+          <h1 className={styles.title}>Carbon Compass: Implementation</h1>
           <p className={styles.subtitle}>
-            Sustainable agriculture system: Technical implementation details, IoT sensor networks, and precision farming deployment
+            AI-powered carbon emission calculation platform: Technical implementation details, AI engine development, and CBAM compliance automation
           </p>
         </div>
 
@@ -23,10 +23,10 @@ const Implementation: React.FC = () => {
               <div className={styles.timeline}>
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 0-8</div>
-                    <h3 className={styles.timelineTitle}>Hardware Setup & Sensor Calibration</h3>
+                    <div className={styles.timelineTime}>Hours 0-12</div>
+                    <h3 className={styles.timelineTitle}>AI Engine Development</h3>
                     <p className={styles.timelineDesc}>
-                      Deployed IoT sensor networks across test farms, calibrated soil moisture sensors, and established data collection infrastructure
+                      Implemented TRAE + Diffy LLM for emission calculations, developed CBAM fee calculator, and created benchmark comparison system
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -34,10 +34,10 @@ const Implementation: React.FC = () => {
 
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 9-20</div>
-                    <h3 className={styles.timelineTitle}>Data Pipeline Development</h3>
+                    <div className={styles.timelineTime}>Hours 13-24</div>
+                    <h3 className={styles.timelineTitle}>Frontend Development</h3>
                     <p className={styles.timelineDesc}>
-                      Built real-time data processing pipeline, implemented ML models for crop analysis, and created predictive analytics
+                      Built React + Next.js interface, implemented SME-focused dashboard, and created emission visualization tools
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -45,10 +45,10 @@ const Implementation: React.FC = () => {
 
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 21-32</div>
-                    <h3 className={styles.timelineTitle}>Mobile App Development</h3>
+                    <div className={styles.timelineTime}>Hours 25-36</div>
+                    <h3 className={styles.timelineTitle}>Backend & API Development</h3>
                     <p className={styles.timelineDesc}>
-                      Created farmer-friendly mobile interface, implemented offline capabilities, and integrated with hardware systems
+                      Developed Python FastAPI backend, integrated carbon emission databases, and implemented secure authentication
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -56,10 +56,10 @@ const Implementation: React.FC = () => {
 
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 33-44</div>
-                    <h3 className={styles.timelineTitle}>Cloud Platform & Analytics</h3>
+                    <div className={styles.timelineTime}>Hours 37-44</div>
+                    <h3 className={styles.timelineTitle}>Data Integration & Testing</h3>
                     <p className={styles.timelineDesc}>
-                      Developed cloud-based dashboard, implemented advanced analytics, and created reporting and visualization tools
+                      Connected to verified carbon databases, tested calculation accuracy, and validated CBAM compliance features
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -68,9 +68,9 @@ const Implementation: React.FC = () => {
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
                     <div className={styles.timelineTime}>Hours 45-48</div>
-                    <h3 className={styles.timelineTitle}>Testing & Deployment</h3>
+                    <h3 className={styles.timelineTitle}>Deployment & Finalization</h3>
                     <p className={styles.timelineDesc}>
-                      Field testing with real farmers, performance optimization, and final deployment to production environments
+                      Deployed to Vercel + Google Cloud Run, performed final testing, and prepared documentation
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -81,37 +81,37 @@ const Implementation: React.FC = () => {
 
           <section className={styles.implementationSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🌾</span>
-              IoT Sensor Network Architecture
+              <span className={styles.sectionIcon}>🔧</span>
+              Technical Architecture
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.architectureDiagram}>
-                <h3 className={styles.diagramTitle}>Smart Farm Sensor Pipeline</h3>
+                <h3 className={styles.diagramTitle}>Carbon Compliance Platform Architecture</h3>
                 <div className={styles.architectureFlow}>
                   <div className={styles.archComponent}>
-                    <span className={styles.archIcon}>🌡️</span>
-                    <div className={styles.archTitle}>Environmental Sensors</div>
-                    <p className={styles.archDesc}>Temperature, humidity, rainfall</p>
-                  </div>
-                  <div className={styles.archComponent}>
-                    <span className={styles.archIcon}>💧</span>
-                    <div className={styles.archTitle}>Soil Sensors</div>
-                    <p className={styles.archDesc}>Moisture, pH, nutrients</p>
-                  </div>
-                  <div className={styles.archComponent}>
-                    <span className={styles.archIcon}>📡</span>
-                    <div className={styles.archTitle}>IoT Gateway</div>
-                    <p className={styles.archDesc}>Data collection & transmission</p>
+                    <span className={styles.archIcon}>🤖</span>
+                    <div className={styles.archTitle}>AI Engine</div>
+                    <p className={styles.archDesc}>TRAE + Diffy LLM for emission calculations</p>
                   </div>
                   <div className={styles.archComponent}>
                     <span className={styles.archIcon}>📊</span>
-                    <div className={styles.archTitle}>AI Analytics</div>
-                    <p className={styles.archDesc}>Crop health predictions</p>
+                    <div className={styles.archTitle}>Data Sources</div>
+                    <p className={styles.archDesc}>Carbon databases, transport emission factors</p>
                   </div>
                   <div className={styles.archComponent}>
-                    <span className={styles.archIcon}>🚜</span>
-                    <div className={styles.archTitle}>Automation</div>
-                    <p className={styles.archDesc}>Smart irrigation control</p>
+                    <span className={styles.archIcon}>🌐</span>
+                    <div className={styles.archTitle}>API Layer</div>
+                    <p className={styles.archDesc}>FastAPI backend with secure endpoints</p>
+                  </div>
+                  <div className={styles.archComponent}>
+                    <span className={styles.archIcon}>👥</span>
+                    <div className={styles.archTitle}>User Interface</div>
+                    <p className={styles.archDesc}>React + Next.js SME-focused dashboard</p>
+                  </div>
+                  <div className={styles.archComponent}>
+                    <span className={styles.archIcon}>☁️</span>
+                    <div className={styles.archTitle}>Cloud Infrastructure</div>
+                    <p className={styles.archDesc}>Vercel frontend + Google Cloud Run backend</p>
                   </div>
                 </div>
               </div>
@@ -121,56 +121,52 @@ const Implementation: React.FC = () => {
           <section className={styles.implementationSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>🔧</span>
-              Sensor Technology Stack
+              Technology Stack
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.sensorGrid}>
-                <div className={styles.sensorCategory}>
-                  <h3 className={styles.sensorCategoryTitle}>
-                    <span>🌡️</span> Environmental Monitoring
+              <div className={styles.techGrid}>
+                <div className={styles.techCategory}>
+                  <h3 className={styles.techCategoryTitle}>
+                    <span>🤖</span> AI & Machine Learning
                   </h3>
-                  <div className={styles.sensorList}>
-                    <span className={styles.sensorItem}>DHT22 Temperature/Humidity</span>
-                    <span className={styles.sensorItem}>BMP280 Barometric Pressure</span>
-                    <span className={styles.sensorItem}>Rain Gauges</span>
-                    <span className={styles.sensorItem}>Wind Speed Sensors</span>
-                    <span className={styles.sensorItem}>Solar Radiation Meters</span>
+                  <div className={styles.techList}>
+                    <span className={styles.techItem}>TRAE + Diffy LLM</span>
+                    <span className={styles.techItem}>Emission calculation algorithms</span>
+                    <span className={styles.techItem}>CBAM fee calculator</span>
+                    <span className={styles.techItem}>Benchmark comparison system</span>
                   </div>
                 </div>
-                <div className={styles.sensorCategory}>
-                  <h3 className={styles.sensorCategoryTitle}>
-                    <span>💧</span> Soil Analysis
+                <div className={styles.techCategory}>
+                  <h3 className={styles.techCategoryTitle}>
+                    <span>👥</span> Frontend Framework
                   </h3>
-                  <div className={styles.sensorList}>
-                    <span className={styles.sensorItem}>Capacitive Moisture Sensors</span>
-                    <span className={styles.sensorItem}>pH Probes</span>
-                    <span className={styles.sensorItem}>NPK Nutrient Sensors</span>
-                    <span className={styles.sensorItem}>Soil Temperature</span>
-                    <span className={styles.sensorItem}>Electrical Conductivity</span>
+                  <div className={styles.techList}>
+                    <span className={styles.techItem}>React + Next.js 15</span>
+                    <span className={styles.techItem}>Tailwind CSS</span>
+                    <span className={styles.techItem}>Responsive design</span>
+                    <span className={styles.techItem}>Interactive data visualization</span>
                   </div>
                 </div>
-                <div className={styles.sensorCategory}>
-                  <h3 className={styles.sensorCategoryTitle}>
-                    <span>🌾</span> Crop Monitoring
+                <div className={styles.techCategory}>
+                  <h3 className={styles.techCategoryTitle}>
+                    <span>🔧</span> Backend Framework
                   </h3>
-                  <div className={styles.sensorList}>
-                    <span className={styles.sensorItem}>Multispectral Cameras</span>
-                    <span className={styles.sensorItem}>NDVI Sensors</span>
-                    <span className={styles.sensorItem}>Leaf Wetness Sensors</span>
-                    <span className={styles.sensorItem}>Growth Stage Monitors</span>
-                    <span className={styles.sensorItem}>Yield Prediction Sensors</span>
+                  <div className={styles.techList}>
+                    <span className={styles.techItem}>Python (FastAPI)</span>
+                    <span className={styles.techItem}>RESTful API design</span>
+                    <span className={styles.techItem}>Secure authentication</span>
+                    <span className={styles.techItem}>Real-time data processing</span>
                   </div>
                 </div>
-                <div className={styles.sensorCategory}>
-                  <h3 className={styles.sensorCategoryTitle}>
-                    <span>⚙️</span> Control Systems
+                <div className={styles.techCategory}>
+                  <h3 className={styles.techCategoryTitle}>
+                    <span>🗄️</span> Database & Storage
                   </h3>
-                  <div className={styles.sensorList}>
-                    <span className={styles.sensorItem}>Smart Irrigation Valves</span>
-                    <span className={styles.sensorItem}>Fertilizer Dispensers</span>
-                    <span className={styles.sensorItem}>Climate Control Systems</span>
-                    <span className={styles.sensorItem}>Automated Harvesting</span>
-                    <span className={styles.sensorItem}>Pest Control Systems</span>
+                  <div className={styles.techList}>
+                    <span className={styles.techItem}>Google Cloud Storage</span>
+                    <span className={styles.techItem}>Dataset management</span>
+                    <span className={styles.techItem}>Carbon emission benchmarks</span>
+                    <span className={styles.techItem}>Secure data access</span>
                   </div>
                 </div>
               </div>
@@ -179,37 +175,44 @@ const Implementation: React.FC = () => {
 
           <section className={styles.implementationSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🚜</span>
-              Field Deployment Strategy
+              <span className={styles.sectionIcon}>🌐</span>
+              External Integrations
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.fieldDeployment}>
-                <div className={styles.fieldHeader}>
-                  <h3>Smart Farm Pilot Program</h3>
-                </div>
-                <div className={styles.fieldStats}>
-                  <div className={styles.fieldStat}>
-                    <div className={styles.fieldNumber}>50</div>
-                    <div className={styles.fieldLabel}>Test Farms</div>
-                  </div>
-                  <div className={styles.fieldStat}>
-                    <div className={styles.fieldNumber}>10,000</div>
-                    <div className={styles.fieldLabel}>Acres Covered</div>
-                  </div>
-                  <div className={styles.fieldStat}>
-                    <div className={styles.fieldNumber}>500+</div>
-                    <div className={styles.fieldLabel}>Sensors Deployed</div>
-                  </div>
-                  <div className={styles.fieldStat}>
-                    <div className={styles.fieldNumber}>24/7</div>
-                    <div className={styles.fieldLabel}>Monitoring</div>
+              <div className={styles.integrationGrid}>
+                <div className={styles.integrationCategory}>
+                  <h3 className={styles.integrationTitle}>
+                    <span>📊</span> Carbon Emission Databases
+                  </h3>
+                  <div className={styles.integrationList}>
+                    <span className={styles.integrationItem}>Verified carbon emission factors</span>
+                    <span className={styles.integrationItem}>Industry-specific benchmarks</span>
+                    <span className={styles.integrationItem}>EU regulatory data sources</span>
+                    <span className={styles.integrationItem}>Real-time data updates</span>
                   </div>
                 </div>
-                <div className={styles.fieldImage}>🌾</div>
-                <p>
-                  Our pilot program spans diverse agricultural environments: row crops, orchards, greenhouses, and livestock farms.
-                  Each location is equipped with customized sensor arrays tailored to specific crop types and farming practices.
-                </p>
+                <div className={styles.integrationCategory}>
+                  <h3 className={styles.integrationTitle}>
+                    <span>🚚</span> Transport Emission APIs
+                  </h3>
+                  <div className={styles.integrationList}>
+                    <span className={styles.integrationItem}>Shipping route calculations</span>
+                    <span className={styles.integrationItem}>Transport mode factors</span>
+                    <span className={styles.integrationItem}>Distance-based emissions</span>
+                    <span className={styles.integrationItem}>Multi-modal transport support</span>
+                  </div>
+                </div>
+                <div className={styles.integrationCategory}>
+                  <h3 className={styles.integrationTitle}>
+                    <span>🏛️</span> Regulatory Systems
+                  </h3>
+                  <div className={styles.integrationList}>
+                    <span className={styles.integrationItem}>EU CBAM compliance data</span>
+                    <span className={styles.integrationItem}>Carbon price tracking</span>
+                    <span className={styles.integrationItem}>Regulatory updates</span>
+                    <span className={styles.integrationItem}>Reporting standards</span>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -220,76 +223,77 @@ const Implementation: React.FC = () => {
               Key Implementation Details
             </h2>
             <div className={styles.sectionContent}>
-              <h3>Real-time Data Processing Pipeline</h3>
+              <h3>Carbon Emission Calculation Engine</h3>
               <div className={styles.codeBlock}>
-                <span className={styles.codeKeyword}>class</span> <span className={styles.codeFunction}>SensorDataProcessor</span>:<br/>
+                <span className={styles.codeKeyword}>class</span> <span className={styles.codeFunction}>CarbonEmissionCalculator</span>:<br/>
                 &nbsp;&nbsp;<span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>__init__</span>(self):<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;self.sensor_data = &#123;&#125;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;self.ml_model = load_crop_health_model()<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;self.irrigation_controller = IrrigationController()<br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeKeyword}>async def</span> <span className={styles.codeFunction}>process_sensor_readings</span>(self, sensor_id, data):<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Validate and clean sensor data</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;cleaned_data = self.validate_sensor_data(data)<br/><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Predict crop health and yield</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;health_prediction = self.ml_model.predict(cleaned_data)<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;yield_estimate = self.calculate_yield_potential(cleaned_data)<br/><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Make automated decisions</span><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeKeyword}>if</span> health_prediction[<span className={styles.codeString}>"stress_level"</span>] &gt; 0.7:<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeKeyword}>await</span> self.irrigation_controller.adjust_irrigation(<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sensor_id, health_prediction[<span className={styles.codeString}>"water_needed"</span>]<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.emission_factors = load_emission_database()<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.transport_factors = load_transport_database()<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.eu_benchmarks = load_eu_benchmarks()<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>async def</span> <span className={styles.codeFunction}>calculate_shipment_emissions</span>(self, shipment_data):<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Calculate embedded emissions</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;embedded_emissions = 0<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeKeyword}>for</span> product <span className={styles.codeKeyword}>in</span> shipment_data[<span className={styles.codeString}>"products"</span>]:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;product_factor = self.emission_factors.get(product[<span className={styles.codeString}>"category"</span>], product[<span className={styles.codeString}>"type"</span>])<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;embedded_emissions += product_factor * product[<span className={styles.codeString}>"quantity"</span>]<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Calculate transport emissions</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;transport_distance = shipment_data[<span className={styles.codeString}>"distance"</span>]<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;transport_mode = shipment_data[<span className={styles.codeString}>"transport_mode"</span>]<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;transport_factor = self.transport_factors.get(transport_mode)<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;transport_emissions = transport_distance * transport_factor<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Calculate total emissions</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;total_emissions = embedded_emissions + transport_emissions<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Calculate CBAM fees</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;eua_price = get_current_eua_price()<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;cbam_fee = total_emissions * eua_price<br/><br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeKeyword}>return</span> &#123;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"health_prediction"</span>: health_prediction,<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"yield_estimate"</span>: yield_estimate,<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"actions_taken"</span>: actions_taken,<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"timestamp"</span>: datetime.now()<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"total_emissions"</span>: total_emissions,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"cbam_fee"</span>: cbam_fee,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"benchmark_comparison"</span>: self.compare_to_eu_benchmarks(total_emissions)<br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;&#125;
               </div>
 
-              <h3>Smart Irrigation Control Algorithm</h3>
+              <h3>CBAM Fee Calculation Algorithm</h3>
               <div className={styles.codeBlock}>
-                <span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>optimize_irrigation_schedule</span>(field_data, weather_forecast):<br/>
-                &nbsp;&nbsp;<span className={styles.codeComment}># Calculate base water requirement</span><br/>
-                &nbsp;&nbsp;base_water_need = calculate_crop_water_requirement(field_data[<span className={styles.codeString}>"crop_type"</span>])<br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeComment}># Adjust for soil moisture levels</span><br/>
-                &nbsp;&nbsp;moisture_factor = 1.0 - (field_data[<span className={styles.codeString}>"soil_moisture"</span>] / 100.0)<br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeComment}># Weather-based adjustments</span><br/>
-                &nbsp;&nbsp;<span className={styles.codeKeyword}>if</span> weather_forecast[<span className={styles.codeString}>"rain_probability"</span>] &gt; 0.6:<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;weather_factor = 0.5&nbsp;&nbsp;<span className={styles.codeComment}># Reduce irrigation if rain expected</span><br/>
+                <span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>calculate_cbam_fee</span>(emissions, eua_price):<br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Apply EU CBAM formula</span><br/>
+                &nbsp;&nbsp;base_fee = emissions * eua_price<br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Apply adjustment factors based on industry</span><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>if</span> industry <span className={styles.codeKeyword}>in</span> high_emission_industries:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;adjustment_factor = 1.0&nbsp;&nbsp;<span className={styles.codeComment}># No adjustment for standard industries</span><br/>
                 &nbsp;&nbsp;<span className={styles.codeKeyword}>else</span>:<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;weather_factor = 1.2&nbsp;&nbsp;<span className={styles.codeComment}># Increase irrigation in dry weather</span><br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeComment}># Calculate optimal irrigation amount</span><br/>
-                &nbsp;&nbsp;optimal_water = base_water_need * moisture_factor * weather_factor<br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeKeyword}>return</span> &#123;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"irrigation_amount"</span>: optimal_water,<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"schedule_time"</span>: optimal_irrigation_time(optimal_water),<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"efficiency_score"</span>: calculate_water_efficiency(optimal_water)<br/>
-                &nbsp;&nbsp;&#125;
+                &nbsp;&nbsp;&nbsp;&nbsp;adjustment_factor = 0.8&nbsp;&nbsp;<span className={styles.codeComment}># 20% reduction for green industries</span><br/><br/>
+                &nbsp;&nbsp;adjusted_fee = base_fee * adjustment_factor<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Apply transitional period discounts</span><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>if</span> is_in_transitional_period():<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;final_fee = adjusted_fee * 0.5&nbsp;&nbsp;<span className={styles.codeComment}># 50% discount during transition</span><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>else</span>:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;final_fee = adjusted_fee<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>return</span> final_fee
               </div>
 
-              <h3>Crop Health Prediction Model</h3>
+              <h3>Benchmark Comparison System</h3>
               <div className={styles.codeBlock}>
-                <span className={styles.codeComment}># Machine Learning Model for Crop Disease Detection</span><br/>
-                <span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>predict_crop_health</span>(sensor_data, satellite_imagery):<br/>
-                &nbsp;&nbsp;<span className={styles.codeComment}># Combine sensor data with satellite imagery</span><br/>
-                &nbsp;&nbsp;combined_features = extract_features(sensor_data, satellite_imagery)<br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeComment}># Random Forest classifier for disease detection</span><br/>
-                &nbsp;&nbsp;disease_prediction = disease_model.predict(combined_features)<br/>
-                &nbsp;&nbsp;disease_probabilities = disease_model.predict_proba(combined_features)<br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeComment}># CNN for crop stress detection from images</span><br/>
-                &nbsp;&nbsp;stress_analysis = stress_analyzer.analyze(satellite_imagery)<br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeComment}># Generate comprehensive health report</span><br/>
-                &nbsp;&nbsp;health_report = &#123;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"overall_health"</span>: calculate_health_score(disease_prediction, stress_analysis),<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"disease_risk"</span>: &#123;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"predicted_disease"</span>: disease_prediction,<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"confidence"</span>: max(disease_probabilities),<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"affected_area"</span>: identify_affected_areas(satellite_imagery)<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&#125;,<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"stress_factors"</span>: stress_analysis,<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"recommendations"</span>: generate_treatment_recommendations(disease_prediction, stress_analysis)<br/>
-                &nbsp;&nbsp;&#125;<br/><br/>
-                &nbsp;&nbsp;<span className={styles.codeKeyword}>return</span> health_report
+                <span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>compare_to_eu_benchmarks</span>(emissions, product_category):<br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Get EU industry benchmarks</span><br/>
+                &nbsp;&nbsp;industry_benchmark = eu_benchmarks.get(product_category)<br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Calculate performance ratio</span><br/>
+                &nbsp;&nbsp;performance_ratio = emissions / industry_benchmark<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Generate insights and recommendations</span><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>if</span> performance_ratio {'<'} 0.8:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;performance_level = <span className={styles.codeString}>"Excellent"</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;recommendation = <span className={styles.codeString}>"Maintain current practices"</span><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>elif</span> performance_ratio {'<'} 1.0:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;performance_level = <span className={styles.codeString}>"Good"</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;recommendation = <span className={styles.codeString}>"Minor optimizations recommended"</span><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>else</span>:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;performance_level = <span className={styles.codeString}>"Needs Improvement"</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;recommendation = <span className={styles.codeString}>"Significant emission reduction strategies required"</span><br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>return</span> &#123;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"performance_level"</span>: performance_level,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"performance_ratio"</span>: performance_ratio,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"recommendation"</span>: recommendation<br/>
+                &nbsp;&nbsp;&#125;
               </div>
             </div>
           </section>
@@ -303,60 +307,60 @@ const Implementation: React.FC = () => {
               <div className={styles.challengesGrid}>
                 <div className={styles.challengeCard}>
                   <h3 className={styles.challengeTitle}>
-                    <span>📡</span> Remote Connectivity Issues
+                    <span>📊</span> Emission Data Accuracy
                   </h3>
                   <p className={styles.challengeDesc}>
-                    Rural farms often have poor internet connectivity, making real-time data transmission challenging.
+                    Carbon emission factors vary significantly by region, production method, and supply chain complexity.
                   </p>
                   <div className={styles.solutionBox}>
                     <h4 className={styles.solutionTitle}>Solution Implemented:</h4>
                     <p className={styles.solutionDesc}>
-                      LoRaWAN networks for long-range communication, edge computing for local data processing, and satellite backup connectivity.
+                      Multi-source data verification, AI-powered factor selection, and confidence scoring for calculations.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.challengeCard}>
                   <h3 className={styles.challengeTitle}>
-                    <span>🔋</span> Sensor Durability
+                    <span>🏛️</span> Regulatory Complexity
                   </h3>
                   <p className={styles.challengeDesc}>
-                    Agricultural sensors face harsh environmental conditions including water, dust, and extreme temperatures.
+                    CBAM regulations are complex and evolving, requiring continuous updates to calculation methods.
                   </p>
                   <div className={styles.solutionBox}>
                     <h4 className={styles.solutionTitle}>Solution Implemented:</h4>
                     <p className={styles.solutionDesc}>
-                      IP68-rated waterproof enclosures, solar power systems with battery backup, and ruggedized sensor housings.
+                      Regulatory intelligence system with automated updates, expert validation, and compliance checking.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.challengeCard}>
                   <h3 className={styles.challengeTitle}>
-                    <span>📊</span> Data Scalability
+                    <span>🔄</span> Real-time Data Integration
                   </h3>
                   <p className={styles.challengeDesc}>
-                    Managing high-frequency data from hundreds of sensors across multiple farms requires efficient processing.
+                    Integrating with multiple external APIs and databases while maintaining performance and reliability.
                   </p>
                   <div className={styles.solutionBox}>
                     <h4 className={styles.solutionTitle}>Solution Implemented:</h4>
                     <p className={styles.solutionDesc}>
-                      Edge computing architecture, data compression algorithms, and distributed database systems with auto-scaling.
+                      Caching strategies, fallback data sources, and robust error handling for API integrations.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.challengeCard}>
                   <h3 className={styles.challengeTitle}>
-                    <span>👨‍🌾</span> Farmer Adoption
+                    <span>👥</span> SME Usability
                   </h3>
                   <p className={styles.challengeDesc}>
-                    Traditional farmers may be resistant to new technology and complex digital interfaces.
+                      Making complex carbon calculations accessible to users without technical expertise.
                   </p>
                   <div className={styles.solutionBox}>
                     <h4 className={styles.solutionTitle}>Solution Implemented:</h4>
                     <p className={styles.solutionDesc}>
-                      Intuitive mobile apps with visual interfaces, voice commands in local languages, and hands-on training programs.
+                      Simplified interface, guided workflows, contextual help, and plain-language explanations.
                     </p>
                   </div>
                 </div>

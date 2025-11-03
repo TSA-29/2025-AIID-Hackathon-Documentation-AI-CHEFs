@@ -6,46 +6,53 @@ const Project2: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.projectOverview}>
-        <h1 className={styles.title}>AGRI-SMART SUSTAIN</h1>
+        <h1 className={styles.title}>CARBON COMPASS</h1>
         <p className={styles.subtitle}>
-          AI-powered precision agriculture platform optimizing crop yields while minimizing environmental impact through smart resource management.
+          AI-powered platform helping SMEs exporting to European Union accurately estimate shipment carbon emissions, calculate CBAM fees, and identify practical strategies to reduce those costs.
         </p>
+        <div className={styles.projectImageContainer}>
+          <img
+            src={import.meta.env.BASE_URL + 'images/ProjPic/CarbonCompass.png'}
+            alt="Carbon Compass project screenshot"
+            className={styles.projectImage}
+          />
+        </div>
       </div>
 
       <div className={styles.navigationGrid}>
         <Link to="background" className={styles.navCard}>
-          <span className={styles.navCardIcon}>🌾</span>
+          <span className={styles.navCardIcon}>📋</span>
           <div className={styles.navCardNumber}>01</div>
           <h3 className={styles.navCardTitle}>BACKGROUND</h3>
           <p className={styles.navCardDescription}>
-            Explore agricultural challenges, food security concerns, and environmental sustainability issues we're addressing.
+            Discover the EU carbon border adjustment challenges, regulatory compliance requirements, and the carbon emission problem we're solving.
           </p>
         </Link>
 
         <Link to="idea" className={styles.navCard}>
-          <span className={styles.navCardIcon}>💚</span>
+          <span className={styles.navCardIcon}>💡</span>
           <div className={styles.navCardNumber}>02</div>
           <h3 className={styles.navCardTitle}>IDEA</h3>
           <p className={styles.navCardDescription}>
-            Discover our sustainable farming approach, IoT integration, and AI-driven agricultural optimization.
+            Explore our AI-powered approach combining regulatory intelligence with logistics data for carbon emission calculations.
           </p>
         </Link>
 
         <Link to="implementation" className={styles.navCard}>
-          <span className={styles.navCardIcon}>🚜</span>
+          <span className={styles.navCardIcon}>⚙️</span>
           <div className={styles.navCardNumber}>03</div>
           <h3 className={styles.navCardTitle}>IMPLEMENTATION</h3>
           <p className={styles.navCardDescription}>
-            Learn about sensor networks, machine learning models, and precision farming technology deployment.
+            Dive into technical implementation, AI engine development, and integration with carbon emission databases.
           </p>
         </Link>
 
         <Link to="result" className={styles.navCard}>
-          <span className={styles.navCardIcon}>📈</span>
+          <span className={styles.navCardIcon}>🎯</span>
           <div className={styles.navCardNumber}>04</div>
           <h3 className={styles.navCardTitle}>RESULT</h3>
           <p className={styles.navCardDescription}>
-            See yield improvements, resource savings, and environmental impact reductions with real farm data.
+            See emission reduction outcomes, cost savings, and compliance benefits with real-world deployment data.
           </p>
         </Link>
       </div>
@@ -54,29 +61,29 @@ const Project2: React.FC = () => {
         <h2>Project Overview</h2>
         <div className={styles.projectInfoGrid}>
           <div className={styles.infoItem}>
-            <h3>🌱 Main Goal</h3>
-            <p>Develop sustainable precision agriculture platform increasing crop yields by 40% while reducing water usage by 60%</p>
+            <h3>🎯 Main Goal</h3>
+            <p>Help SMEs exporting to EU accurately estimate carbon emissions and comply with CBAM regulations while minimizing costs</p>
           </div>
           <div className={styles.infoItem}>
             <h3>🔧 Tech Stack</h3>
-            <p>IoT Sensors, Machine Learning, Computer Vision, Cloud Analytics, Mobile Apps</p>
+            <p>TRAE + Diffy LLM, React + Next.js, Python (FastAPI), Google Cloud Storage, Vercel + Google Cloud Run</p>
           </div>
           <div className={styles.infoItem}>
             <h3>👥 Team Size</h3>
-            <p>5-person team including agronomists, data scientists, and hardware engineers</p>
+            <p>4-person interdisciplinary team including AI engineers, frontend developers, and compliance specialists</p>
           </div>
           <div className={styles.infoItem}>
-            <h3>🌍 Impact Area</h3>
-            <p>Pilot deployed across 50 farms covering 10,000 acres of agricultural land</p>
+            <h3>⏱️ Development Period</h3>
+            <p>48-hour intensive hackathon development</p>
           </div>
         </div>
       </div>
 
       <div className={styles.quickStart}>
         <h3>Start Exploring</h3>
-        <p>Begin with BACKGROUND to understand the agricultural challenges we're solving</p>
+        <p>Begin with BACKGROUND to understand the carbon emission challenges we're solving</p>
         <Link to="background" className={styles.startButton}>
-          Explore Agricultural Challenges →
+          Explore Carbon Emission Challenges →
         </Link>
       </div>
     </div>

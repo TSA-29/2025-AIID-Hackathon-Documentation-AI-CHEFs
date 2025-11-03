@@ -7,9 +7,9 @@ const Implementation: React.FC = () => {
     <div className={styles.implementationPage}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Project 3: Implementation</h1>
+          <h1 className={styles.title}>StudyBuddy: Implementation</h1>
           <p className={styles.subtitle}>
-            Educational AI platform: Technical implementation details, adaptive learning algorithms, and personalized education system
+            AI-powered interactive learning platform: Technical implementation details, AI engine development, and classroom management system
           </p>
         </div>
 
@@ -23,21 +23,10 @@ const Implementation: React.FC = () => {
               <div className={styles.timeline}>
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 0-6</div>
-                    <h3 className={styles.timelineTitle}>Educational Research & Curriculum Design</h3>
-                    <p className={styles.timelineDesc}>
-                      Conducted learning theory research, designed adaptive curriculum framework, and established educational partnerships
-                    </p>
-                  </div>
-                  <div className={styles.timelineDot}></div>
-                </div>
-
-                <div className={styles.timelineItem}>
-                  <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 7-18</div>
+                    <div className={styles.timelineTime}>Hours 0-12</div>
                     <h3 className={styles.timelineTitle}>AI Engine Development</h3>
                     <p className={styles.timelineDesc}>
-                      Built adaptive learning algorithms, implemented NLP for content understanding, and created student performance models
+                      Implemented OpenAI/SiliconFlow API integration, developed quiz generation algorithms, and created personalization engine
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -45,10 +34,10 @@ const Implementation: React.FC = () => {
 
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 19-30</div>
-                    <h3 className={styles.timelineTitle}>Content Management System</h3>
+                    <div className={styles.timelineTime}>Hours 13-24</div>
+                    <h3 className={styles.timelineTitle}>Frontend Development</h3>
                     <p className={styles.timelineDesc}>
-                      Developed educational content pipeline, multimedia integration system, and real-time content adaptation
+                      Built Next.js 15 interface, implemented teacher dashboard, and created student learning experience
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -56,10 +45,10 @@ const Implementation: React.FC = () => {
 
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 31-42</div>
-                    <h3 className={styles.timelineTitle}>Student Dashboard & Analytics</h3>
+                    <div className={styles.timelineTime}>Hours 25-36</div>
+                    <h3 className={styles.timelineTitle}>Backend & Database</h3>
                     <p className={styles.timelineDesc}>
-                      Created personalized learning interface, progress tracking system, and comprehensive analytics dashboard
+                      Developed Supabase database, implemented authentication system, and created API endpoints
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -67,10 +56,21 @@ const Implementation: React.FC = () => {
 
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineContent}>
-                    <div className={styles.timelineTime}>Hours 43-48</div>
-                    <h3 className={styles.timelineTitle}>Testing & School Deployment</h3>
+                    <div className={styles.timelineTime}>Hours 37-44</div>
+                    <h3 className={styles.timelineTitle}>PDF Integration</h3>
                     <p className={styles.timelineDesc}>
-                      Classroom testing, teacher training programs, and integration with existing educational systems
+                      Implemented pdf-parse for document processing, created quiz generation from PDFs, and built summarization features
+                    </p>
+                  </div>
+                  <div className={styles.timelineDot}></div>
+                </div>
+
+                <div className={styles.timelineItem}>
+                  <div className={styles.timelineContent}>
+                    <div className={styles.timelineTime}>Hours 45-48</div>
+                    <h3 className={styles.timelineTitle}>Testing & Deployment</h3>
+                    <p className={styles.timelineDesc}>
+                      Final testing, performance optimization, and deployment to Vercel + Google Cloud Run
                     </p>
                   </div>
                   <div className={styles.timelineDot}></div>
@@ -81,37 +81,37 @@ const Implementation: React.FC = () => {
 
           <section className={styles.implementationSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🧠</span>
-              Adaptive Learning Architecture
+              <span className={styles.sectionIcon}>🔧</span>
+              Technical Architecture
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.architectureDiagram}>
-                <h3 className={styles.diagramTitle}>Personalized Learning Pipeline</h3>
+                <h3 className={styles.diagramTitle}>Interactive Learning Platform Architecture</h3>
                 <div className={styles.architectureFlow}>
                   <div className={styles.archComponent}>
-                    <span className={styles.archIcon}>👤</span>
-                    <div className={styles.archTitle}>Student Profile</div>
-                    <p className={styles.archDesc}>Learning style & pace</p>
-                  </div>
-                  <div className={styles.archComponent}>
-                    <span className={styles.archIcon}>📊</span>
-                    <div className={styles.archTitle}>Assessment Engine</div>
-                    <p className={styles.archDesc}>Real-time evaluation</p>
-                  </div>
-                  <div className={styles.archComponent}>
                     <span className={styles.archIcon}>🤖</span>
-                    <div className={styles.archTitle}>AI Tutor</div>
-                    <p className={styles.archDesc}>Personalized guidance</p>
+                    <div className={styles.archTitle}>AI Engine</div>
+                    <p className={styles.archDesc}>OpenAI/SiliconFlow API integration for quiz generation</p>
                   </div>
                   <div className={styles.archComponent}>
-                    <span className={styles.archIcon}>📚</span>
-                    <div className={styles.archTitle}>Content Library</div>
-                    <p className={styles.archDesc}>Adaptive materials</p>
+                    <span className={styles.archIcon}>🗄️</span>
+                    <div className={styles.archTitle}>Database</div>
+                    <p className={styles.archDesc}>Supabase PostgreSQL with real-time capabilities</p>
                   </div>
                   <div className={styles.archComponent}>
-                    <span className={styles.archIcon}>🎯</span>
-                    <div className={styles.archTitle}>Learning Path</div>
-                    <p className={styles.archDesc}>Optimized curriculum</p>
+                    <span className={styles.archIcon}>🌐</span>
+                    <div className={styles.archTitle}>Frontend</div>
+                    <p className={styles.archDesc}>Next.js 15 with React components and Tailwind CSS</p>
+                  </div>
+                  <div className={styles.archComponent}>
+                    <span className={styles.archIcon}>📄</span>
+                    <div className={styles.archTitle}>PDF Processing</div>
+                    <p className={styles.archDesc}>pdf-parse integration for document analysis and quiz generation</p>
+                  </div>
+                  <div className={styles.archComponent}>
+                    <span className={styles.archIcon}>☁️</span>
+                    <div className={styles.archTitle}>Cloud Infrastructure</div>
+                    <p className={styles.archDesc}>Vercel frontend + Google Cloud Run backend</p>
                   </div>
                 </div>
               </div>
@@ -121,48 +121,52 @@ const Implementation: React.FC = () => {
           <section className={styles.implementationSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>🔧</span>
-              Educational Technology Stack
+              Technology Stack
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.techStack}>
+              <div className={styles.techGrid}>
                 <div className={styles.techCategory}>
-                  <h3 className={styles.techCategoryTitle}>Machine Learning</h3>
+                  <h3 className={styles.techCategoryTitle}>
+                    <span>🤖</span> AI & Machine Learning
+                  </h3>
                   <div className={styles.techList}>
-                    <span className={styles.techItem}>TensorFlow 2.13</span>
-                    <span className={styles.techItem}>PyTorch Lightning</span>
-                    <span className={styles.techItem}>scikit-learn</span>
-                    <span className={styles.techItem}>Transformers</span>
-                    <span className={styles.techItem}>OpenAI GPT</span>
+                    <span className={styles.techItem}>OpenAI GPT API</span>
+                    <span className={styles.techItem}>SiliconFlow API</span>
+                    <span className={styles.techItem}>Quiz generation algorithms</span>
+                    <span className={styles.techItem}>Personalization engine</span>
                   </div>
                 </div>
                 <div className={styles.techCategory}>
-                  <h3 className={styles.techCategoryTitle}>Backend Services</h3>
+                  <h3 className={styles.techCategoryTitle}>
+                    <span>🌐</span> Frontend Framework
+                  </h3>
                   <div className={styles.techList}>
-                    <span className={styles.techItem}>Node.js</span>
-                    <span className={styles.techItem}>GraphQL</span>
-                    <span className={styles.techItem}>Redis</span>
-                    <span className={styles.techItem}>MongoDB</span>
-                    <span className={styles.techItem}>WebRTC</span>
-                  </div>
-                </div>
-                <div className={styles.techCategory}>
-                  <h3 className={styles.techCategoryTitle}>Frontend Platform</h3>
-                  <div className={styles.techList}>
-                    <span className={styles.techItem}>React 18</span>
+                    <span className={styles.techItem}>Next.js 15</span>
+                    <span className={styles.techItem}>React components</span>
                     <span className={styles.techItem}>TypeScript</span>
-                    <span className={styles.techItem}>Material-UI</span>
-                    <span className={styles.techItem}>D3.js</span>
-                    <span className={styles.techItem}>PWA</span>
+                    <span className={styles.techItem}>Tailwind CSS</span>
                   </div>
                 </div>
                 <div className={styles.techCategory}>
-                  <h3 className={styles.techCategoryTitle}>Learning Infrastructure</h3>
+                  <h3 className={styles.techCategoryTitle}>
+                    <span>🔧</span> Backend Framework
+                  </h3>
                   <div className={styles.techList}>
-                    <span className={styles.techItem}>LTI Integration</span>
-                    <span className={styles.techItem}>SCORM Compliance</span>
-                    <span className={styles.techItem}>xAPI Analytics</span>
-                    <span className={styles.techItem}>Cloud Storage</span>
-                    <span className={styles.techItem}>CDN Delivery</span>
+                    <span className={styles.techItem}>Python (FastAPI)</span>
+                    <span className={styles.techItem}>RESTful API design</span>
+                    <span className={styles.techItem}>Secure authentication</span>
+                    <span className={styles.techItem}>Real-time data processing</span>
+                  </div>
+                </div>
+                <div className={styles.techCategory}>
+                  <h3 className={styles.techCategoryTitle}>
+                    <span>🗄️</span> Database & Storage
+                  </h3>
+                  <div className={styles.techList}>
+                    <span className={styles.techItem}>Supabase PostgreSQL</span>
+                    <span className={styles.techItem}>Real-time capabilities</span>
+                    <span className={styles.techItem}>Authentication system</span>
+                    <span className={styles.techItem}>Row-level security</span>
                   </div>
                 </div>
               </div>
@@ -171,96 +175,44 @@ const Implementation: React.FC = () => {
 
           <section className={styles.implementationSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>📚</span>
-              Content Creation & Management
+              <span className={styles.sectionIcon}>📄</span>
+              PDF Integration Features
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.contentGrid}>
-                <div className={styles.contentCategory}>
-                  <h3 className={styles.contentCategoryTitle}>
-                    <span>📝</span> Interactive Lessons
+              <div className={styles.pdfGrid}>
+                <div className={styles.pdfCategory}>
+                  <h3 className={styles.pdfCategoryTitle}>
+                    <span>📄</span> Document Processing
                   </h3>
-                  <div className={styles.contentList}>
-                    <span className={styles.contentItem}>Adaptive Quizzes</span>
-                    <span className={styles.contentItem}>Virtual Simulations</span>
-                    <span className={styles.contentItem}>Interactive Diagrams</span>
-                    <span className={styles.contentItem}>Video Tutorials</span>
-                    <span className={styles.contentItem}>AR Experiences</span>
+                  <div className={styles.pdfList}>
+                    <span className={styles.pdfItem}>pdf-parse for text extraction</span>
+                    <span className={styles.pdfItem}>Automatic summarization</span>
+                    <span className={styles.pdfItem}>Content analysis</span>
+                    <span className={styles.pdfItem}>Google Cloud Storage</span>
                   </div>
                 </div>
-                <div className={styles.contentCategory}>
-                  <h3 className={styles.contentCategoryTitle}>
-                    <span>🎮</span> Gamification Elements
+                <div className={styles.pdfCategory}>
+                  <h3 className={styles.pdfCategoryTitle}>
+                    <span>🎯</span> Quiz Generation
                   </h3>
-                  <div className={styles.contentList}>
-                    <span className={styles.contentItem}>Achievement Badges</span>
-                    <span className={styles.contentItem}>Leaderboards</span>
-                    <span className={styles.contentItem}>Progress Streaks</span>
-                    <span className={styles.contentItem}>Virtual Rewards</span>
-                    <span className={styles.contentItem}>Learning Quests</span>
+                  <div className={styles.pdfList}>
+                    <span className={styles.pdfItem}>AI-powered question creation</span>
+                    <span className={styles.pdfItem}>Multiple question types</span>
+                    <span className={styles.pdfItem}>Difficulty adjustment</span>
+                    <span className={styles.pdfItem}>Context-aware generation</span>
                   </div>
                 </div>
-                <div className={styles.contentCategory}>
-                  <h3 className={styles.contentCategoryTitle}>
-                    <span>📊</span> Assessment Types
+                <div className={styles.pdfCategory}>
+                  <h3 className={styles.pdfCategoryTitle}>
+                    <span>📊</span> Learning Tools
                   </h3>
-                  <div className={styles.contentList}>
-                    <span className={styles.contentItem}>Formative Assessments</span>
-                    <span className={styles.contentItem}>Summative Tests</span>
-                    <span className={styles.contentItem}>Peer Reviews</span>
-                    <span className={styles.contentItem}>Project-Based Learning</span>
-                    <span className={styles.contentItem}>Portfolio Assessments</span>
+                  <div className={styles.pdfList}>
+                    <span className={styles.pdfItem}>Interactive quiz sessions</span>
+                    <span className={styles.pdfItem}>Progress tracking</span>
+                    <span className={styles.pdfItem}>Performance analytics</span>
+                    <span className={styles.pdfItem}>Feedback system</span>
                   </div>
                 </div>
-                <div className={styles.contentCategory}>
-                  <h3 className={styles.contentCategoryTitle}>
-                    <span>🌐</span> Collaboration Tools
-                  </h3>
-                  <div className={styles.contentList}>
-                    <span className={styles.contentItem}>Study Groups</span>
-                    <span className={styles.contentItem}>Discussion Forums</span>
-                    <span className={styles.contentItem}>Peer Tutoring</span>
-                    <span className={styles.contentItem}>Live Sessions</span>
-                    <span className={styles.contentItem}>Project Collaboration</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.implementationSection}>
-            <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🏫</span>
-              School Deployment Strategy
-            </h2>
-            <div className={styles.sectionContent}>
-              <div className={styles.deploymentStats}>
-                <div className={styles.deploymentHeader}>
-                  <h3>Educational Institution Rollout</h3>
-                </div>
-                <div className={styles.deploymentGrid}>
-                  <div className={styles.deploymentStat}>
-                    <div className={styles.deploymentNumber}>85</div>
-                    <div className={styles.deploymentLabel}>Partner Schools</div>
-                  </div>
-                  <div className={styles.deploymentStat}>
-                    <div className={styles.deploymentNumber}>45,000</div>
-                    <div className={styles.deploymentLabel}>Active Students</div>
-                  </div>
-                  <div className={styles.deploymentStat}>
-                    <div className={styles.deploymentNumber}>2,800</div>
-                    <div className={styles.deploymentLabel}>Trained Teachers</div>
-                  </div>
-                  <div className={styles.deploymentStat}>
-                    <div className={styles.deploymentNumber}>12</div>
-                    <div className={styles.deploymentLabel}>Countries</div>
-                  </div>
-                </div>
-                <div className={styles.deploymentImage}>🏫</div>
-                <p>
-                  Our platform spans K-12 schools, universities, and vocational training centers across diverse educational contexts.
-                  Each institution receives customized implementation based on their specific curriculum requirements and student needs.
-                </p>
               </div>
             </div>
           </section>
@@ -271,86 +223,65 @@ const Implementation: React.FC = () => {
               Key Implementation Details
             </h2>
             <div className={styles.sectionContent}>
-              <h3>Adaptive Learning Algorithm</h3>
+              <h3>AI-Powered Quiz Generation</h3>
               <div className={styles.codeBlock}>
-<span className={styles.codeKeyword}>class</span> <span className={styles.codeFunction}>AdaptiveLearningEngine</span>:
-    <span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>__init__</span>(self):
-        self.student_model = StudentProfile()
-        self.content_analyzer = ContentAnalyzer()
-        self.learning_optimizer = LearningOptimizer()
-
-    <span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>generate_personalized_path</span>(self, student_id, learning_objectives):
-        <span className={styles.codeComment}># Analyze student&apos;s current knowledge state</span>
-        knowledge_map = self.student_model.assess_knowledge(student_id)
-        learning_style = self.student_model.get_learning_style(student_id)
-
-        <span className={styles.codeComment}># Identify knowledge gaps and optimal learning sequence</span>
-        gaps = self.identify_knowledge_gaps(knowledge_map, learning_objectives)
-        optimal_path = self.learning_optimizer.optimize_sequence(gaps, learning_style)
-
-        <span className={styles.codeComment}># Select appropriate content and delivery method</span>
-        personalized_content = []
-        <span className={styles.codeKeyword}>for</span> concept <span className={styles.codeKeyword}>in</span> optimal_path:
-            content = self.content_analyzer.get_best_content(
-                concept, learning_style, knowledge_map
-            )
-            personalized_content.append(content)
-
-        <span className={styles.codeKeyword}>return</span> personalized_content
+                <span className={styles.codeKeyword}>class</span> <span className={styles.codeFunction}>QuizGenerator</span>:<br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>__init__</span>(self):<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.ai_client = initialize_ai_client()<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.question_templates = load_question_templates()<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.difficulty_adjuster = DifficultyAdjuster()<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>async def</span> <span className={styles.codeFunction}>generate_quiz</span>(self, topic, difficulty, num_questions):<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Generate contextually relevant questions</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;prompt = build_quiz_prompt(topic, difficulty, num_questions)<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;response = <span className={styles.codeKeyword}>await</span> self.ai_client.generate_content(prompt)<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;questions = parse_ai_response(response)<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Adjust difficulty based on student performance</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;adjusted_questions = self.difficulty_adjuster.adapt(questions, difficulty)<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Create multiple question types</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;quiz = create_mixed_question_types(adjusted_questions)<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeKeyword}>return</span> quiz
               </div>
 
-              <h3>Real-Time Performance Analytics</h3>
+              <h3>Personalized Learning Algorithm</h3>
               <div className={styles.codeBlock}>
-<span className={styles.codeKeyword}>async def</span> <span className={styles.codeFunction}>track_learning_progress</span>(student_id, interaction_data):
-    <span className={styles.codeComment}># Process real-time interaction data</span>
-    processed_data = preprocess_interactions(interaction_data)
-
-    <span className={styles.codeComment}># Update student performance model</span>
-    performance_update = update_performance_model(student_id, processed_data)
-
-    <span className={styles.codeComment}># Generate insights and recommendations</span>
-    insights = generate_learning_insights(performance_update)
-    recommendations = create_actionable_recommendations(insights)
-
-    <span className={styles.codeComment}># Check for intervention needs</span>
-    <span className={styles.codeKeyword}>if</span> performance_update[<span className={styles.codeString}>"struggle_score"</span>] &gt; 0.7:
-        alert_teachers(student_id, insights)
-        suggest_intervention(student_id, recommendations)
-
-    <span className={styles.codeComment}># Update content difficulty and delivery</span>
-    <span className={styles.codeKeyword}>await</span> adapt_content_difficulty(student_id, performance_update)
-
-    <span className={styles.codeKeyword}>return</span> &#123;
-        <span className={styles.codeString}>"progress_update"</span>: performance_update,
-        <span className={styles.codeString}>"insights"</span>: insights,
-        <span className={styles.codeString}>"recommendations"</span>: recommendations
-    &#125;
+                <span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>personalize_learning_path</span>(student_id, quiz_results):<br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Analyze student performance patterns</span><br/>
+                &nbsp;&nbsp;performance_profile = analyze_student_performance(student_id, quiz_results)<br/>
+                &nbsp;&nbsp;learning_style = determine_learning_style(performance_profile)<br/>
+                &nbsp;&nbsp;knowledge_gaps = identify_knowledge_gaps(quiz_results)<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Generate personalized recommendations</span><br/>
+                &nbsp;&nbsp;recommendations = generate_learning_recommendations(<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;performance_profile, learning_style, knowledge_gaps<br/>
+                &nbsp;&nbsp;)<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeComment}># Create adaptive learning path</span><br/>
+                &nbsp;&nbsp;learning_path = optimize_learning_sequence(recommendations)<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>return</span> &#123;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"learning_path"</span>: learning_path,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"recommendations"</span>: recommendations,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"next_difficulty"</span>: calculate_next_difficulty(performance_profile)<br/>
+                &nbsp;&nbsp;&#125;
               </div>
 
-              <h3>AI-Powered Content Generation</h3>
+              <h3>Real-Time Classroom Management</h3>
               <div className={styles.codeBlock}>
-<span className={styles.codeComment}># Dynamic content generation based on student needs</span>
-<span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>generate_adaptive_explanation</span>(concept, student_profile):
-    <span className={styles.codeComment}># Determine optimal explanation style</span>
-    style_preference = student_profile[<span className={styles.codeString}>"learning_style"</span>]
-    difficulty_level = student_profile[<span className={styles.codeString}>"current_level"</span>]
-
-    <span className={styles.codeComment}># Generate multiple explanation variants</span>
-    explanations = []
-    <span className={styles.codeKeyword}>for</span> style <span className={styles.codeKeyword}>in</span> [style_preference, <span className={styles.codeString}>"visual"</span>, <span className={styles.codeString}>"textual"</span>, <span className={styles.codeString}>"interactive"</span>]:
-        explanation = ai_model.generate_explanation(
-            concept=concept,
-            style=style,
-            difficulty=difficulty_level,
-            context=student_profile[<span className={styles.codeString}>"background"</span>]
-        )
-        explanations.append((style, explanation))
-
-    <span className={styles.codeComment}># Select and personalize the best explanation</span>
-    best_explanation = select_optimal_explanation(explanations, student_profile)
-    personalized_content = add_examples_analogies(best_explanation, student_profile)
-
-    <span className={styles.codeKeyword}>return</span> personalized_content
+                <span className={styles.codeKeyword}>class</span> <span className={styles.codeFunction}>ClassroomManager</span>:<br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>def</span> <span className={styles.codeFunction}>__init__</span>(self):<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.active_sessions = &#123;&#125;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.student_progress = &#123;&#125;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.real_time_analytics = RealTimeAnalytics()<br/><br/>
+                &nbsp;&nbsp;<span className={styles.codeKeyword}>async def</span> <span className={styles.codeFunction}>start_quiz_session</span>(self, classroom_id, quiz_data):<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Initialize session and notify students</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;session_id = generate_session_id()<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;self.active_sessions[session_id] = &#123;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"classroom_id"</span>: classroom_id,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"quiz_data"</span>: quiz_data,<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeString}>"start_time"</span>: datetime.now()<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&#125;<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Send notifications to all students</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeKeyword}>await</span> notify_students(classroom_id, session_id)<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeComment}># Start real-time analytics tracking</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeKeyword}>await</span> self.real_time_analytics.start_tracking(session_id)<br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.codeKeyword}>return</span> session_id
               </div>
             </div>
           </section>
@@ -364,60 +295,60 @@ const Implementation: React.FC = () => {
               <div className={styles.challengesGrid}>
                 <div className={styles.challengeCard}>
                   <h3 className={styles.challengeTitle}>
-                    <span>🔄</span> Real-Time Adaptation Performance
+                    <span>🤖</span> AI API Integration
                   </h3>
                   <p className={styles.challengeDesc}>
-                    Personalizing content for thousands of students simultaneously requires low-latency processing and efficient algorithms.
+                    Integrating multiple AI providers (OpenAI and SiliconFlow) with consistent response formats and error handling.
                   </p>
                   <div className={styles.solutionBox}>
                     <h4 className={styles.solutionTitle}>Solution Implemented:</h4>
                     <p className={styles.solutionDesc}>
-                      Edge computing for local processing, cached student models, and distributed ML inference with load balancing.
+                      Unified API abstraction layer with fallback providers, response standardization, and intelligent retry mechanisms.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.challengeCard}>
                   <h3 className={styles.challengeTitle}>
-                    <span>🔒</span> Student Data Privacy & Security
+                    <span>📄</span> PDF Processing
                   </h3>
                   <p className={styles.challengeDesc}>
-                    Educational data is highly sensitive and requires strict compliance with privacy regulations like FERPA and GDPR.
+                    Extracting meaningful content from diverse PDF formats and generating contextually relevant quiz questions.
                   </p>
                   <div className={styles.solutionBox}>
                     <h4 className={styles.solutionTitle}>Solution Implemented:</h4>
                     <p className={styles.solutionDesc}>
-                      End-to-end encryption, anonymized data processing, role-based access controls, and comprehensive audit logging.
+                      Advanced pdf-parse integration with content analysis, semantic understanding, and context-aware question generation.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.challengeCard}>
                   <h3 className={styles.challengeTitle}>
-                    <span>📚</span> Content Quality & Standards Alignment
+                    <span>👥</span> Real-Time Performance
                   </h3>
                   <p className={styles.challengeDesc}>
-                    Ensuring AI-generated content meets educational standards and learning objectives while maintaining accuracy.
+                    Managing concurrent quiz sessions with real-time updates and analytics without performance degradation.
                   </p>
                   <div className={styles.solutionBox}>
                     <h4 className={styles.solutionTitle}>Solution Implemented:</h4>
                     <p className={styles.solutionDesc}>
-                      Expert educator review system, curriculum alignment validation, automated quality checks, and continuous feedback loops.
+                      Optimized database queries, efficient state management with Zustand, and strategic data caching.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.challengeCard}>
                   <h3 className={styles.challengeTitle}>
-                    <span>🏫</span> Teacher Adoption & Integration
+                    <span>🔒</span> Authentication & Security
                   </h3>
                   <p className={styles.challengeDesc}>
-                    Teachers need tools that enhance rather than replace their teaching, requiring seamless integration with existing workflows.
+                    Implementing secure access control for teachers and students with role-based permissions.
                   </p>
                   <div className={styles.solutionBox}>
                     <h4 className={styles.solutionTitle}>Solution Implemented:</h4>
                     <p className={styles.solutionDesc}>
-                      Teacher dashboard with class oversight, LMS integration, professional development resources, and collaborative features.
+                      Supabase authentication with row-level security, encrypted data transmission, and comprehensive audit logging.
                     </p>
                   </div>
                 </div>

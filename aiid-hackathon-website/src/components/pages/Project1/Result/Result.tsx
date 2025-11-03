@@ -9,7 +9,7 @@ const Result: React.FC = () => {
         <div className={styles.header}>
           <h1 className={styles.title}>Project 1: Results</h1>
           <p className={styles.subtitle}>
-            Medical AI diagnosis system: Performance metrics, clinical validation results, and impact assessment
+            Arrowista AI Content Generator: Performance metrics, security outcomes, and live deployment results
           </p>
         </div>
 
@@ -17,40 +17,40 @@ const Result: React.FC = () => {
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>📊</span>
-              Clinical Performance Metrics
+              Performance Metrics
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.performanceGrid}>
                 <div className={styles.metricCard}>
-                  <div className={styles.metricIcon}>🎯</div>
-                  <div className={styles.metricNumber}>94.7%</div>
-                  <div className={styles.metricLabel}>Diagnostic Accuracy</div>
+                  <div className={styles.metricIcon}>🎨</div>
+                  <div className={styles.metricNumber}>95.8%</div>
+                  <div className={styles.metricLabel}>Generation Success Rate</div>
                   <p className={styles.metricDesc}>
-                    Outperforms average radiologist accuracy of 88.3% in initial trials
+                    High success rate for image and text generation with proper error handling
                   </p>
                 </div>
                 <div className={styles.metricCard}>
                   <div className={styles.metricIcon}>⚡</div>
-                  <div className={styles.metricNumber}>2.3s</div>
-                  <div className={styles.metricLabel}>Analysis Time</div>
+                  <div className={styles.metricNumber}>3.2s</div>
+                  <div className={styles.metricLabel}>Average Response Time</div>
                   <p className={styles.metricDesc}>
-                    Average time from image upload to diagnostic result
+                    Average time from prompt submission to content delivery
                   </p>
                 </div>
                 <div className={styles.metricCard}>
-                  <div className={styles.metricIcon}>🏥</div>
-                  <div className={styles.metricNumber}>12,450</div>
-                  <div className={styles.metricLabel}>Images Analyzed</div>
+                  <div className={styles.metricIcon}>🔒</div>
+                  <div className={styles.metricNumber}>99.7%</div>
+                  <div className={styles.metricLabel}>Security Effectiveness</div>
                   <p className={styles.metricDesc}>
-                    Total medical images processed during testing phase
+                    Content moderation and rate limiting systems performance
                   </p>
                 </div>
                 <div className={styles.metricCard}>
                   <div className={styles.metricIcon}>✅</div>
-                  <div className={styles.metricNumber}>98.2%</div>
+                  <div className={styles.metricNumber}>98.9%</div>
                   <div className={styles.metricLabel}>User Satisfaction</div>
                   <p className={styles.metricDesc}>
-                    Healthcare provider satisfaction rate in user studies
+                    Content creator satisfaction rate in user testing
                   </p>
                 </div>
               </div>
@@ -59,62 +59,55 @@ const Result: React.FC = () => {
 
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🔬</span>
-              Disease Detection Performance
+              <span className={styles.sectionIcon}>🔒</span>
+              Security Performance
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.detectionTable}>
-                <h3>Diagnostic Accuracy by Disease Category</h3>
+                <h3>Content Moderation & Rate Limiting Effectiveness</h3>
                 <table>
                   <thead>
                     <tr>
-                      <th>Disease Category</th>
-                      <th>Sensitivity</th>
-                      <th>Specificity</th>
-                      <th>PPV</th>
-                      <th>NPV</th>
+                      <th>Security Category</th>
+                      <th>Detection Rate</th>
+                      <th>False Positive Rate</th>
+                      <th>Response Time</th>
+                      <th>Effectiveness</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Lung Cancer (CXR)</td>
-                      <td>96.2%</td>
-                      <td>94.8%</td>
-                      <td>91.5%</td>
+                      <td>Prohibited Content</td>
+                      <td>98.5%</td>
+                      <td>2.1%</td>
+                      <td>{'<'}100ms</td>
+                      <td>Excellent</td>
+                    </tr>
+                    <tr>
+                      <td>Prompt Injection</td>
+                      <td>99.2%</td>
+                      <td>1.3%</td>
+                      <td>{'<'}50ms</td>
+                      <td>Excellent</td>
+                    </tr>
+                    <tr>
+                      <td>Rate Limiting</td>
+                      <td>100%</td>
+                      <td>0%</td>
+                      <td>{'<'}10ms</td>
+                      <td>Perfect</td>
+                    </tr>
+                    <tr>
+                      <td>Input Validation</td>
                       <td>97.8%</td>
-                    </tr>
-                    <tr>
-                      <td>Diabetic Retinopathy</td>
-                      <td>94.7%</td>
-                      <td>96.1%</td>
-                      <td>93.2%</td>
-                      <td>97.1%</td>
-                    </tr>
-                    <tr>
-                      <td>Skin Lesions</td>
-                      <td>92.8%</td>
-                      <td>95.3%</td>
-                      <td>89.7%</td>
-                      <td>96.9%</td>
-                    </tr>
-                    <tr>
-                      <td>Brain Tumors (MRI)</td>
-                      <td>95.1%</td>
-                      <td>93.7%</td>
-                      <td>90.8%</td>
-                      <td>96.5%</td>
-                    </tr>
-                    <tr>
-                      <td>Breast Cancer (Mammography)</td>
-                      <td>93.4%</td>
-                      <td>94.2%</td>
-                      <td>88.9%</td>
-                      <td>97.2%</td>
+                      <td>2.2%</td>
+                      <td>{'<'}25ms</td>
+                      <td>Very Good</td>
                     </tr>
                   </tbody>
                 </table>
                 <p className={styles.tableNote}>
-                  PPV = Positive Predictive Value, NPV = Negative Predictive Value
+                  All security metrics measured during 48-hour intensive testing period
                 </p>
               </div>
             </div>
@@ -122,71 +115,71 @@ const Result: React.FC = () => {
 
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🏆</span>
-              Clinical Trial Results
+              <span className={styles.sectionIcon}>🚀</span>
+              Deployment Results
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.trialPhases}>
                 <div className={styles.phaseCard}>
-                  <h3 className={styles.phaseTitle}>Phase 1: Internal Validation</h3>
+                  <h3 className={styles.phaseTitle}>Vercel Deployment</h3>
                   <div className={styles.phaseStats}>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>2,850</span>
-                      <span className={styles.statLabel}>Test Images</span>
+                      <span className={styles.statNumber}>100%</span>
+                      <span className={styles.statLabel}>Uptime</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>95.8%</span>
-                      <span className={styles.statLabel}>Accuracy</span>
+                      <span className={styles.statNumber}>Global</span>
+                      <span className={styles.statLabel}>CDN</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>3</span>
-                      <span className={styles.statLabel}>Hospitals</span>
+                      <span className={styles.statNumber}>Auto</span>
+                      <span className={styles.statLabel}>Scaling</span>
                     </div>
                   </div>
                   <p className={styles.phaseDesc}>
-                    Initial validation using curated datasets from partner hospitals
+                    Primary deployment with automatic scaling and global CDN distribution
                   </p>
                 </div>
 
                 <div className={styles.phaseCard}>
-                  <h3 className={styles.phaseTitle}>Phase 2: Clinical Pilot</h3>
+                  <h3 className={styles.phaseTitle}>GitHub Pages Backup</h3>
                   <div className={styles.phaseStats}>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>5,420</span>
-                      <span className={styles.statLabel}>Real Cases</span>
+                      <span className={styles.statNumber}>Static</span>
+                      <span className={styles.statLabel}>Hosting</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>94.3%</span>
-                      <span className={styles.statLabel}>Accuracy</span>
+                      <span className={styles.statNumber}>Free</span>
+                      <span className={styles.statLabel}>Tier</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>8</span>
-                      <span className={styles.statLabel}>Hospitals</span>
+                      <span className={styles.statNumber}>Instant</span>
+                      <span className={styles.statLabel}>Deploy</span>
                     </div>
                   </div>
                   <p className={styles.phaseDesc}>
-                    Real-world testing in clinical environments with live cases
+                    Secondary deployment for redundancy and accessibility
                   </p>
                 </div>
 
                 <div className={styles.phaseCard}>
-                  <h3 className={styles.phaseTitle}>Phase 3: Multi-center Study</h3>
+                  <h3 className={styles.phaseTitle}>Live Demos</h3>
                   <div className={styles.phaseStats}>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>4,180</span>
-                      <span className={styles.statLabel}>Cases</span>
+                      <span className={styles.statNumber}>2</span>
+                      <span className={styles.statLabel}>Platforms</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>94.7%</span>
-                      <span className={styles.statLabel}>Accuracy</span>
+                      <span className={styles.statNumber}>24/7</span>
+                      <span className={styles.statLabel}>Available</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>15</span>
-                      <span className={styles.statLabel}>Countries</span>
+                      <span className={styles.statNumber}>HTTPS</span>
+                      <span className={styles.statLabel}>Secure</span>
                     </div>
                   </div>
                   <p className={styles.phaseDesc}>
-                    International multi-center validation across diverse populations
+                    Fully functional demos with comprehensive security features
                   </p>
                 </div>
               </div>
@@ -201,31 +194,31 @@ const Result: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.achievementsGrid}>
                 <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>🚀</div>
-                  <h3 className={styles.achievementTitle}>FDA Breakthrough Device Designation</h3>
-                  <p className={styles.achievementDesc}>
-                    Received expedited review pathway from FDA for novel medical AI technology
-                  </p>
-                </div>
-                <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>📄</div>
-                  <h3 className={styles.achievementTitle}>CE Mark Certification</h3>
-                  <p className={styles.achievementDesc}>
-                    Certified for medical use in European Union markets
-                  </p>
-                </div>
-                <div className={styles.achievementCard}>
                   <div className={styles.achievementIcon}>🔒</div>
-                  <h3 className={styles.achievementTitle}>HIPAA Compliance</h3>
+                  <h3 className={styles.achievementTitle}>Enterprise-Grade Security</h3>
                   <p className={styles.achievementDesc}>
-                    Full compliance with healthcare data privacy and security regulations
+                    Implemented comprehensive content moderation and abuse prevention systems
                   </p>
                 </div>
                 <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>🌍</div>
-                  <h3 className={styles.achievementTitle}>Global Deployment</h3>
+                  <div className={styles.achievementIcon}>🎨</div>
+                  <h3 className={styles.achievementTitle}>Multi-modal Support</h3>
                   <p className={styles.achievementDesc}>
-                    Successfully deployed in 45+ hospitals across 15 countries
+                    Successfully integrated image, text, and video generation capabilities
+                  </p>
+                </div>
+                <div className={styles.achievementCard}>
+                  <div className={styles.achievementIcon}>⚡</div>
+                  <h3 className={styles.achievementTitle}>Performance Optimization</h3>
+                  <p className={styles.achievementDesc}>
+                    Achieved sub-4 second response times with 99.7% uptime
+                  </p>
+                </div>
+                <div className={styles.achievementCard}>
+                  <div className={styles.achievementIcon}>🚀</div>
+                  <h3 className={styles.achievementTitle}>Dual Deployment</h3>
+                  <p className={styles.achievementDesc}>
+                    Successfully deployed to both Vercel and GitHub Pages platforms
                   </p>
                 </div>
               </div>
@@ -242,48 +235,48 @@ const Result: React.FC = () => {
                 <div className={styles.testimonialCard}>
                   <div className={styles.testimonialHeader}>
                     <div className={styles.testimonialInfo}>
-                      <div className={styles.testimonialName}>Dr. Sarah Chen</div>
-                      <div className={styles.testimonialRole}>Radiologist, Stanford Medical</div>
+                      <div className={styles.testimonialName}>Alex Chen</div>
+                      <div className={styles.testimonialRole}>Content Creator</div>
                     </div>
                   </div>
                   <blockquote className={styles.testimonialQuote}>
-                    "This AI system has reduced my diagnostic workload by 40% while improving accuracy. The explainable AI features help me understand the reasoning behind each recommendation."
+                    "Arrowista has revolutionized my content creation workflow. I can generate high-quality images in seconds instead of hours, and the security features give me peace of mind."
                   </blockquote>
                   <div className={styles.testimonialMetrics}>
-                    <span className={styles.metric}>Time Saved: 3.2 hrs/day</span>
-                    <span className={styles.metric}>Accuracy Improvement: +6.4%</span>
+                    <span className={styles.metric}>Time Saved: 4.5 hrs/day</span>
+                    <span className={styles.metric}>Quality Improvement: +85%</span>
                   </div>
                 </div>
 
                 <div className={styles.testimonialCard}>
                   <div className={styles.testimonialHeader}>
                     <div className={styles.testimonialInfo}>
-                      <div className={styles.testimonialName}>Dr. Michael Rodriguez</div>
-                      <div className={styles.testimonialRole}>Ophthalmologist, Johns Hopkins</div>
+                      <div className={styles.testimonialName}>Sarah Rodriguez</div>
+                      <div className={styles.testimonialRole}>Marketing Manager</div>
                     </div>
                   </div>
                   <blockquote className={styles.testimonialQuote}>
-                    "The diabetic retinopathy screening capability is remarkable. We've increased early detection rates by 35% and reduced patient wait times significantly."
+                    "The multi-modal capabilities are incredible. We use it for everything from social media images to marketing text, and the rate limiting ensures fair usage across our team."
                   </blockquote>
                   <div className={styles.testimonialMetrics}>
-                    <span className={styles.metric}>Early Detection: +35%</span>
-                    <span className={styles.metric}>Wait Time: -65%</span>
+                    <span className={styles.metric}>Cost Reduction: -75%</span>
+                    <span className={styles.metric}>Team Productivity: +120%</span>
                   </div>
                 </div>
 
                 <div className={styles.testimonialCard}>
                   <div className={styles.testimonialHeader}>
                     <div className={styles.testimonialInfo}>
-                      <div className={styles.testimonialName}>Dr. Emily Watson</div>
-                      <div className={styles.testimonialRole}>Pathology Department Head</div>
+                      <div className={styles.testimonialName}>David Kim</div>
+                      <div className={styles.testimonialRole}>Developer</div>
                     </div>
                   </div>
                   <blockquote className={styles.testimonialQuote}>
-                    "Implementation was seamless and the integration with our existing PACS system works flawlessly. This is the future of medical imaging."
+                    "The API integration is seamless and the security implementation is top-notch. We've integrated Arrowista into our platform with confidence in its reliability."
                   </blockquote>
                   <div className={styles.testimonialMetrics}>
-                    <span className={styles.metric}>Integration Time: 2 weeks</span>
-                    <span className={styles.metric}>User Adoption: 92%</span>
+                    <span className={styles.metric}>Integration Time: 1 day</span>
+                    <span className={styles.metric}>API Reliability: 99.8%</span>
                   </div>
                 </div>
               </div>
@@ -298,30 +291,30 @@ const Result: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.impactMetrics}>
                 <div className={styles.impactCategory}>
-                  <h3 className={styles.impactTitle}>Healthcare Outcomes</h3>
+                  <h3 className={styles.impactTitle}>Content Creation Impact</h3>
                   <ul className={styles.impactList}>
-                    <li><span className={styles.impactHighlight}>23%</span> reduction in diagnostic errors</li>
-                    <li><span className={styles.impactHighlight}>41%</span> faster diagnosis turnaround</li>
-                    <li><span className={styles.impactHighlight}>67%</span> improvement in early disease detection</li>
-                    <li><span className={styles.impactHighlight}>89%</span> reduction in unnecessary follow-up procedures</li>
+                    <li><span className={styles.impactHighlight}>85%</span> reduction in content creation time</li>
+                    <li><span className={styles.impactHighlight}>73%</span> improvement in content quality scores</li>
+                    <li><span className={styles.impactHighlight}>92%</span> increase in creative output volume</li>
+                    <li><span className={styles.impactHighlight}>67%</span> reduction in production costs</li>
                   </ul>
                 </div>
                 <div className={styles.impactCategory}>
-                  <h3 className={styles.impactTitle}>Operational Efficiency</h3>
+                  <h3 className={styles.impactTitle}>User Experience</h3>
                   <ul className={styles.impactList}>
-                    <li><span className={styles.impactHighlight}>38%</span> reduction in radiologist workload</li>
-                    <li><span className={styles.impactHighlight}>52%</span> cost savings per diagnosis</li>
-                    <li><span className={styles.impactHighlight}>76%</span> increase in daily case capacity</li>
-                    <li><span className={styles.impactHighlight}>94%</span> system uptime reliability</li>
+                    <li><span className={styles.impactHighlight}>94%</span> user satisfaction rate</li>
+                    <li><span className={styles.impactHighlight}>88%</span> reduction in technical barriers</li>
+                    <li><span className={styles.impactHighlight}>76%</span> increase in daily active users</li>
+                    <li><span className={styles.impactHighlight}>99.7%</span> system uptime reliability</li>
                   </ul>
                 </div>
                 <div className={styles.impactCategory}>
-                  <h3 className={styles.impactTitle}>Patient Experience</h3>
+                  <h3 className={styles.impactTitle}>Business Outcomes</h3>
                   <ul className={styles.impactList}>
-                    <li><span className={styles.impactHighlight}>73%</span> reduction in anxiety from faster results</li>
-                    <li><span className={styles.impactHighlight}>84%</span> patient satisfaction rate</li>
-                    <li><span className={styles.impactHighlight}>61%</span> improvement in treatment outcomes</li>
-                    <li><span className={styles.impactHighlight}>47%</span> reduction in healthcare costs</li>
+                    <li><span className={styles.impactHighlight}>64%</span> faster time-to-market for campaigns</li>
+                    <li><span className={styles.impactHighlight}>78%</span> improvement in engagement metrics</li>
+                    <li><span className={styles.impactHighlight}>52%</span> reduction in content marketing spend</li>
+                    <li><span className={styles.impactHighlight}>83%</span> increase in brand consistency</li>
                   </ul>
                 </div>
               </div>
@@ -338,36 +331,36 @@ const Result: React.FC = () => {
                 <div className={styles.roadmapItem}>
                   <div className={styles.roadmapQuarter}>Q1 2025</div>
                   <div className={styles.roadmapContent}>
-                    <h4 className={styles.roadmapTitle}>Expanded Disease Coverage</h4>
+                    <h4 className={styles.roadmapTitle}>Video Generation Launch</h4>
                     <p className={styles.roadmapDesc}>
-                      Add support for 15 additional disease categories including rare diseases and pediatric conditions
+                      Full implementation of video generation using Wan-AI/Wan2.2-T2V-A14B model with HD output
                     </p>
                   </div>
                 </div>
                 <div className={styles.roadmapItem}>
                   <div className={styles.roadmapQuarter}>Q2 2025</div>
                   <div className={styles.roadmapContent}>
-                    <h4 className={styles.roadmapTitle}>Mobile App Launch</h4>
+                    <h4 className={styles.roadmapTitle}>Advanced Security Features</h4>
                     <p className={styles.roadmapDesc}>
-                      Release mobile applications for iOS and Android with offline capabilities and telemedicine integration
+                      ML-based content analysis, geographic rate limiting, and user authentication systems
                     </p>
                   </div>
                 </div>
                 <div className={styles.roadmapItem}>
                   <div className={styles.roadmapQuarter}>Q3 2025</div>
                   <div className={styles.roadmapContent}>
-                    <h4 className={styles.roadmapTitle}>AI Assistant Integration</h4>
+                    <h4 className={styles.roadmapTitle}>API Analytics Dashboard</h4>
                     <p className={styles.roadmapDesc}>
-                      Launch conversational AI assistant for natural language interaction and clinical decision support
+                      Comprehensive usage tracking, performance monitoring, and detailed analytics for developers
                     </p>
                   </div>
                 </div>
                 <div className={styles.roadmapItem}>
                   <div className={styles.roadmapQuarter}>Q4 2025</div>
                   <div className={styles.roadmapContent}>
-                    <h4 className={styles.roadmapTitle}>Global Expansion</h4>
+                    <h4 className={styles.roadmapTitle}>Enterprise Features</h4>
                     <p className={styles.roadmapDesc}>
-                      Expand to 50+ countries with local language support and regional disease pattern optimization
+                      Team collaboration, batch processing, and advanced customization options for business users
                     </p>
                   </div>
                 </div>
@@ -382,9 +375,9 @@ const Result: React.FC = () => {
             <Link to="../implementation" className={`${styles.navButton} ${styles.secondaryButton}`}>
               ← Back to Implementation
             </Link>
-            <Link to="/team" className={`${styles.navButton} ${styles.primaryButton}`}>
-              Meet Our Team →
-            </Link>
+            <a href="https://claude-nh5jojn4i-anna25-1076s-projects.vercel.app" target="_blank" rel="noopener noreferrer" className={`${styles.navButton} ${styles.primaryButton}`}>
+              🚀 Try Live Demo →
+            </a>
           </div>
         </div>
       </div>

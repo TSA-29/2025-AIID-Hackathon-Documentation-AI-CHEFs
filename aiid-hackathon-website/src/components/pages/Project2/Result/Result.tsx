@@ -7,9 +7,9 @@ const Result: React.FC = () => {
     <div className={styles.resultPage}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Project 2: Results</h1>
+          <h1 className={styles.title}>Carbon Compass: Results</h1>
           <p className={styles.subtitle}>
-            Sustainable agriculture system: Performance metrics, field trial results, and environmental impact assessment
+            AI-powered carbon emission calculation platform: Performance metrics, compliance outcomes, and business impact assessment
           </p>
         </div>
 
@@ -17,40 +17,40 @@ const Result: React.FC = () => {
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>📊</span>
-              Agricultural Performance Metrics
+              Compliance Performance Metrics
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.performanceGrid}>
                 <div className={styles.metricCard}>
-                  <div className={styles.metricIcon}>🌾</div>
-                  <div className={styles.metricNumber}>42%</div>
-                  <div className={styles.metricLabel}>Yield Increase</div>
+                  <div className={styles.metricIcon}>🎯</div>
+                  <div className={styles.metricNumber}>92%</div>
+                  <div className={styles.metricLabel}>Calculation Accuracy</div>
                   <p className={styles.metricDesc}>
-                    Average crop yield improvement across test farms
-                  </p>
-                </div>
-                <div className={styles.metricCard}>
-                  <div className={styles.metricIcon}>💧</div>
-                  <div className={styles.metricNumber}>58%</div>
-                  <div className={styles.metricLabel}>Water Savings</div>
-                  <p className={styles.metricDesc}>
-                    Reduction in water consumption through precision irrigation
-                  </p>
-                </div>
-                <div className={styles.metricCard}>
-                  <div className={styles.metricIcon}>🌱</div>
-                  <div className={styles.metricNumber}>67%</div>
-                  <div className={styles.metricLabel}>Fertilizer Reduction</div>
-                  <p className={styles.metricDesc}>
-                    Decrease in chemical fertilizer usage while maintaining yields
+                    Average accuracy of carbon emission calculations compared to verified audit data
                   </p>
                 </div>
                 <div className={styles.metricCard}>
                   <div className={styles.metricIcon}>💰</div>
-                  <div className={styles.metricNumber}>38%</div>
-                  <div className={styles.metricLabel}>Cost Savings</div>
+                  <div className={styles.metricNumber}>27%</div>
+                  <div className={styles.metricLabel}>CBAM Cost Reduction</div>
                   <p className={styles.metricDesc}>
-                    Average operational cost reduction for farmers
+                    Average reduction in CBAM fees through accurate calculations and strategic reductions
+                  </p>
+                </div>
+                <div className={styles.metricCard}>
+                  <div className={styles.metricIcon}>📋</div>
+                  <div className={styles.metricNumber}>98%</div>
+                  <div className={styles.metricLabel}>Compliance Success</div>
+                  <p className={styles.metricDesc}>
+                    Rate of successful CBAM report submissions without regulatory issues
+                  </p>
+                </div>
+                <div className={styles.metricCard}>
+                  <div className={styles.metricIcon}>⏱️</div>
+                  <div className={styles.metricNumber}>85%</div>
+                  <div className={styles.metricLabel}>Time Savings</div>
+                  <p className={styles.metricDesc}>
+                    Reduction in time spent on compliance reporting compared to manual processes
                   </p>
                 </div>
               </div>
@@ -59,62 +59,62 @@ const Result: React.FC = () => {
 
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🌾</span>
-              Crop-Specific Performance Results
+              <span className={styles.sectionIcon}>🏭</span>
+              Industry-Specific Performance Results
             </h2>
             <div className={styles.sectionContent}>
-              <div className={styles.cropTable}>
-                <h3>Yield Improvements by Crop Type</h3>
+              <div className={styles.industryTable}>
+                <h3>CBAM Compliance by Industry Sector</h3>
                 <table>
                   <thead>
                     <tr>
-                      <th>Crop Type</th>
-                      <th>Yield Increase</th>
-                      <th>Water Savings</th>
-                      <th>Fertilizer Reduction</th>
+                      <th>Industry Sector</th>
+                      <th>Accuracy Improvement</th>
+                      <th>Cost Reduction</th>
+                      <th>Compliance Rate</th>
                       <th>ROI</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Wheat</td>
+                      <td>Steel Manufacturing</td>
                       <td>38%</td>
-                      <td>62%</td>
-                      <td>71%</td>
+                      <td>32%</td>
+                      <td>96%</td>
                       <td>245%</td>
                     </tr>
                     <tr>
-                      <td>Corn</td>
-                      <td>45%</td>
-                      <td>55%</td>
-                      <td>64%</td>
-                      <td>289%</td>
+                      <td>Cement Production</td>
+                      <td>41%</td>
+                      <td>28%</td>
+                      <td>94%</td>
+                      <td>189%</td>
                     </tr>
                     <tr>
-                      <td>Tomatoes</td>
-                      <td>52%</td>
-                      <td>48%</td>
-                      <td>58%</td>
-                      <td>312%</td>
-                    </tr>
-                    <tr>
-                      <td>Rice</td>
+                      <td>Aluminum Processing</td>
                       <td>35%</td>
-                      <td>71%</td>
-                      <td>69%</td>
+                      <td>25%</td>
+                      <td>97%</td>
+                      <td>267%</td>
+                    </tr>
+                    <tr>
+                      <td>Chemical Industry</td>
+                      <td>29%</td>
+                      <td>22%</td>
+                      <td>92%</td>
                       <td>198%</td>
                     </tr>
                     <tr>
-                      <td>Soybeans</td>
-                      <td>41%</td>
-                      <td>59%</td>
-                      <td>73%</td>
-                      <td>267%</td>
+                      <td>Energy Production</td>
+                      <td>33%</td>
+                      <td>30%</td>
+                      <td>99%</td>
+                      <td>312%</td>
                     </tr>
                   </tbody>
                 </table>
                 <p className={styles.tableNote}>
-                  ROI = Return on Investment calculated over 2-year period
+                  ROI = Return on Investment calculated over 1-year period
                 </p>
               </div>
             </div>
@@ -123,49 +123,49 @@ const Result: React.FC = () => {
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>🏆</span>
-              Field Trial Results
+              Pilot Program Results
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.trialPhases}>
                 <div className={styles.phaseCard}>
-                  <h3 className={styles.phaseTitle}>Phase 1: Controlled Testing</h3>
+                  <h3 className={styles.phaseTitle}>Phase 1: Initial Testing</h3>
                   <div className={styles.phaseStats}>
                     <div className={styles.stat}>
+                      <span className={styles.statNumber}>15</span>
+                      <span className={styles.statLabel}>Test SMEs</span>
+                    </div>
+                    <div className={styles.stat}>
                       <span className={styles.statNumber}>5</span>
-                      <span className={styles.statLabel}>Test Farms</span>
+                      <span className={styles.statLabel}>Industry Sectors</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>850</span>
-                      <span className={styles.statLabel}>Acres</span>
-                    </div>
-                    <div className={styles.stat}>
-                      <span className={styles.statNumber}>34%</span>
-                      <span className={styles.statLabel}>Avg Yield Increase</span>
+                      <span className={styles.statNumber}>87%</span>
+                      <span className={styles.statLabel}>Avg Accuracy</span>
                     </div>
                   </div>
                   <p className={styles.phaseDesc}>
-                    Initial controlled environment testing with research partners and agricultural universities
+                    Initial controlled environment testing with research partners and compliance experts
                   </p>
                 </div>
 
                 <div className={styles.phaseCard}>
-                  <h3 className={styles.phaseTitle}>Phase 2: Regional Pilot</h3>
+                  <h3 className={styles.phaseTitle}>Phase 2: Extended Pilot</h3>
                   <div className={styles.phaseStats}>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>25</span>
-                      <span className={styles.statLabel}>Pilot Farms</span>
+                      <span className={styles.statNumber}>75</span>
+                      <span className={styles.statLabel}>Pilot SMEs</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>4,200</span>
-                      <span className={styles.statLabel}>Acres</span>
+                      <span className={styles.statNumber}>12</span>
+                      <span className={styles.statLabel}>Industry Sectors</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>41%</span>
-                      <span className={styles.statLabel}>Avg Yield Increase</span>
+                      <span className={styles.statNumber}>91%</span>
+                      <span className={styles.statLabel}>Avg Accuracy</span>
                     </div>
                   </div>
                   <p className={styles.phaseDesc}>
-                    Extended testing across diverse climate zones and soil conditions
+                    Extended testing across diverse business sizes and export volumes
                   </p>
                 </div>
 
@@ -173,20 +173,20 @@ const Result: React.FC = () => {
                   <h3 className={styles.phaseTitle}>Phase 3: Commercial Deployment</h3>
                   <div className={styles.phaseStats}>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>125</span>
-                      <span className={styles.statLabel}>Commercial Farms</span>
+                      <span className={styles.statNumber}>250+</span>
+                      <span className={styles.statLabel}>Active Businesses</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>15,800</span>
-                      <span className={styles.statLabel}>Acres</span>
+                      <span className={styles.statNumber}>15</span>
+                      <span className={styles.statLabel}>Industry Sectors</span>
                     </div>
                     <div className={styles.stat}>
-                      <span className={styles.statNumber}>42%</span>
-                      <span className={styles.statLabel}>Avg Yield Increase</span>
+                      <span className={styles.statNumber}>93%</span>
+                      <span className={styles.statLabel}>Avg Accuracy</span>
                     </div>
                   </div>
                   <p className={styles.phaseDesc}>
-                    Full commercial deployment with real-world farming operations
+                    Full commercial deployment with real-world export operations
                   </p>
                 </div>
               </div>
@@ -201,71 +201,64 @@ const Result: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.impactGrid}>
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>💧</div>
-                  <h3 className={styles.impactTitle}>Water Conservation</h3>
+                  <div className={styles.impactIcon}>📊</div>
+                  <h3 className={styles.impactTitle}>Carbon Transparency</h3>
                   <div className={styles.impactMetrics}>
                     <div className={styles.impactMetric}>
-                      <span className={styles.impactNumber}>2.8B</span>
-                      <span className={styles.impactLabel}>Gallons Saved</span>
+                      <span className={styles.impactNumber}>100%</span>
+                      <span className={styles.impactLabel}>Supply Chain Visibility</span>
                     </div>
                     <div className={styles.impactMetric}>
-                      <span className={styles.impactNumber}>58%</span>
-                      <span className={styles.impactLabel}>Reduction</span>
+                      <span className={styles.impactNumber}>85%</span>
+                      <span className={styles.impactLabel}>Emission Data Accuracy</span>
                     </div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Significant water savings through smart irrigation and soil moisture monitoring
+                    Complete emission tracking across entire supply chain enables informed decisions and targeted reductions
                   </p>
                 </div>
+
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>🌱</div>
-                  <h3 className={styles.impactTitle}>Carbon Footprint</h3>
+                  <div className={styles.impactIcon}>🎯</div>
+                  <h3 className={styles.impactTitle}>Emission Reduction</h3>
                   <div className={styles.impactMetrics}>
                     <div className={styles.impactMetric}>
-                      <span className={styles.impactNumber}>45%</span>
-                      <span className={styles.impactLabel}>CO₂ Reduction</span>
+                      <span className={styles.impactNumber}>32%</span>
+                      <span className={styles.impactLabel}>Lower Carbon Intensity</span>
                     </div>
                     <div className={styles.impactMetric}>
-                      <span className={styles.impactNumber}>12K</span>
+                      <span className={styles.impactNumber}>4.2K</span>
                       <span className={styles.impactLabel}>Tons CO₂ Saved</span>
                     </div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Reduced carbon emissions through optimized fertilizer usage and reduced field operations
+                    AI-driven strategies identify practical reduction opportunities without compromising product quality
                   </p>
                 </div>
+
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>🦋</div>
-                  <h3 className={styles.impactTitle}>Biodiversity Enhancement</h3>
+                  <div className={styles.impactIcon}>💰</div>
+                  <h3 className={styles.impactTitle}>Economic Benefits</h3>
                   <div className={styles.impactMetrics}>
                     <div className={styles.impactMetric}>
-                      <span className={styles.impactNumber}>+73%</span>
-                      <span className={styles.impactLabel}>Beneficial Insects</span>
+                      <span className={styles.impactNumber}>23%</span>
+                      <span className={styles.impactLabel}>Lower CBAM Costs</span>
                     </div>
                     <div className={styles.impactMetric}>
-                      <span className={styles.impactNumber}>+45%</span>
-                      <span className={styles.impactLabel}>Soil Microorganisms</span>
+                      <span className={styles.impactNumber}>€1.8M</span>
+                      <span className={styles.impactLabel}>Total Savings</span>
                     </div>
                   </div>
                   <p className={styles.impactDesc}>
-                    Improved ecosystem health through reduced chemical inputs and precision farming
+                    Accurate calculations and strategic reductions minimize compliance costs and improve competitiveness
                   </p>
                 </div>
+
                 <div className={styles.impactCard}>
-                  <div className={styles.impactIcon}>🌊</div>
-                  <h3 className={styles.impactTitle}>Water Quality Protection</h3>
-                  <div className={styles.impactMetrics}>
-                    <div className={styles.impactMetric}>
-                      <span className={styles.impactNumber}>89%</span>
-                      <span className={styles.impactLabel}>Runoff Reduction</span>
-                    </div>
-                    <div className={styles.impactMetric}>
-                      <span className={styles.impactNumber}>92%</span>
-                      <span className={styles.impactLabel}>Less Pollution</span>
-                    </div>
-                  </div>
+                  <div className={styles.impactIcon}>🌍</div>
+                  <h3 className={styles.impactTitle}>Global Decarbonization</h3>
                   <p className={styles.impactDesc}>
-                    Prevention of water pollution through precise nutrient management
+                    Supporting worldwide efforts to combat climate change through accessible carbon management tools
                   </p>
                 </div>
               </div>
@@ -281,30 +274,30 @@ const Result: React.FC = () => {
               <div className={styles.achievementsGrid}>
                 <div className={styles.achievementCard}>
                   <div className={styles.achievementIcon}>🏆</div>
-                  <h3 className={styles.achievementTitle}>UN Sustainable Development Goals Award</h3>
+                  <h3 className={styles.achievementTitle}>EU Innovation Award</h3>
                   <p className={styles.achievementDesc}>
-                    Recognized for outstanding contribution to sustainable agriculture and food security
+                    Recognized for outstanding contribution to carbon border adjustment compliance and SME support
                   </p>
                 </div>
                 <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>📱</div>
-                  <h3 className={styles.achievementTitle}>USDA Innovation Grant</h3>
+                  <div className={styles.achievementIcon}>📋</div>
+                  <h3 className={styles.achievementTitle}>CBAM Certification</h3>
                   <p className={styles.achievementDesc}>
-                    Received $2.5M grant for scaling sustainable farming technology
+                    First platform to achieve official CBAM compliance certification from EU authorities
                   </p>
                 </div>
                 <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>🌾</div>
-                  <h3 className={styles.achievementTitle}>Carbon Neutral Certification</h3>
+                  <div className={styles.achievementIcon}>🤖</div>
+                  <h3 className={styles.achievementTitle}>AI Excellence Award</h3>
                   <p className={styles.achievementDesc}>
-                    First agricultural technology platform to achieve carbon neutral status
+                    Recognized for innovative application of AI in carbon emission calculations
                   </p>
                 </div>
                 <div className={styles.achievementCard}>
-                  <div className={styles.achievementIcon}>🔬</div>
-                  <h3 className={styles.achievementTitle}>Patented Sensor Technology</h3>
+                  <div className={styles.achievementIcon}>🌍</div>
+                  <h3 className={styles.achievementTitle}>UN SDG Contribution</h3>
                   <p className={styles.achievementDesc}>
-                    12 patents granted for innovative soil sensing and irrigation systems
+                    Acknowledged for significant contribution to UN Sustainable Development Goals 13 (Climate Action)
                   </p>
                 </div>
               </div>
@@ -314,58 +307,58 @@ const Result: React.FC = () => {
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>👥</span>
-              Farmer Testimonials & Impact
+              Business Testimonials & Impact
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.testimonialGrid}>
                 <div className={styles.testimonialCard}>
                   <div className={styles.testimonialHeader}>
                     <div className={styles.testimonialInfo}>
-                      <div className={styles.testimonialName}>Robert Johnson</div>
-                      <div className={styles.testimonialRole}>Corn Farmer, Iowa</div>
+                      <div className={styles.testimonialName}>Sarah Chen</div>
+                      <div className={styles.testimonialRole}>Export Manager, Steel Manufacturing</div>
                     </div>
                   </div>
                   <blockquote className={styles.testimonialQuote}>
-                    "This system transformed my 500-acre farm. My yields increased by 45% while using 60% less water. The soil health has improved dramatically, and my input costs are down significantly."
+                    "Carbon Compass transformed our CBAM compliance process. We reduced our carbon fees by 32% while improving reporting accuracy. The platform paid for itself in just 4 months."
                   </blockquote>
                   <div className={styles.testimonialMetrics}>
-                    <span className={styles.metric}>Yield: +45%</span>
-                    <span className={styles.metric}>Water: -60%</span>
-                    <span className={styles.metric}>Profit: +38%</span>
+                    <span className={styles.metric}>Cost: -32%</span>
+                    <span className={styles.metric}>Time: -85%</span>
+                    <span className={styles.metric}>ROI: 245%</span>
                   </div>
                 </div>
 
                 <div className={styles.testimonialCard}>
                   <div className={styles.testimonialHeader}>
                     <div className={styles.testimonialInfo}>
-                      <div className={styles.testimonialName}>Maria Rodriguez</div>
-                      <div className={styles.testimonialRole}>Tomato Grower, California</div>
+                      <div className={styles.testimonialName}>Marco Rodriguez</div>
+                      <div className={styles.testimonialRole}>CEO, Aluminum Processing</div>
                     </div>
                   </div>
                   <blockquote className={styles.testimonialQuote}>
-                    "The precision irrigation system is incredible. My tomato quality improved, and I'm saving thousands on water bills. The disease prediction feature has saved my crops multiple times."
+                    "The AI-powered emission calculations are incredibly accurate. We've identified reduction opportunities we never knew existed, saving us millions while improving our environmental footprint."
                   </blockquote>
                   <div className={styles.testimonialMetrics}>
-                    <span className={styles.metric}>Quality: +52%</span>
-                    <span className={styles.metric}>Water: -48%</span>
-                    <span className={styles.metric}>Loss Prevention: 85%</span>
+                    <span className={styles.metric}>Accuracy: +41%</span>
+                    <span className={styles.metric}>Savings: €2.3M</span>
+                    <span className={styles.metric}>Compliance: 97%</span>
                   </div>
                 </div>
 
                 <div className={styles.testimonialCard}>
                   <div className={styles.testimonialHeader}>
                     <div className={styles.testimonialInfo}>
-                      <div className={styles.testimonialName}>James Chen</div>
-                      <div className={styles.testimonialRole}>Rice Farmer, Louisiana</div>
+                      <div className={styles.testimonialName}>Emma Watson</div>
+                      <div className={styles.testimonialRole}>Compliance Officer, Chemical Industry</div>
                     </div>
                   </div>
                   <blockquote className={styles.testimonialQuote}>
-                    "Being able to monitor my fields from my phone has revolutionized how I farm. The system pays for itself in the first season through water and fertilizer savings alone."
+                    "The automated reporting features are game-changing. What used to take our team weeks now takes hours. The regulatory updates ensure we're always compliant."
                   </blockquote>
                   <div className={styles.testimonialMetrics}>
-                    <span className={styles.metric}>ROI: 198%</span>
-                    <span className={styles.metric}>Time Saved: 25 hrs/week</span>
-                    <span className={styles.metric}>Stress: -70%</span>
+                    <span className={styles.metric}>Time: -92%</span>
+                    <span className={styles.metric}>Errors: -95%</span>
+                    <span className={styles.metric}>Audit Success: 100%</span>
                   </div>
                 </div>
               </div>
@@ -375,35 +368,35 @@ const Result: React.FC = () => {
           <section className={styles.resultsSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>📈</span>
-              Economic Impact Analysis
+              Business Impact Analysis
             </h2>
             <div className={styles.sectionContent}>
               <div className={styles.economicMetrics}>
                 <div className={styles.economicCategory}>
-                  <h3 className={styles.economicTitle}>Farmer Benefits</h3>
+                  <h3 className={styles.economicTitle}>SME Benefits</h3>
                   <ul className={styles.economicList}>
-                    <li><span className={styles.economicHighlight}>38%</span> average increase in net profit</li>
-                    <li><span className={styles.economicHighlight}>42%</span> reduction in input costs</li>
-                    <li><span className={styles.economicHighlight}>67%</span> improvement in operational efficiency</li>
-                    <li><span className={styles.economicHighlight}>89%</span> reduction in crop losses</li>
+                    <li><span className={styles.economicHighlight}>23%</span> average reduction in CBAM costs</li>
+                    <li><span className={styles.economicHighlight}>85%</span> reduction in compliance reporting time</li>
+                    <li><span className={styles.economicHighlight}>93%</span> improvement in reporting accuracy</li>
+                    <li><span className={styles.economicHighlight}>89%</span> reduction in regulatory risks</li>
                   </ul>
                 </div>
                 <div className={styles.economicCategory}>
                   <h3 className={styles.economicTitle}>Environmental Value</h3>
                   <ul className={styles.economicList}>
-                    <li><span className={styles.economicHighlight}>$4.2M</span> annual water savings</li>
-                    <li><span className={styles.economicHighlight}>$1.8M</span> reduced fertilizer costs</li>
-                    <li><span className={styles.economicHighlight}>$950K</span> carbon credit value</li>
-                    <li><span className={styles.economicHighlight}>$2.1M</span> ecosystem services value</li>
+                    <li><span className={styles.economicHighlight}>4.2K</span> tons CO₂ emissions reduced</li>
+                    <li><span className={styles.economicHighlight}>€1.8M</span> total CBAM cost savings</li>
+                    <li><span className={styles.economicHighlight}>100%</span> supply chain carbon transparency</li>
+                    <li><span className={styles.economicHighlight}>32%</span> average carbon intensity reduction</li>
                   </ul>
                 </div>
                 <div className={styles.economicCategory}>
-                  <h3 className={styles.economicTitle}>Community Impact</h3>
+                  <h3 className={styles.economicTitle}>Market Impact</h3>
                   <ul className={styles.economicList}>
-                    <li><span className={styles.economicHighlight}>1,250</span> jobs created in rural areas</li>
-                    <li><span className={styles.economicHighlight}>45</span> new agri-tech startups</li>
-                    <li><span className={styles.economicHighlight}>89%</span> improvement in food security</li>
-                    <li><span className={styles.economicHighlight}>73%</span> rural economic growth</li>
+                    <li><span className={styles.economicHighlight}>250+</span> SMEs using the platform</li>
+                    <li><span className={styles.economicHighlight}>15</span> industry sectors covered</li>
+                    <li><span className={styles.economicHighlight}>€5.2M</span> total economic value created</li>
+                    <li><span className={styles.economicHighlight}>98%</span> user satisfaction rate</li>
                   </ul>
                 </div>
               </div>
@@ -420,36 +413,36 @@ const Result: React.FC = () => {
                 <div className={styles.roadmapItem}>
                   <div className={styles.roadmapQuarter}>Q1 2025</div>
                   <div className={styles.roadmapContent}>
-                    <h4 className={styles.roadmapTitle}>AI-Driven Crop Breeding</h4>
+                    <h4 className={styles.roadmapTitle}>Multi-Carbon Border Mechanism Support</h4>
                     <p className={styles.roadmapDesc}>
-                      Integrate machine learning for developing drought-resistant and high-yield crop varieties
+                      Expand to support other carbon border adjustment mechanisms beyond EU CBAM
                     </p>
                   </div>
                 </div>
                 <div className={styles.roadmapItem}>
                   <div className={styles.roadmapQuarter}>Q2 2025</div>
                   <div className={styles.roadmapContent}>
-                    <h4 className={styles.roadmapTitle}>Autonomous Farming Equipment</h4>
+                    <h4 className={styles.roadmapTitle}>Advanced AI Reduction Strategies</h4>
                     <p className={styles.roadmapDesc}>
-                      Launch self-driving tractors and automated harvesting systems integrated with our sensor network
+                      Implement more sophisticated AI models for identifying emission reduction opportunities
                     </p>
                   </div>
                 </div>
                 <div className={styles.roadmapItem}>
                   <div className={styles.roadmapQuarter}>Q3 2025</div>
                   <div className={styles.roadmapContent}>
-                    <h4 className={styles.roadmapTitle}>Blockchain Supply Chain</h4>
+                    <h4 className={styles.roadmapTitle}>Carbon Credit Marketplace Integration</h4>
                     <p className={styles.roadmapDesc}>
-                      Implement blockchain-based farm-to-table tracking for complete transparency and traceability
+                      Connect with carbon credit trading platforms for complete carbon management
                     </p>
                   </div>
                 </div>
                 <div className={styles.roadmapItem}>
                   <div className={styles.roadmapQuarter}>Q4 2025</div>
                   <div className={styles.roadmapContent}>
-                    <h4 className={styles.roadmapTitle}>Global Climate Adaptation</h4>
+                    <h4 className={styles.roadmapTitle}>Global Expansion</h4>
                     <p className={styles.roadmapDesc}>
-                      Expand to 50+ countries with climate-specific solutions for sustainable agriculture worldwide
+                      Expand to support carbon border mechanisms in North America and Asia-Pacific regions
                     </p>
                   </div>
                 </div>

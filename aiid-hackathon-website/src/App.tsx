@@ -23,6 +23,16 @@ import Project3Idea from './components/pages/Project3/Idea/Idea';
 import Project3Implementation from './components/pages/Project3/Implementation/Implementation';
 import Project3Result from './components/pages/Project3/Result/Result';
 
+import VibeCodingGuide from './components/pages/VibeCodingGuide/VibeCodingGuide';
+import VibeCodingIntroduction from './components/pages/VibeCodingGuide/Introduction/Introduction';
+import VibeCodingSetup from './components/pages/VibeCodingGuide/Setup/Setup';
+import VibeCodingStep1 from './components/pages/VibeCodingGuide/Step1/Step1';
+import VibeCodingStep2 from './components/pages/VibeCodingGuide/Step2/Step2';
+import VibeCodingStep3 from './components/pages/VibeCodingGuide/Step3/Step3';
+import VibeCodingStep4 from './components/pages/VibeCodingGuide/Step4/Step4';
+import VibeCodingStep5 from './components/pages/VibeCodingGuide/Step5/Step5';
+import VibeCodingStep6 from './components/pages/VibeCodingGuide/Step6/Step6';
+
 import { NavigationProvider } from './contexts/NavigationContext';
 import './App.css';
 
@@ -60,6 +70,17 @@ function App() {
             </Route>
 
             <Route path="communication" element={<Communication />} />
+            <Route path="vibe-coding-guide">
+              <Route index element={<VibeCodingGuide />} />
+              <Route path="introduction" element={<VibeCodingIntroduction />} />
+              <Route path="setup" element={<VibeCodingSetup />} />
+              <Route path="step1" element={<VibeCodingStep1 />} />
+              <Route path="step2" element={<VibeCodingStep2 />} />
+              <Route path="step3" element={<VibeCodingStep3 />} />
+              <Route path="step4" element={<VibeCodingStep4 />} />
+              <Route path="step5" element={<VibeCodingStep5 />} />
+              <Route path="step6" element={<VibeCodingStep6 />} />
+            </Route>
             <Route path="tutorial" element={<Tutorial />} />
 
             <Route path="*" element={<Home />} />

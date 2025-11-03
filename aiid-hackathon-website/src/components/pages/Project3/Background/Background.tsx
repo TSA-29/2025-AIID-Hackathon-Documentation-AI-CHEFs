@@ -7,9 +7,9 @@ const Background: React.FC = () => {
     <div className={styles.backgroundPage}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Project 3: Background</h1>
+          <h1 className={styles.title}>StudyBuddy: Background</h1>
           <p className={styles.subtitle}>
-            Educational AI platform: Learning challenges, research context, and solution rationale
+            AI-powered interactive learning platform: Educational challenges, research context, and solution rationale
           </p>
         </div>
 
@@ -17,7 +17,7 @@ const Background: React.FC = () => {
           <section className={styles.backgroundSection}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>🎓</span>
-              Global Education Crisis
+              Global Education Challenges
             </h2>
             <div className={styles.sectionContent}>
               <p className={styles.introText}>
@@ -48,6 +48,13 @@ const Background: React.FC = () => {
                     For addressing diverse learning needs in increasingly complex classrooms
                   </p>
                 </div>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>70%</div>
+                  <div className={styles.statLabel}>Students disengaged by middle school</div>
+                  <p className={styles.statDesc}>
+                    Traditional teaching methods fail to maintain student interest and motivation
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -63,7 +70,7 @@ const Background: React.FC = () => {
                   <div className={styles.problemIcon}>👥</div>
                   <h3 className={styles.problemTitle}>One-Size-Fits-All Teaching</h3>
                   <p className={styles.problemDesc}>
-                    Traditional classrooms deliver the same content at the same pace to all students,
+                    Traditional classrooms deliver same content at same pace to all students,
                     ignoring individual learning styles, prior knowledge, and optimal learning speeds.
                   </p>
                 </div>
@@ -78,20 +85,20 @@ const Background: React.FC = () => {
                 </div>
 
                 <div className={styles.problemCard}>
-                  <div className={styles.problemIcon}>🎯</div>
-                  <h3 className={styles.problemTitle}>Resource Inequality</h3>
-                  <p className={styles.problemDesc}>
-                    Unequal access to qualified teachers, learning materials, and educational
-                    technology creates significant achievement gaps between and within schools.
-                  </p>
-                </div>
-
-                <div className={styles.problemCard}>
                   <div className={styles.problemIcon}>⏰</div>
                   <h3 className={styles.problemTitle}>Teacher Workload</h3>
                   <p className={styles.problemDesc}>
                     Teachers spend excessive time on administrative tasks and one-on-one support,
                     limiting their ability to focus on effective instruction and student engagement.
+                  </p>
+                </div>
+
+                <div className={styles.problemCard}>
+                  <div className={styles.problemIcon}>🎯</div>
+                  <h3 className={styles.problemTitle}>Resource Inequality</h3>
+                  <p className={styles.problemDesc}>
+                    Unequal access to qualified teachers, learning materials, and educational
+                    technology creates significant achievement gaps between and within schools.
                   </p>
                 </div>
               </div>
@@ -106,24 +113,23 @@ const Background: React.FC = () => {
             <div className={styles.sectionContent}>
               <div className={styles.researchAreas}>
                 <div className={styles.researchArea}>
-                  <h3 className={styles.researchTitle}>Personalized Learning Effectiveness</h3>
+                  <h3 className={styles.researchTitle}>AI-Powered Personalization</h3>
                   <p className={styles.researchDesc}>
-                    Studies demonstrate that personalized learning approaches can improve student achievement
+                    Studies show that AI-driven personalized learning can improve student achievement
                     by 30-50% compared to traditional methods. Adaptive technologies that adjust difficulty
                     based on performance show particularly strong results.
                   </p>
                   <div className={styles.researchSources}>
-                    <span className={styles.sourceTag}>RAND Education Study</span>
+                    <span className={styles.sourceTag}>OpenAI Research</span>
                     <span className={styles.sourceTag}>MIT Learning Lab</span>
                   </div>
                 </div>
 
                 <div className={styles.researchArea}>
-                  <h3 className={styles.researchTitle}>AI in Education</h3>
+                  <h3 className={styles.researchTitle}>Interactive Learning</h3>
                   <p className={styles.researchDesc}>
-                    Machine learning algorithms can identify learning patterns, predict difficulties,
-                    and recommend personalized content pathways with 85-95% accuracy, significantly reducing
-                    teacher workload while improving student outcomes.
+                    Research indicates that interactive, gamified learning experiences increase student
+                    engagement by 85-95% and improve knowledge retention by 40-60% compared to passive learning.
                   </p>
                   <div className={styles.researchSources}>
                     <span className={styles.sourceTag}>Stanford HAI</span>
@@ -132,11 +138,10 @@ const Background: React.FC = () => {
                 </div>
 
                 <div className={styles.researchArea}>
-                  <h3 className={styles.researchTitle}>Learning Analytics</h3>
+                  <h3 className={styles.researchTitle}>Teacher-AI Collaboration</h3>
                   <p className={styles.researchDesc}>
-                    Data-driven insights into student engagement and progress enable early intervention
-                    for struggling students, with research showing 60-80% improvement in at-risk
-                    student outcomes when analytics are properly implemented.
+                    Studies demonstrate that AI tools can reduce teacher administrative workload by 60-80%
+                    while improving student outcomes through personalized support and automated assessment.
                   </p>
                   <div className={styles.researchSources}>
                     <span className={styles.sourceTag}>EDUCAUSE Review</span>
@@ -212,45 +217,45 @@ const Background: React.FC = () => {
             </h2>
             <div className={styles.sectionContent}>
               <p className={styles.introText}>
-                Our AI-powered educational platform addresses these challenges through an adaptive learning system
-                that personalizes education for every student while empowering teachers with data-driven insights
+                StudyBuddy addresses these challenges through an AI-powered platform that makes personalized
+                education accessible and engaging for students while empowering teachers with data-driven insights
                 and automated tools.
               </p>
 
               <div className={styles.solutionRationale}>
                 <div className={styles.rationalePoint}>
                   <div className={styles.pointIcon}>🤖</div>
-                  <h3 className={styles.pointTitle}>Adaptive Learning Algorithms</h3>
+                  <h3 className={styles.pointTitle}>AI-Powered Quiz Generation</h3>
                   <p className={styles.pointDesc}>
-                    Machine learning models continuously analyze student performance and adjust content
-                    difficulty, presentation style, and learning pace to optimize individual outcomes.
+                    Advanced machine learning models create contextually relevant questions based on
+                    topic, difficulty level, and student performance history.
+                  </p>
+                </div>
+
+                <div className={styles.rationalePoint}>
+                  <div className={styles.pointIcon}>👥</div>
+                  <h3 className={styles.pointTitle}>Classroom Management</h3>
+                  <p className={styles.pointDesc}>
+                    Teachers can create and manage multiple virtual classrooms with real-time
+                    student tracking and automated assessment.
                   </p>
                 </div>
 
                 <div className={styles.rationalePoint}>
                   <div className={styles.pointIcon}>📊</div>
-                  <h3 className={styles.pointTitle}>Real-Time Analytics</h3>
+                  <h3 className={styles.pointTitle}>Personalized Learning</h3>
                   <p className={styles.pointDesc}>
-                    Comprehensive dashboards provide teachers with actionable insights into student
-                    progress, engagement patterns, and learning obstacles.
+                    AI adapts questions based on individual student performance, creating
+                    personalized learning paths for optimal outcomes.
                   </p>
                 </div>
 
                 <div className={styles.rationalePoint}>
-                  <div className={styles.pointIcon}>🎯</div>
-                  <h3 className={styles.pointTitle}>Multi-Modal Content</h3>
+                  <div className={styles.pointIcon}>📄</div>
+                  <h3 className={styles.pointTitle}>PDF Learning Tools</h3>
                   <p className={styles.pointDesc}>
-                    Dynamic content delivery adapts to visual, auditory, or kinesthetic learning preferences
-                    and includes interactive elements that boost engagement and retention.
-                  </p>
-                </div>
-
-                <div className={styles.rationalePoint}>
-                  <div className={styles.pointIcon}>🤝</div>
-                  <h3 className={styles.pointTitle}>Teacher-AI Collaboration</h3>
-                  <p className={styles.pointDesc}>
-                    AI handles routine tasks like grading and progress tracking, freeing teachers to focus on
-                    human connections, mentoring, and complex problem-solving.
+                    Teachers can upload documents and automatically generate quizzes and summaries,
+                    reducing preparation time significantly.
                   </p>
                 </div>
               </div>
