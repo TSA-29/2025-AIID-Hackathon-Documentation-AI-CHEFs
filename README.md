@@ -103,6 +103,8 @@ The website features a comprehensive tutorial on **"Vibe Coding"** - an innovati
 - Prompt engineering for code generation
 - Iterative refinement techniques
 - SEO and deployment strategies
+- Integrated video tutorials with step-by-step guidance
+- Visual deployment examples with screenshots
 
 ## 🛠️ Technology Stack
 
