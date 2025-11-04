@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styles from './Communication.module.css';
 
 const Communication: React.FC = () => {
-  const [activeProject, setActiveProject] = useState<string | null>(null);
   const [selectedMetric, setSelectedMetric] = useState<string>('revenue');
   return (
     <div className={styles.communicationPage}>
@@ -70,19 +69,19 @@ const Communication: React.FC = () => {
                 <div className={styles.planSection}>
                   <h3 className={styles.planTitle}>Target Customers</h3>
                   <div className={styles.customerCards}>
-                    <div className={styles.customerCard} onClick={() => setActiveProject('social-managers')}>
+                    <div className={styles.customerCard}>
                       <div className={styles.customerIcon}>👥</div>
                       <h4>Social Media Managers</h4>
                       <p>Handling multiple client accounts</p>
                       <div className={styles.customerStat}>2.5M+ professionals</div>
                     </div>
-                    <div className={styles.customerCard} onClick={() => setActiveProject('agencies')}>
+                    <div className={styles.customerCard}>
                       <div className={styles.customerIcon}>🏢</div>
                       <h4>Marketing Agencies</h4>
                       <p>Streamlined content workflows</p>
                       <div className={styles.customerStat}>500K+ agencies</div>
                     </div>
-                    <div className={styles.customerCard} onClick={() => setActiveProject('ecommerce')}>
+                    <div className={styles.customerCard}>
                       <div className={styles.customerIcon}>🛒</div>
                       <h4>E-commerce</h4>
                       <p>Regular product promotions</p>
