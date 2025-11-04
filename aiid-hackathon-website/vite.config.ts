@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/2025-AIID-Hackathon-Documentation-Template/',
+  base: process.env.VITE_BASE ?? '/2025-AIID-Hackathon-Documentation-Template/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
